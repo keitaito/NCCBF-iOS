@@ -25,8 +25,10 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
         tableView.delegate = self
         tableView.dataSource = self
         do {
-            let url = try ResourceLoader().load(resource: sampleDataName, ofType: sampleDataType)
-            print(url)
+            let url = try ResourceLoader.load(resource: sampleDataName, ofType: sampleDataType)
+            let jsonData = try Data(contentsOf: url)
+            let jsonObject = try JSONSerialization.jsonObject(with: jsonData)
+            let data = try JSONParser.parse(json: jsonObject)
         } catch {
             print(error)
         }
