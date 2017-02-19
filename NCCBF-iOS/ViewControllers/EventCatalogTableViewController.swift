@@ -15,6 +15,8 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
     
     // MARK: - Properties
     let mockData = ["foo", "bar", "baz"]
+    let sampleDataName = "SFCherryBlossomSampleData"
+    let sampleDataType = "json"
     
     // MARK: - Methods
     override func viewDidLoad() {
@@ -22,6 +24,12 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
         // Do any additional setup after loading the view, typically from a nib.
         tableView.delegate = self
         tableView.dataSource = self
+        do {
+            let url = try ResourceLoader().load(resource: sampleDataName, ofType: sampleDataType)
+            print(url)
+        } catch {
+            print(error)
+        }
     }
     
     // MARK: - UITableViewDataSource

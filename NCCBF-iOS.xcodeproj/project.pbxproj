@@ -10,6 +10,7 @@
 		8733C58A1E5A1B9600140899 /* SFCherryBlossomSampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8733C5891E5A1B9600140899 /* SFCherryBlossomSampleData.json */; };
 		8733C58E1E5A1C8900140899 /* EventCatalogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8733C58C1E5A1C8900140899 /* EventCatalogTableViewController.swift */; };
 		8733C58F1E5A1C8900140899 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8733C58D1E5A1C8900140899 /* Main.storyboard */; };
+		8733C5A51E5A220B00140899 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8733C5A41E5A220B00140899 /* JSON.swift */; };
 		87C5F7F91E553B3D001D7B09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C5F7F81E553B3D001D7B09 /* AppDelegate.swift */; };
 		87C5F8001E553B3D001D7B09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87C5F7FF1E553B3D001D7B09 /* Assets.xcassets */; };
 		87C5F8031E553B3D001D7B09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C5F8011E553B3D001D7B09 /* LaunchScreen.storyboard */; };
@@ -19,6 +20,7 @@
 		8733C5891E5A1B9600140899 /* SFCherryBlossomSampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SFCherryBlossomSampleData.json; path = Resources/SFCherryBlossomSampleData.json; sourceTree = "<group>"; };
 		8733C58C1E5A1C8900140899 /* EventCatalogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventCatalogTableViewController.swift; path = ViewControllers/EventCatalogTableViewController.swift; sourceTree = "<group>"; };
 		8733C58D1E5A1C8900140899 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ViewControllers/Main.storyboard; sourceTree = "<group>"; };
+		8733C5A41E5A220B00140899 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Util/JSON.swift; sourceTree = "<group>"; };
 		87C5F7F51E553B3D001D7B09 /* NCCBF-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NCCBF-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C5F7F81E553B3D001D7B09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87C5F7FF1E553B3D001D7B09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 			children = (
 				8733C58C1E5A1C8900140899 /* EventCatalogTableViewController.swift */,
 				8733C58D1E5A1C8900140899 /* Main.storyboard */,
+				8733C5A41E5A220B00140899 /* JSON.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8733C5A51E5A220B00140899 /* JSON.swift in Sources */,
 				8733C58E1E5A1C8900140899 /* EventCatalogTableViewController.swift in Sources */,
 				87C5F7F91E553B3D001D7B09 /* AppDelegate.swift in Sources */,
 			);
