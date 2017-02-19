@@ -27,18 +27,23 @@ enum JSONError: Error {
 }
 
 struct JSONParser {
-    public static func parse(json: Any) throws -> [Any] {
-        var results = [Any]()
+    public static func parse(json: Any) throws -> [Event] {
+        var results = [Event]()
         if let topLevelArray = json as? [Any] {
             for element in topLevelArray {
                 if let dictionary = element as? [String: Any] {
-                    results.append(dictionary)
+                    do {
+                        let event = try Event(json: dictionary)
+                        results.append(event)
+                    } catch {
+                        print(error)
+                    }
                 } else {
-                    throw JSONError.parsingError("Failed to do type casting from Any to [String: Any].", element)
+                    throw JSONError.parsingError("Failed type casting from Any to [String: Any].", element)
                 }
             }
         } else {
-            throw JSONError.parsingError("Failed to do type casting from Any to [Any].", json)
+            throw JSONError.parsingError("Failed type casting from Any to [Any].", json)
         }
         return results
     }
