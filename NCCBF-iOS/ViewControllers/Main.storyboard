@@ -22,14 +22,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kFC-l5-LHV">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="4wR-v8-WLb">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4wR-v8-WLb" id="nGy-XO-tPT">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -38,8 +38,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="kFC-l5-LHV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="3q6-tW-gq8"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kFC-l5-LHV" secondAttribute="bottom" id="buP-Nn-BhC"/>
+                            <constraint firstAttribute="bottom" secondItem="kFC-l5-LHV" secondAttribute="bottom" id="BrU-Yb-8Zt"/>
+                            <constraint firstAttribute="trailing" secondItem="kFC-l5-LHV" secondAttribute="trailing" id="Fq8-1N-Vu6"/>
+                            <constraint firstItem="kFC-l5-LHV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HYK-mY-rhf"/>
+                            <constraint firstItem="kFC-l5-LHV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="T8U-o6-Fvr"/>
                             <constraint firstAttribute="trailing" secondItem="kFC-l5-LHV" secondAttribute="trailing" id="c2F-EU-Hbb"/>
                             <constraint firstItem="kFC-l5-LHV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w2K-xf-HkC"/>
                         </constraints>
