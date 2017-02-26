@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zS5-sp-EHr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Event Details View Controller-->
+        <scene sceneID="M11-UQ-U7R">
+            <objects>
+                <viewController storyboardIdentifier="vc" id="zS5-sp-EHr" customClass="EventDetailsViewController" customModule="NCCBF_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x3D-nu-8lj"/>
+                        <viewControllerLayoutGuide type="bottom" id="vsn-hS-UT1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mDS-gL-SKi" customClass="EventDetailsView" customModule="NCCBF_iOS" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zit-xB-QsE">
+                                <rect key="frame" x="16" y="323" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zit-xB-QsE" firstAttribute="leading" secondItem="mDS-gL-SKi" secondAttribute="leadingMargin" id="D7s-B3-xLz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zit-xB-QsE" secondAttribute="trailing" id="GIw-c6-HqY"/>
+                            <constraint firstItem="zit-xB-QsE" firstAttribute="centerX" secondItem="mDS-gL-SKi" secondAttribute="centerX" id="gpR-Ud-AII"/>
+                            <constraint firstItem="zit-xB-QsE" firstAttribute="centerY" secondItem="mDS-gL-SKi" secondAttribute="centerY" id="vvs-k0-yeB"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="descriptionLabel" destination="zit-xB-QsE" id="Qb8-q4-ftn"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="BDc-A6-AiB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RRb-cN-LCQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2999.1999999999998" y="177.66116941529236"/>
+        </scene>
+    </scenes>
+</document>

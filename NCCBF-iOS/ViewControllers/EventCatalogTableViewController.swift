@@ -45,13 +45,21 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
         return events.count
     }
     
-    // MARK: - UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let event = events[indexPath.row]
         cell.textLabel?.text = event.name
         return cell
     }
-
+    
+    // MARK: - UITableViewDelegate
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let event = events[indexPath.row]
+        let storyboard = UIStoryboard(name: "EventDetailsViewController", bundle: Bundle.main)
+        if let vc = storyboard.instantiateInitialViewController() as? EventDetailsViewController {
+            vc.event = event
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }
 
