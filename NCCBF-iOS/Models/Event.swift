@@ -23,6 +23,18 @@ enum EventError: Error {
 }
 
 extension Event {
+    init() {
+        self.id = Int.max
+        self.startAt = Date()
+        self.endAt = Date()
+        self.location = ""
+        self.locationId = Int.max
+        self.name = ""
+        self.description = ""
+    }
+}
+
+extension Event {
     init(json: [String: Any]) throws {
         guard let id = json["id"] as? Int else {
             throw EventError.initializingError("id is missing.", json)
