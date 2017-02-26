@@ -14,7 +14,7 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Properties
-    let mockData = ["foo", "bar", "baz"]
+    var events = [Event]()
     let sampleDataName = "SFCherryBlossomSampleData"
     let sampleDataType = "json"
     
@@ -28,21 +28,28 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
             let url = try ResourceLoader.load(resource: sampleDataName, ofType: sampleDataType)
             let jsonData = try Data(contentsOf: url)
             let jsonObject = try JSONSerialization.jsonObject(with: jsonData)
-            let data = try JSONParser.parse(json: jsonObject)
+            events = try JSONParser.parse(json: jsonObject)
         } catch {
             print(error)
         }
+        
+        setupUI()
+    }
+    
+    private func setupUI() {
+        title = "Events"
     }
     
     // MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mockData.count
+        return events.count
     }
     
     // MARK: - UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = mockData[indexPath.row]
+        let event = events[indexPath.row]
+        cell.textLabel?.text = event.name
         return cell
     }
 
