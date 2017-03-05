@@ -55,9 +55,10 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
     // MARK: - UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let event = events[indexPath.row]
+        let eventDetails = EventDetailsViewModel(event: event)
         let storyboard = UIStoryboard(name: "EventDetailsViewController", bundle: Bundle.main)
         if let vc = storyboard.instantiateInitialViewController() as? EventDetailsViewController {
-            vc.event = event
+            vc.eventDetails = eventDetails
             navigationController?.pushViewController(vc, animated: true)
         }
     }

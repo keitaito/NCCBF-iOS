@@ -10,7 +10,7 @@ import UIKit
 
 class EventDetailsViewController: UIViewController {
     
-    public var event = Event() {
+    public var eventDetails: EventDetailsViewModel? {
         didSet {
             update()
         }
@@ -27,11 +27,12 @@ class EventDetailsViewController: UIViewController {
     }
     
     private func update() {
-        detailsView.configure(with: event)
-        setupUI(with: event)
+        guard let eventDetails = eventDetails else { return }
+        detailsView.configure(with: eventDetails)
+        setupUI(with: eventDetails)
     }
     
-    private func setupUI(with event: Event) {
-        title = event.name
+    private func setupUI(with eventDetails: EventDetailsViewModel) {
+        title = eventDetails.name
     }
 }
