@@ -12,4 +12,7 @@ class EventDetailsView: UIView {
     
     @IBOutlet weak var descriptionLabel: UILabel!
 
+    public func configure(with event: Event) {
+        descriptionLabel.text = event.description
+    }
 }

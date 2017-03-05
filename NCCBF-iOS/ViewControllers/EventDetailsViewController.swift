@@ -27,7 +27,7 @@ class EventDetailsViewController: UIViewController {
     }
     
     private func update() {
-        detailsView.descriptionLabel.text = event.description
+        detailsView.configure(with: event)
         setupUI(with: event)
     }
     
