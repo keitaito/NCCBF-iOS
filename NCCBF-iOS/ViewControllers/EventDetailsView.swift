@@ -11,8 +11,10 @@ import UIKit
 class EventDetailsView: UIView {
     
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
 
     public func configure(with eventDetails: EventDetailsViewModel) {
         descriptionLabel.text = eventDetails.description
+        imageView.image = #imageLiteral(resourceName: "placeholder")
     }
 }
