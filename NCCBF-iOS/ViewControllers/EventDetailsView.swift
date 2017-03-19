@@ -10,11 +10,19 @@ import UIKit
 
 class EventDetailsView: UIView {
     
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var scheduleLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
 
     public func configure(with eventDetails: EventDetailsViewModel) {
-        descriptionLabel.text = eventDetails.description
+        
+        nameLabel.text = eventDetails.name
+        scheduleLabel.text = eventDetails.schedule
+        locationLabel.text = eventDetails.location
+        
+//        descriptionLabel.text = eventDetails.description
         imageView.image = #imageLiteral(resourceName: "placeholder")
     }
 }

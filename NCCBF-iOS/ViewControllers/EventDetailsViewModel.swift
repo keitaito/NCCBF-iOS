@@ -9,14 +9,49 @@
 import Foundation
 
 struct EventDetailsViewModel {
-    let event: Event
     
-    let name: String
-    let description: String
+    // MAKR: - Public properties
+    
+    public var name: String {
+        return event.name
+    }
+    
+    public var description: String {
+        return event.description
+    }
+    
+    public var startAt: String {
+        return dateFormatter.string(from: event.startAt)
+    }
+    
+    public var endAt: String {
+        return dateFormatter.string(from: event.endAt)
+    }
+    
+    public var schedule: String {
+        let df = DateFormatter()
+        df.dateFormat = "h:mm a"
+        let endAtString = df.string(from: event.endAt)
+        return "\(startAt) - \(endAtString)"
+    }
+    
+    public var location: String {
+        return event.location
+    }
+    
+    // MARK: - Private properties
+    
+    private let event: Event
+    
+    private var dateFormatter: DateFormatter {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM d, h:mm a"
+        return dateFormatter
+    }
+    
+    // MARK: - Initialization
     
     init(event: Event) {
         self.event = event
-        self.name = event.name
-        self.description = event.description
     }
 }
