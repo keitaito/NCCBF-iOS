@@ -58,7 +58,7 @@
         <!--Navigation Controller-->
         <scene sceneID="OFN-B6-7oG">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fo5-AO-Tki" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="EventCatalogNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="fo5-AO-Tki" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qp8-PV-96R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -71,7 +71,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncm-ha-FTx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.59999999999999" y="791.15442278860576"/>
+            <point key="canvasLocation" x="252" y="137"/>
         </scene>
     </scenes>
 </document>
