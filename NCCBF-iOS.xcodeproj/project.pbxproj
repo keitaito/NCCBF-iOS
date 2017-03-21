@@ -21,6 +21,16 @@
 		87C5F8031E553B3D001D7B09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C5F8011E553B3D001D7B09 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8756D92A1E7F734D00C0CFAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87C5F7ED1E553B3D001D7B09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87C5F7F41E553B3D001D7B09;
+			remoteInfo = "NCCBF-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		8733C5891E5A1B9600140899 /* SFCherryBlossomSampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SFCherryBlossomSampleData.json; path = Resources/SFCherryBlossomSampleData.json; sourceTree = "<group>"; };
 		8733C58C1E5A1C8900140899 /* EventCatalogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventCatalogTableViewController.swift; path = ViewControllers/EventCatalogTableViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +41,8 @@
 		873F0A031E63791000BECCD2 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventDetailsViewController.swift; path = ViewControllers/EventDetailsViewController.swift; sourceTree = "<group>"; };
 		873F0A051E63891200BECCD2 /* EventDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventDetailsView.swift; path = ViewControllers/EventDetailsView.swift; sourceTree = "<group>"; };
 		8756D4AE1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventDetailsViewModel.swift; path = ViewControllers/EventDetailsViewModel.swift; sourceTree = "<group>"; };
+		8756D9251E7F734D00C0CFAC /* NCCBF-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NCCBF-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8756D9291E7F734D00C0CFAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87C5F7F51E553B3D001D7B09 /* NCCBF-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NCCBF-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C5F7F81E553B3D001D7B09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87C5F7FF1E553B3D001D7B09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +51,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8756D9221E7F734D00C0CFAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		87C5F7F21E553B3D001D7B09 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,10 +105,19 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		8756D9261E7F734D00C0CFAC /* NCCBF-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				8756D9291E7F734D00C0CFAC /* Info.plist */,
+			);
+			path = "NCCBF-iOSTests";
+			sourceTree = "<group>";
+		};
 		87C5F7EC1E553B3D001D7B09 = {
 			isa = PBXGroup;
 			children = (
 				87C5F7F71E553B3D001D7B09 /* NCCBF-iOS */,
+				8756D9261E7F734D00C0CFAC /* NCCBF-iOSTests */,
 				87C5F7F61E553B3D001D7B09 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				87C5F7F51E553B3D001D7B09 /* NCCBF-iOS.app */,
+				8756D9251E7F734D00C0CFAC /* NCCBF-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +149,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8756D9241E7F734D00C0CFAC /* NCCBF-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8756D92E1E7F734D00C0CFAC /* Build configuration list for PBXNativeTarget "NCCBF-iOSTests" */;
+			buildPhases = (
+				8756D9211E7F734D00C0CFAC /* Sources */,
+				8756D9221E7F734D00C0CFAC /* Frameworks */,
+				8756D9231E7F734D00C0CFAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8756D92B1E7F734D00C0CFAC /* PBXTargetDependency */,
+			);
+			name = "NCCBF-iOSTests";
+			productName = "NCCBF-iOSTests";
+			productReference = 8756D9251E7F734D00C0CFAC /* NCCBF-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		87C5F7F41E553B3D001D7B09 /* NCCBF-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87C5F8071E553B3D001D7B09 /* Build configuration list for PBXNativeTarget "NCCBF-iOS" */;
@@ -147,6 +194,12 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Keita Ito";
 				TargetAttributes = {
+					8756D9241E7F734D00C0CFAC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D433NUFZ5K;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 87C5F7F41E553B3D001D7B09;
+					};
 					87C5F7F41E553B3D001D7B09 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = D433NUFZ5K;
@@ -168,11 +221,19 @@
 			projectRoot = "";
 			targets = (
 				87C5F7F41E553B3D001D7B09 /* NCCBF-iOS */,
+				8756D9241E7F734D00C0CFAC /* NCCBF-iOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8756D9231E7F734D00C0CFAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		87C5F7F31E553B3D001D7B09 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,6 +249,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8756D9211E7F734D00C0CFAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		87C5F7F11E553B3D001D7B09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -204,6 +272,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8756D92B1E7F734D00C0CFAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87C5F7F41E553B3D001D7B09 /* NCCBF-iOS */;
+			targetProxy = 8756D92A1E7F734D00C0CFAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		87C5F8011E553B3D001D7B09 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -216,6 +292,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8756D92C1E7F734D00C0CFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D433NUFZ5K;
+				INFOPLIST_FILE = "NCCBF-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keitaito.NCCBF-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NCCBF-iOS.app/NCCBF-iOS";
+			};
+			name = Debug;
+		};
+		8756D92D1E7F734D00C0CFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D433NUFZ5K;
+				INFOPLIST_FILE = "NCCBF-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keitaito.NCCBF-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NCCBF-iOS.app/NCCBF-iOS";
+			};
+			name = Release;
+		};
 		87C5F8051E553B3D001D7B09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -338,6 +442,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8756D92E1E7F734D00C0CFAC /* Build configuration list for PBXNativeTarget "NCCBF-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8756D92C1E7F734D00C0CFAC /* Debug */,
+				8756D92D1E7F734D00C0CFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		87C5F7F01E553B3D001D7B09 /* Build configuration list for PBXProject "NCCBF-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
