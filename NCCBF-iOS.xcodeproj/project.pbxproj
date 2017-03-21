@@ -36,7 +36,7 @@
 		8733C5891E5A1B9600140899 /* SFCherryBlossomSampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SFCherryBlossomSampleData.json; path = Resources/SFCherryBlossomSampleData.json; sourceTree = "<group>"; };
 		8733C58C1E5A1C8900140899 /* EventCatalogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventCatalogTableViewController.swift; path = ViewControllers/EventCatalogTableViewController.swift; sourceTree = "<group>"; };
 		8733C58D1E5A1C8900140899 /* EventCatalogTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EventCatalogTableViewController.storyboard; path = ViewControllers/EventCatalogTableViewController.storyboard; sourceTree = "<group>"; };
-		8733C5A41E5A220B00140899 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Util/JSON.swift; sourceTree = "<group>"; };
+		8733C5A41E5A220B00140899 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Utilities/JSON.swift; sourceTree = "<group>"; };
 		8733C5B91E5A39BD00140899 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Models/Event.swift; sourceTree = "<group>"; };
 		873F0A011E6378E200BECCD2 /* EventDetailsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EventDetailsViewController.storyboard; path = ViewControllers/EventDetailsViewController.storyboard; sourceTree = "<group>"; };
 		873F0A031E63791000BECCD2 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventDetailsViewController.swift; path = ViewControllers/EventDetailsViewController.swift; sourceTree = "<group>"; };
@@ -99,12 +99,12 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		873F0A001E63715900BECCD2 /* Util */ = {
+		873F0A001E63715900BECCD2 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				8733C5A41E5A220B00140899 /* JSON.swift */,
 			);
-			name = Util;
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		8756D9261E7F734D00C0CFAC /* NCCBF-iOSTests */ = {
@@ -140,7 +140,7 @@
 				87C5F7F81E553B3D001D7B09 /* AppDelegate.swift */,
 				8733C5BB1E5A39C000140899 /* Models */,
 				8733C5901E5A1C9000140899 /* ViewControllers */,
-				873F0A001E63715900BECCD2 /* Util */,
+				873F0A001E63715900BECCD2 /* Utilities */,
 				87C5F7FF1E553B3D001D7B09 /* Assets.xcassets */,
 				87C5F8011E553B3D001D7B09 /* LaunchScreen.storyboard */,
 				87C5F8041E553B3D001D7B09 /* Info.plist */,
