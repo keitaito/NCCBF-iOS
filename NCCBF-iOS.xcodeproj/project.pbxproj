@@ -88,8 +88,6 @@
 				873F0A031E63791000BECCD2 /* EventDetailsViewController.swift */,
 				873F0A051E63891200BECCD2 /* EventDetailsView.swift */,
 				8756D4AE1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift */,
-				8733C58D1E5A1C8900140899 /* EventCatalogTableViewController.storyboard */,
-				873F0A011E6378E200BECCD2 /* EventDetailsViewController.storyboard */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -119,6 +117,15 @@
 			path = "NCCBF-iOSTests";
 			sourceTree = "<group>";
 		};
+		8756D9601E810F3000C0CFAC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8733C58D1E5A1C8900140899 /* EventCatalogTableViewController.storyboard */,
+				873F0A011E6378E200BECCD2 /* EventDetailsViewController.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		87C5F7EC1E553B3D001D7B09 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +150,7 @@
 				87C5F7F81E553B3D001D7B09 /* AppDelegate.swift */,
 				8733C5BB1E5A39C000140899 /* Models */,
 				8733C5901E5A1C9000140899 /* ViewControllers */,
+				8756D9601E810F3000C0CFAC /* Storyboards */,
 				873F0A001E63715900BECCD2 /* Utilities */,
 				8733C58B1E5A1B9D00140899 /* Resources */,
 			);
