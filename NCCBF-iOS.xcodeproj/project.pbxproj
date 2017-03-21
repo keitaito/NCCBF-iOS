@@ -16,6 +16,7 @@
 		873F0A041E63791000BECCD2 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F0A031E63791000BECCD2 /* EventDetailsViewController.swift */; };
 		873F0A061E63891200BECCD2 /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F0A051E63891200BECCD2 /* EventDetailsView.swift */; };
 		8756D4AF1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8756D4AE1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift */; };
+		8756D95B1E810A2C00C0CFAC /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8756D95A1E810A2C00C0CFAC /* NetworkingTests.swift */; };
 		87C5F7F91E553B3D001D7B09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C5F7F81E553B3D001D7B09 /* AppDelegate.swift */; };
 		87C5F8001E553B3D001D7B09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87C5F7FF1E553B3D001D7B09 /* Assets.xcassets */; };
 		87C5F8031E553B3D001D7B09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C5F8011E553B3D001D7B09 /* LaunchScreen.storyboard */; };
@@ -43,6 +44,7 @@
 		8756D4AE1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventDetailsViewModel.swift; path = ViewControllers/EventDetailsViewModel.swift; sourceTree = "<group>"; };
 		8756D9251E7F734D00C0CFAC /* NCCBF-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NCCBF-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8756D9291E7F734D00C0CFAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8756D95A1E810A2C00C0CFAC /* NetworkingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
 		87C5F7F51E553B3D001D7B09 /* NCCBF-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NCCBF-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C5F7F81E553B3D001D7B09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87C5F7FF1E553B3D001D7B09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				8756D9291E7F734D00C0CFAC /* Info.plist */,
+				8756D95A1E810A2C00C0CFAC /* NetworkingTests.swift */,
 			);
 			path = "NCCBF-iOSTests";
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 					8756D9241E7F734D00C0CFAC = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = D433NUFZ5K;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 87C5F7F41E553B3D001D7B09;
 					};
@@ -253,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8756D95B1E810A2C00C0CFAC /* NetworkingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,11 +301,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = D433NUFZ5K;
 				INFOPLIST_FILE = "NCCBF-iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keitaito.NCCBF-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NCCBF-iOS.app/NCCBF-iOS";
 			};
@@ -310,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = D433NUFZ5K;
 				INFOPLIST_FILE = "NCCBF-iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
