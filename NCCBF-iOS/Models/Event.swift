@@ -52,7 +52,7 @@ extension Event {
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.sss'Z'"
-        dateFormatter.timeZone = TimeZone(abbreviation: "PST")
+        dateFormatter.timeZone = TimeZone(abbreviation: "GMT")
         guard let startAtDate = dateFormatter.date(from: startAtString) else {
             throw EventError.initializingError("startAtString is invalid.", startAtString)
         }
