@@ -36,8 +36,12 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
         setupUI()
     }
     
-    private func setupUI() {
-        title = "Events"
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
     
     // MARK: - UITableViewDataSource
@@ -61,6 +65,12 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
             vc.eventDetails = eventDetails
             navigationController?.pushViewController(vc, animated: true)
         }
+    }
+    
+    // MARK: - Private Methods
+    
+    private func setupUI() {
+        title = "Events"
     }
 }
 
