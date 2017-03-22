@@ -22,18 +22,11 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        tableView.delegate = self
-        tableView.dataSource = self
-        do {
-            let url = try ResourceLoader.load(resource: sampleDataName, ofType: sampleDataType)
-            let jsonData = try Data(contentsOf: url)
-            let jsonObject = try JSONSerialization.jsonObject(with: jsonData)
-            events = try JSONParser.parse(json: jsonObject)
-        } catch {
-            print(error)
-        }
         
+        setupTableView()
         setupUI()
+//        loadJSONFileInternally()
+        downloadEventsFromTheServer()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -69,8 +62,39 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
     
     // MARK: - Private Methods
     
+    private func setupTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
     private func setupUI() {
         title = "Events"
+    }
+    
+    private func loadJSONFileInternally() {
+        do {
+            let url = try ResourceLoader.load(resource: sampleDataName, ofType: sampleDataType)
+            let jsonData = try Data(contentsOf: url)
+            let jsonObject = try JSONSerialization.jsonObject(with: jsonData)
+            events = try JSONParser.parse(json: jsonObject)
+        } catch {
+            print(error)
+        }
+    }
+    
+    private func downloadEventsFromTheServer() {
+        Networking.downloadJSON(from: NCCBFEventScheduleData2017URL) { json in
+            do {
+                let downloadedEvents = try JSONParser.parse(json: json)
+                self.events = downloadedEvents
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            } catch {
+                print(error)
+            }
+        }
     }
 }
 
