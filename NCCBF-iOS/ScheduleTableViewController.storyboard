@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XwR-WS-W6M">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Schedule Table View Controller-->
+        <scene sceneID="xQN-fS-ITF">
+            <objects>
+                <viewController id="DM7-1Y-esv" customClass="ScheduleTableViewController" customModule="NCCBF_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AsJ-68-2OX"/>
+                        <viewControllerLayoutGuide type="bottom" id="4mN-rz-CQ7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="43i-m4-md8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7ep-oz-riR">
+                                <rect key="frame" x="8" y="72" width="359" height="29"/>
+                                <segments>
+                                    <segment title="Apr 8"/>
+                                    <segment title="Apr 9"/>
+                                    <segment title="Apr 15"/>
+                                    <segment title="Apr 16"/>
+                                </segments>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kHy-ml-oQH">
+                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="fGW-ki-S1G">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fGW-ki-S1G" id="4TG-gc-Iuw">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7ep-oz-riR" secondAttribute="trailing" constant="8" id="8GR-lF-il2"/>
+                            <constraint firstItem="kHy-ml-oQH" firstAttribute="leading" secondItem="43i-m4-md8" secondAttribute="leading" id="8wR-BG-yEz"/>
+                            <constraint firstItem="kHy-ml-oQH" firstAttribute="top" secondItem="7ep-oz-riR" secondAttribute="bottom" constant="8" id="CYI-x8-nd9"/>
+                            <constraint firstItem="7ep-oz-riR" firstAttribute="leading" secondItem="43i-m4-md8" secondAttribute="leading" constant="8" id="a38-0O-Gdy"/>
+                            <constraint firstItem="7ep-oz-riR" firstAttribute="top" secondItem="AsJ-68-2OX" secondAttribute="bottom" constant="8" id="cz7-mr-IHI"/>
+                            <constraint firstAttribute="trailing" secondItem="kHy-ml-oQH" secondAttribute="trailing" id="eAg-mb-wNJ"/>
+                            <constraint firstItem="4mN-rz-CQ7" firstAttribute="top" secondItem="kHy-ml-oQH" secondAttribute="bottom" id="qIK-Ws-tgh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hd6-pZ-30E"/>
+                    <connections>
+                        <outlet property="tableView" destination="kHy-ml-oQH" id="BUL-Kk-ulu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oxI-d3-rzW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080.8" y="152.47376311844079"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Yek-Ow-gIN">
+            <objects>
+                <navigationController storyboardIdentifier="ScheduleNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="XwR-WS-W6M" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hy4-7D-3ah">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DM7-1Y-esv" kind="relationship" relationship="rootViewController" id="PER-Y1-cDG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0jc-eO-HHd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="152.47376311844079"/>
+        </scene>
+    </scenes>
+</document>

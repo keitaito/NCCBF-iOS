@@ -20,7 +20,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="Dw5-zO-bDY" kind="relationship" relationship="viewControllers" id="RWm-qX-6pQ"/>
-                        <segue destination="aLe-DK-1ML" kind="relationship" relationship="viewControllers" id="TRt-O8-14M"/>
+                        <segue destination="RcJ-mb-AEK" kind="relationship" relationship="viewControllers" id="gCe-ep-wna"/>
+                        <segue destination="aLe-DK-1ML" kind="relationship" relationship="viewControllers" id="y0w-hT-GX2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tx6-Ef-Buz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -35,7 +36,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VbP-Zn-BYw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-374" y="-313"/>
+            <point key="canvasLocation" x="-369" y="-309"/>
+        </scene>
+        <!--ScheduleTableViewController-->
+        <scene sceneID="E2w-X1-Wh7">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ScheduleNavigationController" storyboardName="ScheduleTableViewController" id="RcJ-mb-AEK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="7Vc-nh-q0b"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rWb-bh-rcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-390" y="-252"/>
         </scene>
         <!--MoreInfoNavigationController-->
         <scene sceneID="xyr-Cq-JVC">
@@ -45,7 +56,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gor-x9-qlA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-374" y="-209"/>
+            <point key="canvasLocation" x="-389" y="-191"/>
         </scene>
     </scenes>
 </document>
