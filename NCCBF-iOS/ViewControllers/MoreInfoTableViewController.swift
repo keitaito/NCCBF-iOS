@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class MoreInfoTableViewController: UITableViewController {
     
@@ -35,6 +36,15 @@ class MoreInfoTableViewController: UITableViewController {
         cell.textLabel?.text = item.title
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = items[indexPath.row]
+        if let url = item.url {
+            let safariVC = SFSafariViewController(url: url)
+            safariVC.title = item.title
+            navigationController?.pushViewController(safariVC, animated: true)
+        }
     }
     
     // MARK: - Private Methods
