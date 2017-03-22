@@ -21,6 +21,7 @@
 		87C5F7F91E553B3D001D7B09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C5F7F81E553B3D001D7B09 /* AppDelegate.swift */; };
 		87C5F8001E553B3D001D7B09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87C5F7FF1E553B3D001D7B09 /* Assets.xcassets */; };
 		87C5F8031E553B3D001D7B09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C5F8011E553B3D001D7B09 /* LaunchScreen.storyboard */; };
+		87FC32941E81F54B007F1B4A /* SFCherryBlossomSampleData2.json in Resources */ = {isa = PBXBuildFile; fileRef = 87FC32931E81F54B007F1B4A /* SFCherryBlossomSampleData2.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		87C5F7FF1E553B3D001D7B09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87C5F8021E553B3D001D7B09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87C5F8041E553B3D001D7B09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87FC32931E81F54B007F1B4A /* SFCherryBlossomSampleData2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SFCherryBlossomSampleData2.json; path = Resources/SFCherryBlossomSampleData2.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				87C5F8011E553B3D001D7B09 /* LaunchScreen.storyboard */,
 				87C5F8041E553B3D001D7B09 /* Info.plist */,
 				8733C5891E5A1B9600140899 /* SFCherryBlossomSampleData.json */,
+				87FC32931E81F54B007F1B4A /* SFCherryBlossomSampleData2.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87FC32941E81F54B007F1B4A /* SFCherryBlossomSampleData2.json in Resources */,
 				873F0A021E6378E200BECCD2 /* EventDetailsViewController.storyboard in Resources */,
 				87C5F8031E553B3D001D7B09 /* LaunchScreen.storyboard in Resources */,
 				87C5F8001E553B3D001D7B09 /* Assets.xcassets in Resources */,
