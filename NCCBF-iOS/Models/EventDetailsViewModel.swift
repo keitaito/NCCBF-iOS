@@ -16,8 +16,8 @@ struct EventDetailsViewModel {
         return event.name
     }
     
-    public var description: String {
-        return event.description
+    public var details: String? {
+        return event.details
     }
     
     public var startAt: String {

@@ -52,7 +52,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zit-xB-QsE">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zit-xB-QsE" userLabel="Details Label">
                                                 <rect key="frame" x="0.0" y="381.5" width="288" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -78,7 +78,7 @@
                             <constraint firstAttribute="bottom" secondItem="kQV-ib-afE" secondAttribute="bottom" id="kb1-NO-tKa"/>
                         </constraints>
                         <connections>
-                            <outlet property="descriptionLabel" destination="zit-xB-QsE" id="Qb8-q4-ftn"/>
+                            <outlet property="detailsLabel" destination="zit-xB-QsE" id="9Or-2e-R6T"/>
                             <outlet property="imageView" destination="wfp-B2-pVX" id="xhs-Wf-ePM"/>
                             <outlet property="locationLabel" destination="0Hq-1U-DDz" id="9UO-92-sdM"/>
                             <outlet property="nameLabel" destination="Dnf-od-bT5" id="xvE-P7-PtF"/>

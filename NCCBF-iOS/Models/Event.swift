@@ -8,14 +8,23 @@
 
 import Foundation
 
-struct Event {
+class Event {
+    
     let id: Int
+    let name: String
+    var details: String?
     let startAt: Date
     let endAt: Date
     let location: String
-    let locationId: Int
-    let name: String
-    let description: String
+    
+    init(id: Int, name: String, details: String?, startAt: Date, endAt: Date, location: String) {
+        self.id = id
+        self.name = name
+        self.details = details
+        self.startAt = startAt
+        self.endAt = endAt
+        self.location = location
+    }
 }
 
 enum EventError: Error {
@@ -23,19 +32,7 @@ enum EventError: Error {
 }
 
 extension Event {
-    init() {
-        self.id = Int.max
-        self.startAt = Date()
-        self.endAt = Date()
-        self.location = ""
-        self.locationId = Int.max
-        self.name = ""
-        self.description = ""
-    }
-}
-
-extension Event {
-    init(json: [String: Any]) throws {
+    convenience init(json: [String: Any]) throws {
         guard let id = json["id"] as? Int else {
             throw EventError.initializingError("id is missing.", json)
         }
@@ -48,28 +45,21 @@ extension Event {
         guard let location = json["location"] as? String else {
             throw EventError.initializingError("location is missing.", json)
         }
-        guard let locationId = json["locationid"] as? Int else {
-            throw EventError.initializingError("locationid is missing.", json)
-        }
         guard let name = json["name"] as? String else {
             throw EventError.initializingError("name is missing.", json)
         }
-        guard let description = json["description"] as? String else {
-            throw EventError.initializingError("description is missing.", json)
-        }
+        let details = json["details"] as? String
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.sss'Z'"
         dateFormatter.timeZone = TimeZone(abbreviation: "PST")
-        let startAtDate = dateFormatter.date(from: startAtString)!
-        let endAtDate = dateFormatter.date(from: endAtString)!
+        guard let startAtDate = dateFormatter.date(from: startAtString) else {
+            throw EventError.initializingError("startAtString is invalid.", startAtString)
+        }
+        guard let endAtDate = dateFormatter.date(from: endAtString) else {
+            throw EventError.initializingError("endAtString is invalid.", endAtString)
+        }
         
-        self.id = id
-        self.startAt = startAtDate
-        self.endAt = endAtDate
-        self.location = location
-        self.locationId = locationId
-        self.name = name
-        self.description = description
+        self.init(id: id, name: name, details: details, startAt: startAtDate, endAt: endAtDate, location: location)
     }
 }
