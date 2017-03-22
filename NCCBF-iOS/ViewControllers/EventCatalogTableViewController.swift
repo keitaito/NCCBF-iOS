@@ -15,7 +15,7 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
     
     // MARK: - Properties
     var events = [Event]()
-    let sampleDataName = "SFCherryBlossomSampleData"
+    let sampleDataName = "SFCherryBlossomSampleData2"
     let sampleDataType = "json"
     
     // MARK: - Methods

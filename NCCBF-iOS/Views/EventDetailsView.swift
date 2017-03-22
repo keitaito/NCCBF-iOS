@@ -13,7 +13,7 @@ class EventDetailsView: UIView {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var scheduleLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var detailsLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
 
     public func configure(with eventDetails: EventDetailsViewModel) {
@@ -22,7 +22,7 @@ class EventDetailsView: UIView {
         scheduleLabel.text = eventDetails.schedule
         locationLabel.text = eventDetails.location
         
-        descriptionLabel.text = eventDetails.description
+        detailsLabel.text = eventDetails.details
 //        descriptionLabel.text = testText
         imageView.image = #imageLiteral(resourceName: "placeholder")
     }

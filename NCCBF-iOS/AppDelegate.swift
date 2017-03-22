@@ -21,9 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         // Instantiate the initial VC.
-        let storyboard = UIStoryboard(name: "EventCatalogTableViewController", bundle: Bundle.main)
-        let eventCatalogVC = storyboard.instantiateInitialViewController()
-        window?.rootViewController = eventCatalogVC
+//        let storyboard = UIStoryboard(name: "EventCatalogTableViewController", bundle: Bundle.main)
+        let storyboard = UIStoryboard(name: "NCCBFTabBarController", bundle: Bundle.main)
+        let tabBarController = storyboard.instantiateInitialViewController()
+        window?.rootViewController = tabBarController
         
         return true
     }

@@ -1,0 +1,346 @@
+[
+    {
+        "id": 1,
+        "startat": "2017-04-08T19:00:00.000Z",
+        "endat": "2017-04-08T19:45:00.000Z",
+        "location": "Peace Plaza Stage",
+        "imagename": "TaikoDojo.jpg",
+        "name": "SF Taiko Dojo",
+        "url": "www.sftaiko.com",
+        "details": "Grandmaster Seiichi Tanaka founded the San Francisco Taiko Dojo in 1968 and introduced the taiko art form to America. Over the years, Grandmaster Tanakaâ€™s students have traveled around the globe, forming new taiko ensembles and establishing taiko as an art form. San Francisco Taiko Dojo remains the most exciting and dynamic taiko group in the world. Grandmaster Tanakaâ€™s style has developed the taiko from a primitive folk art to a powerful, sophisticated synthesis of rhythm, harmony and body movements."
+    },
+    {
+        "id": 2,
+        "startat": "2017-04-08T19:45:00.000Z",
+        "endat": "2017-04-08T20:15:00.000Z",
+        "location": "Peace Plaza Stage",
+        "imagename": "OpeningCeremony.jpg",
+        "name": "Opening Ceremony",
+        "details": "2017 Northern California Cherry Blossom Festival Opening Ceremony"
+    },
+    {
+        "id": 3,
+        "startat": "2017-04-08T20:15:00.000Z",
+        "endat": "2017-04-08T20:45:00.000Z",
+        "location": "Peace Plaza Stage",
+        "imagename": "Hanayagi.jpg",
+        "name": "Michiya Hanayagi and Michisuya Hanayagi Kai"
+    },
+    {
+        "id": 4,
+        "startat": "2017-04-08T20:45:00.000Z",
+        "endat": "2017-04-08T21:15:00.000Z",
+        "location": "Peace Plaza Stage",
+        "name": "Nihon Buyo Kiyonomoto"
+    },
+    {
+        "id": 5,
+        "startat": "2017-04-08T21:15:00.000Z",
+        "endat": "2017-04-09T21:45:00.000Z",
+        "location": "Peace Plaza Stage",
+        "name": "World Oyama Karate"
+    },
+    {
+        "id": 6,
+        "startat": "2017-04-08T21:45:00.000Z",
+        "endat": "2017-04-08T22:00:00.000Z",
+        "location": "Peace Plaza Stage",
+        "name": "Childrens' Tsuzumi Challenge"
+    },
+    {
+        "id": 7,
+        "startat": "2017-04-08T22:00:00.000Z",
+        "endat": "2017-04-08T22:30:00.000Z",
+        "location": "Peace Plaza Stage",
+        "name": "Essence with Masayuki Koga"
+    },
+    {
+        "id": 8,
+        "startat": "2017-04-08T22:30:00.000Z",
+        "endat": "2017-04-08T23:00:00.000Z",
+        "location": "Peace Plaza Stage",
+        "name": "Tomoya Nakai - 25 string koto (MUST SEE)"
+    },
+    {
+        "id": 9,
+        "startat": "2017-04-08T23:00:00.000Z",
+        "endat": "2017-04-08T23:15:00.000Z",
+        "location": "Peace Plaza Stage",
+        "name": "Yoko and the Sunshine Girls"
+    },
+    {
+        "id": 10,
+        "startat": "2017-04-08T23:15:00.000Z",
+        "endat": "2017-04-08T23:45:00.000Z",
+        "location": "Peace Plaza Stage",
+        "name": "Sakura Minyo Doo Koo Kai"
+    },
+    {
+        "id": 11,
+        "startat": "2017-04-08T23:45:00.000Z",
+        "endat": "2017-04-09T00:15:00.000Z",
+        "location": "Peace Plaza Stage",
+        "name": "Kendama USA Demonstration"
+    },
+    {
+        "id": 12,
+        "startat": "2017-04-09T00:15:00.000Z",
+        "endat": "2017-04-09T00:45:00.000Z",
+        "location": "Peace Plaza Stage",
+        "name": "Northern California Naginata Federation"
+    },
+    {
+        "id": 13,
+        "startat": "2017-04-09T00:45:00.000Z",
+        "endat": "2017-04-09T01:00:00.000Z",
+        "location": "Peace Plaza Stage",
+        "name": "UC Berkeley Yosakoi"
+    },
+    {
+        "id": 14,
+        "startat": "2017-04-08T18:00:00.000Z",
+        "endat": "2017-04-08T18:30:00.000Z",
+        "location": "Sakura 360",
+        "imagename": "sakura360.png",
+        "name": "Kendama USA Demonstration"
+    },
+    {
+        "id": 15,
+        "startat": "2017-04-08T19:30:00.000Z",
+        "endat": "2017-04-08T20:00:00.000Z",
+        "location": "Sakura 360",
+        "imagename": "sakura360.png",
+        "name": "Pop Culture Fashion Shows"
+    },
+    {
+        "id": 16,
+        "startat": "2017-04-08T20:00:00.000Z",
+        "endat": "2017-04-08T20:30:00.000Z",
+        "location": "Sakura 360",
+        "imagename": "sakura360.png",
+        "name": "Fanimaids"
+    },
+    {
+        "id": 17,
+        "startat": "2017-04-08T20:30:00.000Z",
+        "endat": "2017-04-08T21:00:00.000Z",
+        "location": "Sakura 360",
+        "imagename": "sakura360.png",
+        "name": "DJ Coco"
+    },
+    {
+        "id": 18,
+        "startat": "2017-04-08T21:00:00.000Z",
+        "endat": "2017-04-08T22:00:00.000Z",
+        "location": "Sakura 360",
+        "imagename": "sakura360.png",
+        "name": "DJ Grimecraft"
+    },
+    {
+        "id": 19,
+        "startat": "2017-04-08T22:00:00.000Z",
+        "endat": "2017-04-08T22:30:00.000Z",
+        "location": "Sakura 360",
+        "imagename": "sakura360.png",
+        "name": "Ti@Mi"
+    },
+    {
+        "id": 20,
+        "startat": "2017-04-08T22:30:00.000Z",
+        "endat": "2017-04-08T23:00:00.000Z",
+        "location": "Sakura 360",
+        "imagename": "sakura360.png",
+        "name": "Lolita Fashion Contest"
+    },
+    {
+        "id": 21,
+        "startat": "2017-04-08T23:00:00.000Z",
+        "endat": "2017-04-08T23:30:00.000Z",
+        "location": "Sakura 360",
+        "imagename": "sakura360.png",
+        "name": "Cosplay Workshop Q & A"
+    },
+    {
+        "id": 22,
+        "startat": "2017-04-08T23:30:00.000Z",
+        "endat": "2017-04-09T00:30:00.000Z",
+        "location": "Sakura 360",
+        "imagename": "sakura360.png",
+        "name": "Cosplay Masquerade"
+    },
+    {
+        "id": 23,
+        "startat": "2017-04-09T00:30:00.000Z",
+        "endat": "2017-04-09T01:30:00.000Z",
+        "location": "Sakura 360",
+        "imagename": "sakura360.png",
+        "name": "DJ Grimecraft - After Party"
+    },
+    {
+        "id": 24,
+        "startat": "2017-04-08T19:00:00.000Z",
+        "endat": "2017-04-08T20:00:00.000Z",
+        "location": "JCCCNC",
+        "name": "Japanese Music Institute of America"
+    },
+    {
+        "id": 25,
+        "startat": "2017-04-08T20:00:00.000Z",
+        "endat": "2017-04-08T21:30:00.000Z",
+        "location": "JCCCNC",
+        "name": "Minyo Minbu"
+    },
+    {
+        "id": 26,
+        "startat": "2017-04-08T21:30:00.000Z",
+        "endat": "2017-04-08T22:00:00.000Z",
+        "location": "JCCCNC",
+        "name": "Marimo-Kai and Yukari Sakaguchi"
+    },
+    {
+        "id": 27,
+        "startat": "2017-04-08T22:00:00.000Z",
+        "endat": "2017-04-08T23:00:00.000Z",
+        "location": "JCCCNC",
+        "name": "Northern California Seiha USA Orchestra"
+    },
+    {
+        "id": 28,
+        "startat": "2017-04-09T01:00:00.000Z",
+        "location": "JCCCNC",
+        "name": "Shigin (Japanese Poetry in Singing Form)"
+    },
+    {
+        "id": 29,
+        "startat": "2017-04-08T18:00:00.000Z",
+        "endat": "2017-04-09T00:00:00.000Z",
+        "location": "JCCCNC - ISSEI MEMORIAL HALL",
+        "imagename": "Ikebana.jpg",
+        "name": "Ikebana Exhibit & Demonstration"
+    },
+    {
+        "id": 30,
+        "startat": "2017-04-08T18:00:00.000Z",
+        "endat": "2017-04-09T00:00:00.000Z",
+        "location": "JCCCNC - Classroom One",
+        "name": "Washi Ningyo"
+    },
+    {
+        "id": 31,
+        "startat": "2017-04-08T18:00:00.000Z",
+        "endat": "2017-04-08T23:00:00.000Z",
+        "location": "JCCCNC - Classroom Two",
+        "name": "Shishu (Japanese Embroidery)"
+    },
+    {
+        "id": 32,
+        "startat": "2017-04-08T19:45:00.000Z",
+        "location": "HOKKA NICHIBEI- KAI",
+        "name": "Omote-Senke"
+    },
+    {
+        "id": 33,
+        "startat": "2017-04-08T20:45:00.000Z",
+        "location": "HOKKA NICHIBEI- KAI",
+        "name": "Omote-Senke"
+    },
+    {
+        "id": 34,
+        "startat": "2017-04-08T21:45:00.000Z",
+        "location": "HOKKA NICHIBEI- KAI",
+        "name": "Tea Ceremony Demonstrations"
+    },
+    {
+        "id": 35,
+        "startat": "2017-04-08T22:45:00.000Z",
+        "location": "HOKKA NICHIBEI- KAI",
+        "name": "Tea Ceremony Demonstrations"
+    },
+    {
+        "id": 36,
+        "startat": "2017-04-08T20:00:00.000Z",
+        "location": "TATEUCHI AUDITORIUM",
+        "name": "Ura-Senke Tankokai"
+    },
+    {
+        "id": 37,
+        "startat": "2017-04-08T21:00:00.000Z",
+        "location": "TATEUCHI AUDITORIUM",
+        "name": "Ura-Senke Tankokai"
+    },
+    {
+        "id": 38,
+        "startat": "2017-04-08T22:00:00.000Z",
+        "location": "TATEUCHI AUDITORIUM",
+        "name": "Tea Ceremony Demonstrations"
+    },
+    {
+        "id": 39,
+        "startat": "2017-04-08T23:00:00.000Z",
+        "location": "TATEUCHI AUDITORIUM",
+        "name": "Tea Ceremony Demonstrations"
+    },
+    {
+        "id": 40,
+        "startat": "2017-04-08T18:00:00.000Z",
+        "endat": "2017-04-09T00:00:00.000Z",
+        "location": "NATIONAL JACL BUILDING",
+        "name": "Origami Exhibit and Demonstration"
+    },
+    {
+        "id": 41,
+        "startat": "2017-04-08T18:00:00.000Z",
+        "endat": "2017-04-09T00:00:00.000Z",
+        "location": "UNION BANK COMMUNITY ROOM",
+        "name": "Japanese Sword Club"
+    },
+    {
+        "id": 42,
+        "startat": "2017-04-08T22:00:00.000Z",
+        "endat": "2017-04-08T23:00:00.000Z",
+        "location": "SEQUOIA'S AUDITORIUM",
+        "name": "Japanese American Music with Pianist Hugo Kitano and Chellist Leo Kitano"
+    },
+    {
+        "id": 43,
+        "startat": "2017-04-08T19:00:00.000Z",
+        "endat": "2017-04-09T00:00:00.000Z",
+        "location": "NATIONAL JAPANESE AMERICAN HISTORICAL SOCIETY",
+        "name": "110 Years of Japantown and Japanese Sword Exhibit"
+    },
+    {
+        "id": 44,
+        "startat": "2017-04-08T18:00:00.000Z",
+        "endat": "2017-04-09T00:00:00.000Z",
+        "location": "KINOKUNIYA BOOKSTORE",
+        "name": "Biri Biri - Washi Paper Painting"
+    },
+    {
+        "id": 45,
+        "startat": "2017-04-08T19:00:00.000Z",
+        "endat": "2017-04-08T20:00:00.000Z",
+        "location": "WEBSTER STREET STAGE",
+        "name": "Pulse"
+    },
+    {
+        "id": 46,
+        "startat": "2017-04-08T20:30:00.000Z",
+        "endat": "2017-04-08T21:30:00.000Z",
+        "location": "WEBSTER STREET STAGE",
+        "name": "Freaky Deaky"
+    },
+    {
+        "id": 47,
+        "startat": "2017-04-08T22:00:00.000Z",
+        "endat": "2017-04-08T23:00:00.000Z",
+        "location": "WEBSTER STREET STAGE",
+        "name": "Rendezvous"
+    },
+    {
+        "id": 48,
+        "startat": "2017-04-08T23:30:00.000Z",
+        "endat": "2017-04-08T22:30:00.000Z",
+        "location": "WEBSTER STREET STAGE",
+        "name": "Sapo"
+    }
+]
