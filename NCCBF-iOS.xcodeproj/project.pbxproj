@@ -22,6 +22,9 @@
 		87C5F8001E553B3D001D7B09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87C5F7FF1E553B3D001D7B09 /* Assets.xcassets */; };
 		87C5F8031E553B3D001D7B09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C5F8011E553B3D001D7B09 /* LaunchScreen.storyboard */; };
 		87FC32941E81F54B007F1B4A /* SFCherryBlossomSampleData2.json in Resources */ = {isa = PBXBuildFile; fileRef = 87FC32931E81F54B007F1B4A /* SFCherryBlossomSampleData2.json */; };
+		87FC32961E81FF04007F1B4A /* MoreInfoTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FC32951E81FF04007F1B4A /* MoreInfoTableViewController.storyboard */; };
+		87FC32981E81FF87007F1B4A /* MoreInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC32971E81FF87007F1B4A /* MoreInfoTableViewController.swift */; };
+		87FC329A1E821F4C007F1B4A /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC32991E821F4C007F1B4A /* MenuItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		87C5F8021E553B3D001D7B09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87C5F8041E553B3D001D7B09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87FC32931E81F54B007F1B4A /* SFCherryBlossomSampleData2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SFCherryBlossomSampleData2.json; path = Resources/SFCherryBlossomSampleData2.json; sourceTree = "<group>"; };
+		87FC32951E81FF04007F1B4A /* MoreInfoTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MoreInfoTableViewController.storyboard; path = Storyboards/MoreInfoTableViewController.storyboard; sourceTree = "<group>"; };
+		87FC32971E81FF87007F1B4A /* MoreInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreInfoTableViewController.swift; path = ViewControllers/MoreInfoTableViewController.swift; sourceTree = "<group>"; };
+		87FC32991E821F4C007F1B4A /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItem.swift; path = Models/MenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 			children = (
 				8733C58C1E5A1C8900140899 /* EventCatalogTableViewController.swift */,
 				873F0A031E63791000BECCD2 /* EventDetailsViewController.swift */,
+				87FC32971E81FF87007F1B4A /* MoreInfoTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -100,6 +107,7 @@
 			children = (
 				8733C5B91E5A39BD00140899 /* Event.swift */,
 				8756D4AE1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift */,
+				87FC32991E821F4C007F1B4A /* MenuItem.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -127,6 +135,7 @@
 				8733C58D1E5A1C8900140899 /* EventCatalogTableViewController.storyboard */,
 				873F0A011E6378E200BECCD2 /* EventDetailsViewController.storyboard */,
 				8756D9611E81101B00C0CFAC /* NCCBFTabBarController.storyboard */,
+				87FC32951E81FF04007F1B4A /* MoreInfoTableViewController.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -267,6 +276,7 @@
 				87FC32941E81F54B007F1B4A /* SFCherryBlossomSampleData2.json in Resources */,
 				873F0A021E6378E200BECCD2 /* EventDetailsViewController.storyboard in Resources */,
 				87C5F8031E553B3D001D7B09 /* LaunchScreen.storyboard in Resources */,
+				87FC32961E81FF04007F1B4A /* MoreInfoTableViewController.storyboard in Resources */,
 				87C5F8001E553B3D001D7B09 /* Assets.xcassets in Resources */,
 				8733C58A1E5A1B9600140899 /* SFCherryBlossomSampleData.json in Resources */,
 				8756D9621E81101B00C0CFAC /* NCCBFTabBarController.storyboard in Resources */,
@@ -295,6 +305,8 @@
 				8733C58E1E5A1C8900140899 /* EventCatalogTableViewController.swift in Sources */,
 				873F0A061E63891200BECCD2 /* EventDetailsView.swift in Sources */,
 				8756D4AF1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift in Sources */,
+				87FC329A1E821F4C007F1B4A /* MenuItem.swift in Sources */,
+				87FC32981E81FF87007F1B4A /* MoreInfoTableViewController.swift in Sources */,
 				87C5F7F91E553B3D001D7B09 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
