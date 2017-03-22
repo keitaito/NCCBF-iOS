@@ -25,6 +25,8 @@
 		87FC32961E81FF04007F1B4A /* MoreInfoTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FC32951E81FF04007F1B4A /* MoreInfoTableViewController.storyboard */; };
 		87FC32981E81FF87007F1B4A /* MoreInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC32971E81FF87007F1B4A /* MoreInfoTableViewController.swift */; };
 		87FC329A1E821F4C007F1B4A /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC32991E821F4C007F1B4A /* MenuItem.swift */; };
+		87FC329C1E824887007F1B4A /* MoreInfoDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FC329B1E824887007F1B4A /* MoreInfoDetailViewController.storyboard */; };
+		87FC329E1E824A42007F1B4A /* MoreInfoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC329D1E824A42007F1B4A /* MoreInfoDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		87FC32951E81FF04007F1B4A /* MoreInfoTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MoreInfoTableViewController.storyboard; path = Storyboards/MoreInfoTableViewController.storyboard; sourceTree = "<group>"; };
 		87FC32971E81FF87007F1B4A /* MoreInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreInfoTableViewController.swift; path = ViewControllers/MoreInfoTableViewController.swift; sourceTree = "<group>"; };
 		87FC32991E821F4C007F1B4A /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItem.swift; path = Models/MenuItem.swift; sourceTree = "<group>"; };
+		87FC329B1E824887007F1B4A /* MoreInfoDetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MoreInfoDetailViewController.storyboard; path = Storyboards/MoreInfoDetailViewController.storyboard; sourceTree = "<group>"; };
+		87FC329D1E824A42007F1B4A /* MoreInfoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreInfoDetailViewController.swift; path = ViewControllers/MoreInfoDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 				8733C58C1E5A1C8900140899 /* EventCatalogTableViewController.swift */,
 				873F0A031E63791000BECCD2 /* EventDetailsViewController.swift */,
 				87FC32971E81FF87007F1B4A /* MoreInfoTableViewController.swift */,
+				87FC329D1E824A42007F1B4A /* MoreInfoDetailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				873F0A011E6378E200BECCD2 /* EventDetailsViewController.storyboard */,
 				8756D9611E81101B00C0CFAC /* NCCBFTabBarController.storyboard */,
 				87FC32951E81FF04007F1B4A /* MoreInfoTableViewController.storyboard */,
+				87FC329B1E824887007F1B4A /* MoreInfoDetailViewController.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -278,6 +284,7 @@
 				87C5F8031E553B3D001D7B09 /* LaunchScreen.storyboard in Resources */,
 				87FC32961E81FF04007F1B4A /* MoreInfoTableViewController.storyboard in Resources */,
 				87C5F8001E553B3D001D7B09 /* Assets.xcassets in Resources */,
+				87FC329C1E824887007F1B4A /* MoreInfoDetailViewController.storyboard in Resources */,
 				8733C58A1E5A1B9600140899 /* SFCherryBlossomSampleData.json in Resources */,
 				8756D9621E81101B00C0CFAC /* NCCBFTabBarController.storyboard in Resources */,
 				8733C58F1E5A1C8900140899 /* EventCatalogTableViewController.storyboard in Resources */,
@@ -307,6 +314,7 @@
 				8756D4AF1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift in Sources */,
 				87FC329A1E821F4C007F1B4A /* MenuItem.swift in Sources */,
 				87FC32981E81FF87007F1B4A /* MoreInfoTableViewController.swift in Sources */,
+				87FC329E1E824A42007F1B4A /* MoreInfoDetailViewController.swift in Sources */,
 				87C5F7F91E553B3D001D7B09 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

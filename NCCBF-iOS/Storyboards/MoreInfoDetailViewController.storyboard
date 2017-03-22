@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--More Info Detail View Controller-->
+        <scene sceneID="P4Y-2e-2g7">
+            <objects>
+                <viewController storyboardIdentifier="MoreInfoDetailViewController" id="rQ8-U3-90x" customClass="MoreInfoDetailViewController" customModule="NCCBF_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5X5-DZ-qNf"/>
+                        <viewControllerLayoutGuide type="bottom" id="jN8-tb-KCf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kGL-43-74g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLt-5B-Y8z">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3E-FN-bh7">
+                                        <rect key="frame" x="16" y="16" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="r3E-FN-bh7" secondAttribute="bottom" constant="16" id="35N-HP-14y"/>
+                                    <constraint firstItem="r3E-FN-bh7" firstAttribute="top" secondItem="cLt-5B-Y8z" secondAttribute="top" constant="16" id="K8g-xu-KbD"/>
+                                    <constraint firstItem="r3E-FN-bh7" firstAttribute="leading" secondItem="cLt-5B-Y8z" secondAttribute="leading" constant="16" id="U6e-HC-nI1"/>
+                                    <constraint firstAttribute="trailing" secondItem="r3E-FN-bh7" secondAttribute="trailing" constant="16" id="wzI-c6-nz7"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cLt-5B-Y8z" firstAttribute="top" secondItem="kGL-43-74g" secondAttribute="top" id="0lJ-kO-P5b"/>
+                            <constraint firstAttribute="trailing" secondItem="cLt-5B-Y8z" secondAttribute="trailing" id="Na5-b3-jNM"/>
+                            <constraint firstItem="cLt-5B-Y8z" firstAttribute="leading" secondItem="kGL-43-74g" secondAttribute="leading" id="qxa-6d-ndI"/>
+                            <constraint firstItem="cLt-5B-Y8z" firstAttribute="width" secondItem="kGL-43-74g" secondAttribute="width" id="tPM-hS-oty"/>
+                            <constraint firstAttribute="bottom" secondItem="cLt-5B-Y8z" secondAttribute="bottom" id="uze-EZ-akm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="r3E-FN-bh7" id="ZNO-Wl-Ndg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aZb-Jh-Bgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237.59999999999999" y="82.3088455772114"/>
+        </scene>
+    </scenes>
+</document>

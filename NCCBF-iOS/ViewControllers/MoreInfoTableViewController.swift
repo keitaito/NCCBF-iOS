@@ -44,6 +44,12 @@ class MoreInfoTableViewController: UITableViewController {
             let safariVC = SFSafariViewController(url: url)
             safariVC.title = item.title
             navigationController?.pushViewController(safariVC, animated: true)
+        } else {
+            let storyboard = UIStoryboard(name: "MoreInfoDetailViewController", bundle: Bundle.main)
+            guard let moreInfoDetailVC = storyboard.instantiateViewController(withIdentifier: "MoreInfoDetailViewController") as? MoreInfoDetailViewController else {
+                return }
+            moreInfoDetailVC.item = item
+            navigationController?.pushViewController(moreInfoDetailVC, animated: true)
         }
     }
     
