@@ -22,7 +22,11 @@ class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITa
         tableView.dataSource = self
         tableView.delegate = self
         tableView.reloadData()
+        
+        setupUI()
     }
+    
+    // MARK: - UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return events?.count ?? 0
@@ -34,5 +38,11 @@ class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITa
         cell.textLabel?.text = event.name
         
         return cell
+    }
+    
+    // MARK: - Private Methods
+    
+    private func setupUI() {
+        title = "Schedule"
     }
 }
