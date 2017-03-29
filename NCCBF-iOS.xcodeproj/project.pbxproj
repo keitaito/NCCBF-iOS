@@ -11,7 +11,6 @@
 		8733C58E1E5A1C8900140899 /* EventCatalogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8733C58C1E5A1C8900140899 /* EventCatalogTableViewController.swift */; };
 		8733C58F1E5A1C8900140899 /* EventCatalogTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8733C58D1E5A1C8900140899 /* EventCatalogTableViewController.storyboard */; };
 		8733C5A51E5A220B00140899 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8733C5A41E5A220B00140899 /* JSON.swift */; };
-		8733C5BA1E5A39BD00140899 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8733C5B91E5A39BD00140899 /* Event.swift */; };
 		873F0A021E6378E200BECCD2 /* EventDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873F0A011E6378E200BECCD2 /* EventDetailsViewController.storyboard */; };
 		873F0A041E63791000BECCD2 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F0A031E63791000BECCD2 /* EventDetailsViewController.swift */; };
 		873F0A061E63891200BECCD2 /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F0A051E63891200BECCD2 /* EventDetailsView.swift */; };
@@ -327,7 +326,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8733C5BA1E5A39BD00140899 /* Event.swift in Sources */,
 				87FC32A01E830E19007F1B4A /* Networking.swift in Sources */,
 				873F0A041E63791000BECCD2 /* EventDetailsViewController.swift in Sources */,
 				8733C5A51E5A220B00140899 /* JSON.swift in Sources */,
