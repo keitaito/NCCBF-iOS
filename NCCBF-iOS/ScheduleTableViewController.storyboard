@@ -38,7 +38,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fGW-ki-S1G" id="4TG-gc-Iuw">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -58,6 +58,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hd6-pZ-30E"/>
                     <connections>
+                        <outlet property="dateSegmentedControl" destination="7ep-oz-riR" id="EL9-4k-zaw"/>
                         <outlet property="tableView" destination="kHy-ml-oQH" id="BUL-Kk-ulu"/>
                     </connections>
                 </viewController>
