@@ -28,7 +28,6 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
         setupTableView()
         setupUI()
 //        loadJSONFileInternally()
-//        downloadEventsFromTheServer()
         
         guard let context = context else { return }
         
@@ -97,29 +96,6 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
             events = try JSONParser.parse(json: jsonObject, context: context)
         } catch {
             print(error)
-        }
-    }
-    
-    private func downloadEventsFromTheServer() {
-        Networking.downloadJSON(from: NCCBFEventScheduleData2017URL) { json in
-            do {
-                guard let context = self.context else { fatalError("context is nil.") }
-                let downloadedEvents = try JSONParser.parse(json: json, context: context)
-                self.events = downloadedEvents
-                
-                do {
-                    try context.save()
-                    print("context save succeeded.")
-                } catch {
-                    print("context save failed.")
-                }
-                
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-            } catch {
-                print(error)
-            }
         }
     }
 }
