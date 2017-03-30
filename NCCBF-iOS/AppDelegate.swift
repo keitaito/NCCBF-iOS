@@ -7,13 +7,11 @@
 //
 
 import UIKit
-import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let dataController = DataController()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -22,44 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
         
-        // Setup CoreData.
-        let context = dataController.persistentContainer.viewContext
-        
         // Instantiate the initial VC.
-        let storyboard = UIStoryboard(name: "NCCBFTabBarController", bundle: Bundle.main)
-        guard let tabBarController = storyboard.instantiateInitialViewController() as? UITabBarController,
-            let nc0 = tabBarController.viewControllers?[0] as? UINavigationController,
-            let eventCatalogTableVC = nc0.topViewController as? EventCatalogTableViewController else { fatalError("eventCatalogTableVC is not found.") }
-        eventCatalogTableVC.context = context
-        
-        let fetchRequest: NSFetchRequest<Event> = Event.fetchRequest()
-        do {
-            let fetchResult = try context.fetch(fetchRequest)
-            print(fetchResult.count)
-            print("fetchRequest succeeded.")
-        } catch {
-            print(error)
-            fatalError("fetchRequest failed.")
-        }
-        
-        
-        window?.rootViewController = tabBarController
-        
-        // Set events data.
-        
-        Networking.downloadJSON(from: NCCBFEventScheduleData2017URL) { json in
-            do {
-                let downloadedEvents = try JSONParser.parse(json: json, context: context)
-                
-                guard let tc = tabBarController as? UITabBarController else { return }
-                guard let nc1 = tc.viewControllers?[1] as? UINavigationController else { return }
-                guard let scheduleTableVC = nc1.topViewController as? ScheduleTableViewController else { return }
-                scheduleTableVC.events = downloadedEvents
-                
-            } catch {
-                print(error)
-            }
-        }
+        window?.rootViewController = RootContainerViewController()
         
         return true
     }

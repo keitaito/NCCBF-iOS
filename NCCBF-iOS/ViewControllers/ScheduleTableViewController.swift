@@ -7,17 +7,34 @@
 //
 
 import UIKit
+import CoreData
 
 class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
+    var context: NSManagedObjectContext?
     var events: [Event]?
     
     let reuseIdentifier = "reuseIdentifier"
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard let context = context else { return }
+        
+        let fetchRequest: NSFetchRequest<Event> = Event.fetchRequest()
+        do {
+            let fetchResult = try context.fetch(fetchRequest)
+            print(fetchResult.count)
+            print("fetchRequest succeeded.")
+            
+            events = fetchResult
+            
+        } catch {
+            print(error)
+            fatalError("fetchRequest failed.")
+        }
         
         tableView.dataSource = self
         tableView.delegate = self

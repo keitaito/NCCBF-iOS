@@ -28,7 +28,22 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
         setupTableView()
         setupUI()
 //        loadJSONFileInternally()
-        downloadEventsFromTheServer()
+//        downloadEventsFromTheServer()
+        
+        guard let context = context else { return }
+        
+        let fetchRequest: NSFetchRequest<Event> = Event.fetchRequest()
+        do {
+            let fetchResult = try context.fetch(fetchRequest)
+            print(fetchResult.count)
+            print("fetchRequest succeeded.")
+            
+            events = fetchResult
+            
+        } catch {
+            print(error)
+            fatalError("fetchRequest failed.")
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
