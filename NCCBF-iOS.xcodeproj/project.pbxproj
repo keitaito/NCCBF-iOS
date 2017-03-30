@@ -21,6 +21,7 @@
 		875975361E8C899B0018233F /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875975351E8C899B0018233F /* UIStoryboardExtension.swift */; };
 		8772FE621E8868540048B2C0 /* NCCBF-iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8772FE601E8868540048B2C0 /* NCCBF-iOS.xcdatamodeld */; };
 		8772FE641E8868700048B2C0 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8772FE631E8868700048B2C0 /* DataController.swift */; };
+		87941A991E8D1CA900218A6C /* ScheduleDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */; };
 		87A7032F1E887BEF00CDF31D /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A7032D1E887BEF00CDF31D /* Event+CoreDataClass.swift */; };
 		87A703301E887BEF00CDF31D /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A7032E1E887BEF00CDF31D /* Event+CoreDataProperties.swift */; };
 		87C431101E8C853C00180374 /* RootContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4310F1E8C853C00180374 /* RootContainerViewController.swift */; };
@@ -67,6 +68,7 @@
 		875975351E8C899B0018233F /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStoryboardExtension.swift; path = Extensions/UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		8772FE611E8868540048B2C0 /* NCCBF-iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "NCCBF-iOS.xcdatamodel"; sourceTree = "<group>"; };
 		8772FE631E8868700048B2C0 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataController.swift; path = CoreData/DataController.swift; sourceTree = "<group>"; };
+		87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleDateFormatter.swift; path = Utilities/ScheduleDateFormatter.swift; sourceTree = "<group>"; };
 		87A7032D1E887BEF00CDF31D /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Event+CoreDataClass.swift"; path = "CoreData/Entities/Event+CoreDataClass.swift"; sourceTree = "<group>"; };
 		87A7032E1E887BEF00CDF31D /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Event+CoreDataProperties.swift"; path = "CoreData/Entities/Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		87C4310F1E8C853C00180374 /* RootContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootContainerViewController.swift; path = ViewControllers/RootContainerViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			children = (
 				8733C5A41E5A220B00140899 /* JSON.swift */,
 				87FC329F1E830E19007F1B4A /* Networking.swift */,
+				87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				87FC32981E81FF87007F1B4A /* MoreInfoTableViewController.swift in Sources */,
 				8772FE641E8868700048B2C0 /* DataController.swift in Sources */,
 				87FC32A61E831924007F1B4A /* ScheduleTableViewController.swift in Sources */,
+				87941A991E8D1CA900218A6C /* ScheduleDateFormatter.swift in Sources */,
 				87FC329E1E824A42007F1B4A /* MoreInfoDetailViewController.swift in Sources */,
 				87C5F7F91E553B3D001D7B09 /* AppDelegate.swift in Sources */,
 				87FC32A21E830E6E007F1B4A /* Constants.swift in Sources */,
