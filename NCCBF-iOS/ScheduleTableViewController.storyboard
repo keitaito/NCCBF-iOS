@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XwR-WS-W6M">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XwR-WS-W6M">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,18 +29,45 @@
                                     <segment title="Apr 15"/>
                                     <segment title="Apr 16"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentDidChange:" destination="DM7-1Y-esv" eventType="valueChanged" id="v12-Ck-dkw"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kHy-ml-oQH">
                                 <rect key="frame" x="0.0" y="108" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="fGW-ki-S1G">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleTableViewCell" id="fGW-ki-S1G" customClass="ScheduleTableViewCell" customModule="NCCBF_iOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fGW-ki-S1G" id="4TG-gc-Iuw">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uul-fL-NUr">
+                                                    <rect key="frame" x="8" y="0.0" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jah-u9-TY0">
+                                                    <rect key="frame" x="8" y="22" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Uul-fL-NUr" firstAttribute="top" secondItem="4TG-gc-Iuw" secondAttribute="top" id="60K-rn-Ifs"/>
+                                                <constraint firstItem="Uul-fL-NUr" firstAttribute="leading" secondItem="4TG-gc-Iuw" secondAttribute="leading" constant="8" id="Sh4-jg-NMK"/>
+                                                <constraint firstAttribute="bottom" secondItem="jah-u9-TY0" secondAttribute="bottom" id="VF5-ln-RgK"/>
+                                                <constraint firstItem="jah-u9-TY0" firstAttribute="leading" secondItem="4TG-gc-Iuw" secondAttribute="leading" constant="8" id="yKZ-5t-bjj"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="timeLabel" destination="Uul-fL-NUr" id="79r-6h-HFA"/>
+                                            <outlet property="titleLabel" destination="jah-u9-TY0" id="UQM-pk-hac"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -58,7 +85,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hd6-pZ-30E"/>
                     <connections>
-                        <outlet property="dateSegmentedControl" destination="7ep-oz-riR" id="EL9-4k-zaw"/>
+                        <outlet property="dateSegmentedControl" destination="7ep-oz-riR" id="lts-N7-Ii8"/>
                         <outlet property="tableView" destination="kHy-ml-oQH" id="BUL-Kk-ulu"/>
                     </connections>
                 </viewController>
