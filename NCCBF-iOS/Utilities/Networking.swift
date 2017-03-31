@@ -10,7 +10,7 @@ import Foundation
 
 class Networking {
     class func downloadJSON(from url: URL, completionHandler: @escaping (Any) -> Void) {
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
                 print(error)
             }
@@ -23,6 +23,8 @@ class Networking {
                     print(error)
                 }
             }
-        }.resume()
+        }
+        task.resume()
+    }
     }
 }
