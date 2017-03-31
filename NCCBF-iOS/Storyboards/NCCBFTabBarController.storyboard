@@ -12,7 +12,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="m1Y-T2-cAb">
             <objects>
-                <tabBarController id="hdW-yK-iOs" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="NCCBFTabBarController" id="hdW-yK-iOs" customClass="NCCBFTabBarController" customModule="NCCBF_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="RA1-yZ-egI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

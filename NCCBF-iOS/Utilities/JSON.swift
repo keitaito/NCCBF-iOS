@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreData
 
 enum ResourceLoaderError: Error {
     case loadingError(String, Any)
@@ -27,13 +28,13 @@ enum JSONError: Error {
 }
 
 struct JSONParser {
-    public static func parse(json: Any) throws -> [Event] {
+    public static func parse(json: Any, context: NSManagedObjectContext) throws -> [Event] {
         var results = [Event]()
         if let topLevelArray = json as? [Any] {
             for element in topLevelArray {
                 if let dictionary = element as? [String: Any] {
                     do {
-                        let event = try Event(json: dictionary)
+                        let event = try Event(json: dictionary, context: context)
                         results.append(event)
                     } catch {
                         print(error)

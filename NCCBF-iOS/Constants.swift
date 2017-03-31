@@ -8,4 +8,6 @@
 
 import Foundation
 
-let NCCBFEventScheduleData2017URL = URL(string: "http://sfcherryblossom.org/wp-content/uploads/2017/ScheduleData/NCCBFSchedule.json")!
+let NCCBFEventScheduleData2017URL = URL(string: "https://sfcherryblossom.org/wp-content/uploads/2017/ScheduleData/NCCBFSchedule.json")!
+
+let launchedBefore = "launchedBefore"

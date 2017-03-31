@@ -11,16 +11,27 @@
 		8733C58E1E5A1C8900140899 /* EventCatalogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8733C58C1E5A1C8900140899 /* EventCatalogTableViewController.swift */; };
 		8733C58F1E5A1C8900140899 /* EventCatalogTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8733C58D1E5A1C8900140899 /* EventCatalogTableViewController.storyboard */; };
 		8733C5A51E5A220B00140899 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8733C5A41E5A220B00140899 /* JSON.swift */; };
-		8733C5BA1E5A39BD00140899 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8733C5B91E5A39BD00140899 /* Event.swift */; };
 		873F0A021E6378E200BECCD2 /* EventDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873F0A011E6378E200BECCD2 /* EventDetailsViewController.storyboard */; };
 		873F0A041E63791000BECCD2 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F0A031E63791000BECCD2 /* EventDetailsViewController.swift */; };
 		873F0A061E63891200BECCD2 /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F0A051E63891200BECCD2 /* EventDetailsView.swift */; };
 		8756D4AF1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8756D4AE1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift */; };
 		8756D95B1E810A2C00C0CFAC /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8756D95A1E810A2C00C0CFAC /* NetworkingTests.swift */; };
 		8756D9621E81101B00C0CFAC /* NCCBFTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8756D9611E81101B00C0CFAC /* NCCBFTabBarController.storyboard */; };
+		875975341E8C893D0018233F /* NCCBFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875975331E8C893D0018233F /* NCCBFTabBarController.swift */; };
+		875975361E8C899B0018233F /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875975351E8C899B0018233F /* UIStoryboardExtension.swift */; };
+		8772FE621E8868540048B2C0 /* NCCBF-iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8772FE601E8868540048B2C0 /* NCCBF-iOS.xcdatamodeld */; };
+		8772FE641E8868700048B2C0 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8772FE631E8868700048B2C0 /* DataController.swift */; };
+		87941A951E8D0E4800218A6C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A941E8D0E4800218A6C /* DateExtension.swift */; };
+		87941A971E8D168900218A6C /* NSPredicateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A961E8D168900218A6C /* NSPredicateExtension.swift */; };
+		87941A991E8D1CA900218A6C /* ScheduleDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */; };
+		87A7032F1E887BEF00CDF31D /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A7032D1E887BEF00CDF31D /* Event+CoreDataClass.swift */; };
+		87A703301E887BEF00CDF31D /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A7032E1E887BEF00CDF31D /* Event+CoreDataProperties.swift */; };
+		87C431101E8C853C00180374 /* RootContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4310F1E8C853C00180374 /* RootContainerViewController.swift */; };
 		87C5F7F91E553B3D001D7B09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C5F7F81E553B3D001D7B09 /* AppDelegate.swift */; };
 		87C5F8001E553B3D001D7B09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87C5F7FF1E553B3D001D7B09 /* Assets.xcassets */; };
 		87C5F8031E553B3D001D7B09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C5F8011E553B3D001D7B09 /* LaunchScreen.storyboard */; };
+		87D0528F1E8DF747009FD35F /* ScheduleDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0528E1E8DF747009FD35F /* ScheduleDate.swift */; };
+		87D052911E8DFFF5009FD35F /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D052901E8DFFF5009FD35F /* ScheduleTableViewCell.swift */; };
 		87FC32941E81F54B007F1B4A /* SFCherryBlossomSampleData2.json in Resources */ = {isa = PBXBuildFile; fileRef = 87FC32931E81F54B007F1B4A /* SFCherryBlossomSampleData2.json */; };
 		87FC32961E81FF04007F1B4A /* MoreInfoTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FC32951E81FF04007F1B4A /* MoreInfoTableViewController.storyboard */; };
 		87FC32981E81FF87007F1B4A /* MoreInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC32971E81FF87007F1B4A /* MoreInfoTableViewController.swift */; };
@@ -57,11 +68,23 @@
 		8756D9291E7F734D00C0CFAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8756D95A1E810A2C00C0CFAC /* NetworkingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
 		8756D9611E81101B00C0CFAC /* NCCBFTabBarController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = NCCBFTabBarController.storyboard; path = Storyboards/NCCBFTabBarController.storyboard; sourceTree = "<group>"; };
+		875975331E8C893D0018233F /* NCCBFTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NCCBFTabBarController.swift; path = ViewControllers/NCCBFTabBarController.swift; sourceTree = "<group>"; };
+		875975351E8C899B0018233F /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStoryboardExtension.swift; path = Extensions/UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		8772FE611E8868540048B2C0 /* NCCBF-iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "NCCBF-iOS.xcdatamodel"; sourceTree = "<group>"; };
+		8772FE631E8868700048B2C0 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataController.swift; path = CoreData/DataController.swift; sourceTree = "<group>"; };
+		87941A941E8D0E4800218A6C /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = Extensions/DateExtension.swift; sourceTree = "<group>"; };
+		87941A961E8D168900218A6C /* NSPredicateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSPredicateExtension.swift; path = Extensions/NSPredicateExtension.swift; sourceTree = "<group>"; };
+		87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleDateFormatter.swift; path = Utilities/ScheduleDateFormatter.swift; sourceTree = "<group>"; };
+		87A7032D1E887BEF00CDF31D /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Event+CoreDataClass.swift"; path = "CoreData/Entities/Event+CoreDataClass.swift"; sourceTree = "<group>"; };
+		87A7032E1E887BEF00CDF31D /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Event+CoreDataProperties.swift"; path = "CoreData/Entities/Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		87C4310F1E8C853C00180374 /* RootContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootContainerViewController.swift; path = ViewControllers/RootContainerViewController.swift; sourceTree = "<group>"; };
 		87C5F7F51E553B3D001D7B09 /* NCCBF-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NCCBF-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C5F7F81E553B3D001D7B09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87C5F7FF1E553B3D001D7B09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87C5F8021E553B3D001D7B09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87C5F8041E553B3D001D7B09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87D0528E1E8DF747009FD35F /* ScheduleDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleDate.swift; path = Models/ScheduleDate.swift; sourceTree = "<group>"; };
+		87D052901E8DFFF5009FD35F /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleTableViewCell.swift; path = ViewControllers/ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		87FC32931E81F54B007F1B4A /* SFCherryBlossomSampleData2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SFCherryBlossomSampleData2.json; path = Resources/SFCherryBlossomSampleData2.json; sourceTree = "<group>"; };
 		87FC32951E81FF04007F1B4A /* MoreInfoTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MoreInfoTableViewController.storyboard; path = Storyboards/MoreInfoTableViewController.storyboard; sourceTree = "<group>"; };
 		87FC32971E81FF87007F1B4A /* MoreInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreInfoTableViewController.swift; path = ViewControllers/MoreInfoTableViewController.swift; sourceTree = "<group>"; };
@@ -107,11 +130,14 @@
 		8733C5901E5A1C9000140899 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				87C4310F1E8C853C00180374 /* RootContainerViewController.swift */,
+				875975331E8C893D0018233F /* NCCBFTabBarController.swift */,
 				8733C58C1E5A1C8900140899 /* EventCatalogTableViewController.swift */,
 				873F0A031E63791000BECCD2 /* EventDetailsViewController.swift */,
 				87FC32971E81FF87007F1B4A /* MoreInfoTableViewController.swift */,
 				87FC329D1E824A42007F1B4A /* MoreInfoDetailViewController.swift */,
 				87FC32A51E831924007F1B4A /* ScheduleTableViewController.swift */,
+				87D052901E8DFFF5009FD35F /* ScheduleTableViewCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -122,6 +148,7 @@
 				8733C5B91E5A39BD00140899 /* Event.swift */,
 				8756D4AE1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift */,
 				87FC32991E821F4C007F1B4A /* MenuItem.swift */,
+				87D0528E1E8DF747009FD35F /* ScheduleDate.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -131,6 +158,7 @@
 			children = (
 				8733C5A41E5A220B00140899 /* JSON.swift */,
 				87FC329F1E830E19007F1B4A /* Networking.swift */,
+				87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -168,8 +196,30 @@
 		8772FE2F1E8653A90048B2C0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				875975351E8C899B0018233F /* UIStoryboardExtension.swift */,
+				87941A941E8D0E4800218A6C /* DateExtension.swift */,
+				87941A961E8D168900218A6C /* NSPredicateExtension.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		8772FE5F1E8868350048B2C0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8772FE651E8877370048B2C0 /* Entities */,
+				8772FE601E8868540048B2C0 /* NCCBF-iOS.xcdatamodeld */,
+				8772FE631E8868700048B2C0 /* DataController.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		8772FE651E8877370048B2C0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				87A7032D1E887BEF00CDF31D /* Event+CoreDataClass.swift */,
+				87A7032E1E887BEF00CDF31D /* Event+CoreDataProperties.swift */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 		87C5F7EC1E553B3D001D7B09 = {
@@ -195,6 +245,7 @@
 			children = (
 				87C5F7F81E553B3D001D7B09 /* AppDelegate.swift */,
 				87FC32A11E830E6E007F1B4A /* Constants.swift */,
+				8772FE5F1E8868350048B2C0 /* CoreData */,
 				8733C5BB1E5A39C000140899 /* Models */,
 				8733C5901E5A1C9000140899 /* ViewControllers */,
 				8756D9631E81139300C0CFAC /* Views */,
@@ -327,19 +378,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8733C5BA1E5A39BD00140899 /* Event.swift in Sources */,
 				87FC32A01E830E19007F1B4A /* Networking.swift in Sources */,
+				87D0528F1E8DF747009FD35F /* ScheduleDate.swift in Sources */,
+				87941A951E8D0E4800218A6C /* DateExtension.swift in Sources */,
+				8772FE621E8868540048B2C0 /* NCCBF-iOS.xcdatamodeld in Sources */,
+				875975341E8C893D0018233F /* NCCBFTabBarController.swift in Sources */,
 				873F0A041E63791000BECCD2 /* EventDetailsViewController.swift in Sources */,
 				8733C5A51E5A220B00140899 /* JSON.swift in Sources */,
 				8733C58E1E5A1C8900140899 /* EventCatalogTableViewController.swift in Sources */,
+				87941A971E8D168900218A6C /* NSPredicateExtension.swift in Sources */,
+				875975361E8C899B0018233F /* UIStoryboardExtension.swift in Sources */,
 				873F0A061E63891200BECCD2 /* EventDetailsView.swift in Sources */,
+				87A703301E887BEF00CDF31D /* Event+CoreDataProperties.swift in Sources */,
 				8756D4AF1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift in Sources */,
+				87A7032F1E887BEF00CDF31D /* Event+CoreDataClass.swift in Sources */,
+				87D052911E8DFFF5009FD35F /* ScheduleTableViewCell.swift in Sources */,
 				87FC329A1E821F4C007F1B4A /* MenuItem.swift in Sources */,
 				87FC32981E81FF87007F1B4A /* MoreInfoTableViewController.swift in Sources */,
+				8772FE641E8868700048B2C0 /* DataController.swift in Sources */,
 				87FC32A61E831924007F1B4A /* ScheduleTableViewController.swift in Sources */,
+				87941A991E8D1CA900218A6C /* ScheduleDateFormatter.swift in Sources */,
 				87FC329E1E824A42007F1B4A /* MoreInfoDetailViewController.swift in Sources */,
 				87C5F7F91E553B3D001D7B09 /* AppDelegate.swift in Sources */,
 				87FC32A21E830E6E007F1B4A /* Constants.swift in Sources */,
+				87C431101E8C853C00180374 /* RootContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +608,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8772FE601E8868540048B2C0 /* NCCBF-iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8772FE611E8868540048B2C0 /* NCCBF-iOS.xcdatamodel */,
+			);
+			currentVersion = 8772FE611E8868540048B2C0 /* NCCBF-iOS.xcdatamodel */;
+			name = "NCCBF-iOS.xcdatamodeld";
+			path = "CoreData/NCCBF-iOS.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 87C5F7ED1E553B3D001D7B09 /* Project object */;
 }

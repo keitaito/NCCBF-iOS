@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -14,6 +15,7 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Properties
+    var context: NSManagedObjectContext?
     var events = [Event]()
     let sampleDataName = "SFCherryBlossomSampleData2"
     let sampleDataType = "json"
@@ -26,7 +28,21 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
         setupTableView()
         setupUI()
 //        loadJSONFileInternally()
-        downloadEventsFromTheServer()
+        
+        guard let context = context else { return }
+        
+        let fetchRequest: NSFetchRequest<Event> = Event.fetchRequest()
+        do {
+            let fetchResult = try context.fetch(fetchRequest)
+            print(fetchResult.count)
+            print("fetchRequest succeeded.")
+            
+            events = fetchResult
+            
+        } catch {
+            print(error)
+            fatalError("fetchRequest failed.")
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -76,24 +92,10 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
             let url = try ResourceLoader.load(resource: sampleDataName, ofType: sampleDataType)
             let jsonData = try Data(contentsOf: url)
             let jsonObject = try JSONSerialization.jsonObject(with: jsonData)
-            events = try JSONParser.parse(json: jsonObject)
+            guard let context = context else { fatalError("context is nil.") }
+            events = try JSONParser.parse(json: jsonObject, context: context)
         } catch {
             print(error)
-        }
-    }
-    
-    private func downloadEventsFromTheServer() {
-        Networking.downloadJSON(from: NCCBFEventScheduleData2017URL) { json in
-            do {
-                let downloadedEvents = try JSONParser.parse(json: json)
-                self.events = downloadedEvents
-                
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-            } catch {
-                print(error)
-            }
         }
     }
 }

@@ -24,15 +24,16 @@ struct EventDetailsViewModel {
         return dateFormatter.string(from: event.startAt)
     }
     
-    public var endAt: String {
-        return dateFormatter.string(from: event.endAt)
+    public var endAt: String? {
+        guard let endAt = event.endAt else { return nil }
+        return dateFormatter.string(from: endAt)
     }
     
     public var schedule: String {
         let df = DateFormatter()
         df.dateFormat = "h:mm a"
         df.timeZone = TimeZone(abbreviation: "PST")
-        let endAtString = df.string(from: event.endAt)
+        let endAtString = endAt ?? "all day"
         return "\(startAt) - \(endAtString)"
     }
     
@@ -47,7 +48,7 @@ struct EventDetailsViewModel {
     private var dateFormatter: DateFormatter {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMM d, h:mm a"
-        dateFormatter.timeZone = TimeZone(abbreviation: "PST")
+        dateFormatter.timeZone = TimeZone(abbreviation: "PDT")
         return dateFormatter
     }
     

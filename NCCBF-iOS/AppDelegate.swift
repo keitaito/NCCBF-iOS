@@ -21,25 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         // Instantiate the initial VC.
-        let storyboard = UIStoryboard(name: "NCCBFTabBarController", bundle: Bundle.main)
-        let tabBarController = storyboard.instantiateInitialViewController()
-        window?.rootViewController = tabBarController
-        
-        // Set events data.
-        
-        Networking.downloadJSON(from: NCCBFEventScheduleData2017URL) { json in
-            do {
-                let downloadedEvents = try JSONParser.parse(json: json)
-                
-                guard let tc = tabBarController as? UITabBarController else { return }
-                guard let nc = tc.viewControllers?[1] as? UINavigationController else { return }
-                guard let scheduleTableVC = nc.topViewController as? ScheduleTableViewController else { return }
-                scheduleTableVC.events = downloadedEvents
-                
-            } catch {
-                print(error)
-            }
-        }
+        window?.rootViewController = RootContainerViewController()
         
         return true
     }
