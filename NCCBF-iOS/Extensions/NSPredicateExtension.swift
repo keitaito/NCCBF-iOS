@@ -9,9 +9,7 @@
 import Foundation
 
 extension NSPredicate {
-    convenience init(from startDate: ScheduleDate, to endDate: ScheduleDate) {
-        let start = Date.scheduleDate(.apr8)
-        let end = Date.scheduleDate(.apr9)
-        self.init(format: "startAt >= %@ && endAt < %@", start as NSDate, end as NSDate)
+    convenience init(from startScheduleDate: ScheduleDate, to endScheduleDate: ScheduleDate) {
+        self.init(format: "startAt >= %@ && endAt < %@", startScheduleDate.date as NSDate, endScheduleDate.date as NSDate)
     }
 }
