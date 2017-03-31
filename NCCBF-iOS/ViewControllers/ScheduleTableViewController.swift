@@ -18,17 +18,13 @@ class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITa
     var fetchedResultsController: NSFetchedResultsController<Event>?
     var events: [Event]?
     
-    let reuseIdentifier = "reuseIdentifier"
+    let reuseIdentifier = "ScheduleTableViewCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         initializeFetchedResultsController()
-        
-        tableView.dataSource = self
-        tableView.delegate = self
-//        tableView.reloadData()
-        
+        setupTableView()
         setupUI()
     }
     
@@ -47,13 +43,15 @@ class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
-//        guard let event = events?[indexPath.row] else { fatalError("Failed getting event") }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? ScheduleTableViewCell else {
+            fatalError("Cell dequeue failed.")
+        }
+
         guard let event = fetchedResultsController?.object(at: indexPath) else {
             fatalError("Event object is not found.")
         }
         
-        cell.textLabel?.text = event.name
+        cell.configure(with: event)
         
         return cell
     }
@@ -72,6 +70,11 @@ class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITa
     
     private func setupUI() {
         title = "Schedule"
+    }
+    
+    private func setupTableView() {
+        tableView.dataSource = self
+        tableView.delegate = self
     }
     
     private func initializeFetchedResultsController() {
