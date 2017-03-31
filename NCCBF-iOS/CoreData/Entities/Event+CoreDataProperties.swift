@@ -2,7 +2,7 @@
 //  Event+CoreDataProperties.swift
 //  NCCBF-iOS
 //
-//  Created by Keita Ito on 3/26/17.
+//  Created by Keita Ito on 3/30/17.
 //  Copyright © 2017 Keita Ito. All rights reserved.
 //
 
@@ -13,7 +13,7 @@ import CoreData
 extension Event {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Event> {
-        return NSFetchRequest<Event>(entityName: "Event");
+        return NSFetchRequest<Event>(entityName: "Event")
     }
 
     @NSManaged public var details: String?
@@ -22,5 +22,6 @@ extension Event {
     @NSManaged public var location: String
     @NSManaged public var name: String
     @NSManaged public var startAt: Date
+    @NSManaged public var imageName: String?
 
 }
