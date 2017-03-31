@@ -26,6 +26,12 @@ class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITa
         initializeFetchedResultsController()
         setupTableView()
         setupUI()
+        
+        do {
+            try fetchedResultsController?.performFetch()
+        } catch {
+            fatalError(error.localizedDescription)
+        }
     }
     
     // MARK: - UITableViewDataSource
@@ -66,6 +72,23 @@ class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITa
         print(event.startAt)
     }
     
+    // MARK: - IBActions
+    
+    @IBAction func segmentDidChange(_ sender: UISegmentedControl) {
+        print("selectedSegmentIndex: \(sender.selectedSegmentIndex)")
+        guard let scheduleDateSegment = ScheduleDateSegment(rawValue: sender.selectedSegmentIndex) else {
+            return
+        }
+        fetchedResultsController?.fetchRequest.predicate = scheduleDateSegment.predicate
+        do {
+            try fetchedResultsController?.performFetch()
+            print("count: \(fetchedResultsController!.fetchedObjects!.count)")
+            tableView.reloadData()
+        } catch {
+            fatalError(error.localizedDescription)
+        }
+    }
+    
     // MARK: - Private Methods
     
     private func setupUI() {
@@ -79,20 +102,12 @@ class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITa
     
     private func initializeFetchedResultsController() {
         guard let context = context else { fatalError("context is nil.") }
-        
         let request: NSFetchRequest<Event> = Event.fetchRequest()
-        request.predicate = NSPredicate(from: .apr8, to: .apr9)
-        
+        request.predicate = ScheduleDateSegment(rawValue: dateSegmentedControl.selectedSegmentIndex)?.predicate
         let startAtSort = NSSortDescriptor(key: "startAt", ascending: true)
         request.sortDescriptors = [startAtSort]
         
         fetchedResultsController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         fetchedResultsController?.delegate = self
-        
-        do {
-            try fetchedResultsController?.performFetch()
-        } catch {
-            fatalError("Failed to initialize FetchedResultsController: \(error)")
-        }
     }
 }
