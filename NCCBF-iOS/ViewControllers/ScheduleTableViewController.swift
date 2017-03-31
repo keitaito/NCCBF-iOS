@@ -68,21 +68,23 @@ class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITa
         guard let event = fetchedResultsController?.object(at: indexPath) else {
             fatalError("Event object is not found.")
         }
-        print(event.name)
-        print(event.startAt)
+        guard let vc = UIStoryboard.instantiateViewController(withIdentifier: "EventDetailsViewController") as? EventDetailsViewController else {
+            return
+        }
+        
+        vc.eventDetails = EventDetailsViewModel(event: event)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     // MARK: - IBActions
     
     @IBAction func segmentDidChange(_ sender: UISegmentedControl) {
-        print("selectedSegmentIndex: \(sender.selectedSegmentIndex)")
         guard let scheduleDateSegment = ScheduleDateSegment(rawValue: sender.selectedSegmentIndex) else {
             return
         }
         fetchedResultsController?.fetchRequest.predicate = scheduleDateSegment.predicate
         do {
             try fetchedResultsController?.performFetch()
-            print("count: \(fetchedResultsController!.fetchedObjects!.count)")
             tableView.reloadData()
         } catch {
             fatalError(error.localizedDescription)
