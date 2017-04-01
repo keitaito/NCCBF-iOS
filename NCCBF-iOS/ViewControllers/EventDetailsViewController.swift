@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class EventDetailsViewController: UIViewController {
     
