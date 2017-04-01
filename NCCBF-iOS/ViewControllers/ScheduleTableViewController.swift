@@ -16,7 +16,6 @@ class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITa
     
     var context: NSManagedObjectContext?
     var fetchedResultsController: NSFetchedResultsController<Event>?
-    var events: [Event]?
     
     let reuseIdentifier = "ScheduleTableViewCell"
 
