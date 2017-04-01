@@ -270,9 +270,9 @@
 			isa = PBXGroup;
 			children = (
 				87C5F7F71E553B3D001D7B09 /* NCCBF-iOS */,
+				8779ADB41E8F0FFF00D77D3E /* Frameworks */,
 				8756D9261E7F734D00C0CFAC /* NCCBF-iOSTests */,
 				87C5F7F61E553B3D001D7B09 /* Products */,
-				8779ADB41E8F0FFF00D77D3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
