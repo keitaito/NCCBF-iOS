@@ -15,16 +15,24 @@ class EventDetailsView: UIView {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var detailsLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
-
-    public func configure(with eventDetails: EventDetailsViewModel) {
+    
+    // MARK: - Public Properties
+    
+    var configurationHandler: (() -> Void)?
+    
+    
+    // MARK: - Public Methods
+    
+    func configure(with eventDetails: EventDetailsViewModel) {
         
         nameLabel.text = eventDetails.name
         scheduleLabel.text = eventDetails.schedule
         locationLabel.text = eventDetails.location
-        
         detailsLabel.text = eventDetails.details
-//        descriptionLabel.text = testText
-        imageView.image = #imageLiteral(resourceName: "placeholder")
+        
+        if let configurationHandler = configurationHandler {
+            configurationHandler()
+        }
     }
 }
 

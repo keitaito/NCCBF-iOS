@@ -21,6 +21,12 @@
 		875975361E8C899B0018233F /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875975351E8C899B0018233F /* UIStoryboardExtension.swift */; };
 		8772FE621E8868540048B2C0 /* NCCBF-iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8772FE601E8868540048B2C0 /* NCCBF-iOS.xcdatamodeld */; };
 		8772FE641E8868700048B2C0 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8772FE631E8868700048B2C0 /* DataController.swift */; };
+		8779ADB91E8F132000D77D3E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8779ADB51E8F0FFF00D77D3E /* Alamofire.framework */; };
+		8779ADBA1E8F132000D77D3E /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8779ADB61E8F0FFF00D77D3E /* AlamofireImage.framework */; };
+		8779ADBD1E8F1CCE00D77D3E /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779ADBC1E8F1CCE00D77D3E /* FileManagerExtension.swift */; };
+		8779ADC21E8F4DEE00D77D3E /* ImageConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779ADC11E8F4DEE00D77D3E /* ImageConfigurator.swift */; };
+		8779ADC61E8F657800D77D3E /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779ADC51E8F657800D77D3E /* UIImageViewExtension.swift */; };
+		8779ADCA1E8F681D00D77D3E /* EventCatalogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779ADC91E8F681D00D77D3E /* EventCatalogTableViewCell.swift */; };
 		87941A951E8D0E4800218A6C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A941E8D0E4800218A6C /* DateExtension.swift */; };
 		87941A971E8D168900218A6C /* NSPredicateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A961E8D168900218A6C /* NSPredicateExtension.swift */; };
 		87941A991E8D1CA900218A6C /* ScheduleDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */; };
@@ -72,6 +78,12 @@
 		875975351E8C899B0018233F /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStoryboardExtension.swift; path = Extensions/UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		8772FE611E8868540048B2C0 /* NCCBF-iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "NCCBF-iOS.xcdatamodel"; sourceTree = "<group>"; };
 		8772FE631E8868700048B2C0 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataController.swift; path = CoreData/DataController.swift; sourceTree = "<group>"; };
+		8779ADB51E8F0FFF00D77D3E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		8779ADB61E8F0FFF00D77D3E /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		8779ADBC1E8F1CCE00D77D3E /* FileManagerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileManagerExtension.swift; path = Extensions/FileManagerExtension.swift; sourceTree = "<group>"; };
+		8779ADC11E8F4DEE00D77D3E /* ImageConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageConfigurator.swift; path = Utilities/ImageConfigurator.swift; sourceTree = "<group>"; };
+		8779ADC51E8F657800D77D3E /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		8779ADC91E8F681D00D77D3E /* EventCatalogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventCatalogTableViewCell.swift; path = ViewControllers/EventCatalogTableViewCell.swift; sourceTree = "<group>"; };
 		87941A941E8D0E4800218A6C /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = Extensions/DateExtension.swift; sourceTree = "<group>"; };
 		87941A961E8D168900218A6C /* NSPredicateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSPredicateExtension.swift; path = Extensions/NSPredicateExtension.swift; sourceTree = "<group>"; };
 		87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleDateFormatter.swift; path = Utilities/ScheduleDateFormatter.swift; sourceTree = "<group>"; };
@@ -109,6 +121,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8779ADB91E8F132000D77D3E /* Alamofire.framework in Frameworks */,
+				8779ADBA1E8F132000D77D3E /* AlamofireImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +147,7 @@
 				87C4310F1E8C853C00180374 /* RootContainerViewController.swift */,
 				875975331E8C893D0018233F /* NCCBFTabBarController.swift */,
 				8733C58C1E5A1C8900140899 /* EventCatalogTableViewController.swift */,
+				8779ADC91E8F681D00D77D3E /* EventCatalogTableViewCell.swift */,
 				873F0A031E63791000BECCD2 /* EventDetailsViewController.swift */,
 				87FC32971E81FF87007F1B4A /* MoreInfoTableViewController.swift */,
 				87FC329D1E824A42007F1B4A /* MoreInfoDetailViewController.swift */,
@@ -159,6 +174,7 @@
 				8733C5A41E5A220B00140899 /* JSON.swift */,
 				87FC329F1E830E19007F1B4A /* Networking.swift */,
 				87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */,
+				8779ADC11E8F4DEE00D77D3E /* ImageConfigurator.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -199,6 +215,8 @@
 				875975351E8C899B0018233F /* UIStoryboardExtension.swift */,
 				87941A941E8D0E4800218A6C /* DateExtension.swift */,
 				87941A961E8D168900218A6C /* NSPredicateExtension.swift */,
+				8779ADBC1E8F1CCE00D77D3E /* FileManagerExtension.swift */,
+				8779ADC51E8F657800D77D3E /* UIImageViewExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -222,12 +240,22 @@
 			name = Entities;
 			sourceTree = "<group>";
 		};
+		8779ADB41E8F0FFF00D77D3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8779ADB51E8F0FFF00D77D3E /* Alamofire.framework */,
+				8779ADB61E8F0FFF00D77D3E /* AlamofireImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		87C5F7EC1E553B3D001D7B09 = {
 			isa = PBXGroup;
 			children = (
 				87C5F7F71E553B3D001D7B09 /* NCCBF-iOS */,
 				8756D9261E7F734D00C0CFAC /* NCCBF-iOSTests */,
 				87C5F7F61E553B3D001D7B09 /* Products */,
+				8779ADB41E8F0FFF00D77D3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -285,6 +313,7 @@
 				87C5F7F11E553B3D001D7B09 /* Sources */,
 				87C5F7F21E553B3D001D7B09 /* Frameworks */,
 				87C5F7F31E553B3D001D7B09 /* Resources */,
+				8779ADBB1E8F133B00D77D3E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -365,6 +394,24 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8779ADBB1E8F133B00D77D3E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8756D9211E7F734D00C0CFAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -382,6 +429,8 @@
 				87D0528F1E8DF747009FD35F /* ScheduleDate.swift in Sources */,
 				87941A951E8D0E4800218A6C /* DateExtension.swift in Sources */,
 				8772FE621E8868540048B2C0 /* NCCBF-iOS.xcdatamodeld in Sources */,
+				8779ADC21E8F4DEE00D77D3E /* ImageConfigurator.swift in Sources */,
+				8779ADC61E8F657800D77D3E /* UIImageViewExtension.swift in Sources */,
 				875975341E8C893D0018233F /* NCCBFTabBarController.swift in Sources */,
 				873F0A041E63791000BECCD2 /* EventDetailsViewController.swift in Sources */,
 				8733C5A51E5A220B00140899 /* JSON.swift in Sources */,
@@ -393,6 +442,7 @@
 				8756D4AF1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift in Sources */,
 				87A7032F1E887BEF00CDF31D /* Event+CoreDataClass.swift in Sources */,
 				87D052911E8DFFF5009FD35F /* ScheduleTableViewCell.swift in Sources */,
+				8779ADBD1E8F1CCE00D77D3E /* FileManagerExtension.swift in Sources */,
 				87FC329A1E821F4C007F1B4A /* MenuItem.swift in Sources */,
 				87FC32981E81FF87007F1B4A /* MoreInfoTableViewController.swift in Sources */,
 				8772FE641E8868700048B2C0 /* DataController.swift in Sources */,
@@ -400,6 +450,7 @@
 				87941A991E8D1CA900218A6C /* ScheduleDateFormatter.swift in Sources */,
 				87FC329E1E824A42007F1B4A /* MoreInfoDetailViewController.swift in Sources */,
 				87C5F7F91E553B3D001D7B09 /* AppDelegate.swift in Sources */,
+				8779ADCA1E8F681D00D77D3E /* EventCatalogTableViewCell.swift in Sources */,
 				87FC32A21E830E6E007F1B4A /* Constants.swift in Sources */,
 				87C431101E8C853C00180374 /* RootContainerViewController.swift in Sources */,
 			);
@@ -554,8 +605,12 @@
 		87C5F8081E553B3D001D7B09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "NCCBF-AppIcon";
 				DEVELOPMENT_TEAM = D433NUFZ5K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "NCCBF-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keitaito.NCCBF-iOS";
@@ -567,8 +622,12 @@
 		87C5F8091E553B3D001D7B09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "NCCBF-AppIcon";
 				DEVELOPMENT_TEAM = D433NUFZ5K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "NCCBF-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keitaito.NCCBF-iOS";

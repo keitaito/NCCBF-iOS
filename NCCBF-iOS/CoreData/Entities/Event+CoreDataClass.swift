@@ -23,17 +23,12 @@ extension Event {
         
         self.init(context: context)
         
+        let details = json["details"] as? String
+        let imageName = json["imagename"] as? String
+        
         guard let id = json["id"] as? Int else {
             context.delete(self)
             throw EventError.initializingError("id is missing.", json)
-        }
-        guard let startAtString = json["startat"] as? String else {
-            context.delete(self)
-            throw EventError.initializingError("startat is missing.", json)
-        }
-        guard let endAtString = json["endat"] as? String else {
-            context.delete(self)
-            throw EventError.initializingError("endat is missing.", json)
         }
         guard let location = json["location"] as? String else {
             context.delete(self)
@@ -43,7 +38,14 @@ extension Event {
             context.delete(self)
             throw EventError.initializingError("name is missing.", json)
         }
-        let details = json["details"] as? String
+        guard let startAtString = json["startat"] as? String else {
+            context.delete(self)
+            throw EventError.initializingError("startat is missing.", json)
+        }
+        guard let endAtString = json["endat"] as? String else {
+            context.delete(self)
+            throw EventError.initializingError("endat is missing.", json)
+        }
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.sss'Z'"
@@ -63,5 +65,6 @@ extension Event {
         self.location = location
         self.name = name
         self.details = details
+        self.imageName = imageName
     }
 }
