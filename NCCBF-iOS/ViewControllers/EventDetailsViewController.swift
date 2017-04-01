@@ -58,7 +58,7 @@ class EventDetailsViewController: UIViewController {
                     // 4. Download image from the server.
                     NCCBF_iOS.debugPrint(.notFoundInCachesDirectory)
                     self?.detailsView.imageView.af_setImage(
-                        withURL: imageConfigurator.imagePathURL,
+                        withURL: imageConfigurator.downloadImageURL,
                         placeholderImage: #imageLiteral(resourceName: "test-image"),
                         imageTransition: .crossDissolve(0.5),
                         runImageTransitionIfCached: false,

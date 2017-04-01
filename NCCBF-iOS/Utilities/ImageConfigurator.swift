@@ -17,6 +17,10 @@ class ImageConfigurator {
         return imagesCachesDirectory.appendingPathComponent(imageName)
     }
     
+    var downloadImageURL: URL {
+        return NCCBF2017EventImageURL.appendingPathComponent(imageName)
+    }
+    
     init(imageName: String) {
         self.imageName = imageName
     }
