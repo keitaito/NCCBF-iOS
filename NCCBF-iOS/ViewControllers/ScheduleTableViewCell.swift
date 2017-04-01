@@ -9,6 +9,7 @@
 import UIKit
 
 class ScheduleTableViewCell: UITableViewCell {
+    class var ReuseIdentifier: String { return "\(type(of: self))" }
     
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!

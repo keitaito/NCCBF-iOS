@@ -17,8 +17,6 @@ class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITa
     var context: NSManagedObjectContext?
     var fetchedResultsController: NSFetchedResultsController<Event>?
     
-    let reuseIdentifier = "ScheduleTableViewCell"
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,9 +46,7 @@ class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? ScheduleTableViewCell else {
-            fatalError("Cell dequeue failed.")
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: ScheduleTableViewCell.ReuseIdentifier, for: indexPath) as! ScheduleTableViewCell
 
         guard let event = fetchedResultsController?.object(at: indexPath) else {
             fatalError("Event object is not found.")
