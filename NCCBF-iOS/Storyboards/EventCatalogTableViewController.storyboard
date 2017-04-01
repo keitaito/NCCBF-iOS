@@ -42,8 +42,6 @@
                             <constraint firstAttribute="trailing" secondItem="kFC-l5-LHV" secondAttribute="trailing" id="Fq8-1N-Vu6"/>
                             <constraint firstItem="kFC-l5-LHV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HYK-mY-rhf"/>
                             <constraint firstItem="kFC-l5-LHV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="T8U-o6-Fvr"/>
-                            <constraint firstAttribute="trailing" secondItem="kFC-l5-LHV" secondAttribute="trailing" id="c2F-EU-Hbb"/>
-                            <constraint firstItem="kFC-l5-LHV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w2K-xf-HkC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8bD-WW-vlC"/>
