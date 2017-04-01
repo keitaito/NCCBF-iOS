@@ -34,48 +34,42 @@ class EventDetailsViewController: UIViewController {
     private func setConfigurationHandler() {
         detailsView.configurationHandler = { [weak self] in
             if let imageName = self?.eventDetails?.imageName {
+                
+                let imageConfigurator = ImageConfigurator(imageName: imageName)
+                
                 // 1. Load image from app bundle.
                 if let appBundleImage = UIImage(named: imageName) {
                     NCCBF_iOS.debugPrint(.foundInAppBundle)
                     self?.detailsView.imageView.image = appBundleImage
                 } else {
+                    
+                    // 2. Check caches directory.
                     NCCBF_iOS.debugPrint(.notFoundInAppBundle)
-                    // Check caches directory.
-                    let imagesCachesDirectory = FileManager.NCCBF2017EventImagesCachesDirectory
-                    let imagePathURL = imagesCachesDirectory.appendingPathComponent(imageName)
-                    if FileManager.default.fileExists(atPath: imagePathURL.path) {
-                        do {
-                            let imageData = try Data(contentsOf: imagePathURL)
-                            guard let image = UIImage(data: imageData) else {
-                                fatalError("image is nil.")
-                            }
-                            NCCBF_iOS.debugPrint(.foundInCachesDirectory)
+                    if FileManager.default.fileExists(atPath: imageConfigurator.imagePathURL.path) {
+                        
+                        // 3. Display image in caches directory.
+                        NCCBF_iOS.debugPrint(.foundInCachesDirectory)
+                        if let image = imageConfigurator.loadImage() {
                             self?.detailsView.imageView.image = image
                             return
-                        } catch {
-                            fatalError(error.localizedDescription)
                         }
                     }
                     
+                    // 4. Download image from the server.
                     NCCBF_iOS.debugPrint(.notFoundInCachesDirectory)
-                    // 2. No image in app bundle. Downloa image from the server.
-                    let imageURL = NCCBF2017EventImageURL.appendingPathComponent(imageName)
-                    
-                    self?.detailsView.imageView.af_setImage(withURL: imageURL, placeholderImage: #imageLiteral(resourceName: "test-image"), filter: nil, progress: nil, progressQueue: DispatchQueue.main, imageTransition: .crossDissolve(1.0), runImageTransitionIfCached: false, completion: { (dataResponse) in
-                        guard let data = dataResponse.data else { return }
-                        
-                        if !FileManager.default.fileExists(atPath: imagePathURL.path) {
-                            NCCBF_iOS.debugPrint(.saveDownloadedImageInCachesDirectory)
-                            let dispatchQueue = DispatchQueue(label: "saving_image_nccbf")
-                            dispatchQueue.async {
-                                do {
-                                    try data.write(to: imagePathURL)
-                                    NCCBF_iOS.debugPrint(.writingImageSucceeded)
-                                } catch {
-                                    fatalError(error.localizedDescription)
-                                }
+                    self?.detailsView.imageView.af_setImage(
+                        withURL: imageConfigurator.imagePathURL,
+                        placeholderImage: #imageLiteral(resourceName: "test-image"),
+                        imageTransition: .crossDissolve(0.5),
+                        runImageTransitionIfCached: false,
+                        completion: { (dataResponse) in
+                            guard let data = dataResponse.data else { return }
+                            
+                            // 5. Save downloaded image to caches directory.
+                            if !FileManager.default.fileExists(atPath: imageConfigurator.imagePathURL.path) {
+                                NCCBF_iOS.debugPrint(.saveDownloadedImageInCachesDirectory)
+                                imageConfigurator.saveImageToCachesDirectory(imageData: data)
                             }
-                        }
                     })
                 }
                 
