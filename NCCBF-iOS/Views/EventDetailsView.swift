@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class EventDetailsView: UIView {
     
@@ -24,7 +25,56 @@ class EventDetailsView: UIView {
         
         detailsLabel.text = eventDetails.details
 //        descriptionLabel.text = testText
-        imageView.image = #imageLiteral(resourceName: "placeholder")
+        
+        if let imageName = eventDetails.imageName {
+            // 1. Load image from app bundle.
+            if let appBundleImage = UIImage(named: imageName) {
+                NCCBF_iOS.debugPrint(.foundInAppBundle)
+                imageView.image = appBundleImage
+            } else {
+                NCCBF_iOS.debugPrint(.notFoundInAppBundle)
+                // Check caches directory.
+                let imagesCachesDirectory = FileManager.NCCBF2017EventImagesCachesDirectory
+                let imagePathURL = imagesCachesDirectory.appendingPathComponent(imageName)
+                if FileManager.default.fileExists(atPath: imagePathURL.path) {
+                    do {
+                        let imageData = try Data(contentsOf: imagePathURL)
+                        guard let image = UIImage(data: imageData) else {
+                            fatalError("image is nil.")
+                        }
+                        NCCBF_iOS.debugPrint(.foundInCachesDirectory)
+                        imageView.image = image
+                        return
+                    } catch {
+                        fatalError(error.localizedDescription)
+                    }
+                }
+                
+                NCCBF_iOS.debugPrint(.notFoundInCachesDirectory)
+                // 2. No image in app bundle. Downloa image from the server.
+                let imageURL = NCCBF2017EventImageURL.appendingPathComponent(imageName)
+                
+                imageView.af_setImage(withURL: imageURL, placeholderImage: #imageLiteral(resourceName: "test-image"), filter: nil, progress: nil, progressQueue: DispatchQueue.main, imageTransition: .crossDissolve(1.0), runImageTransitionIfCached: false, completion: { (dataResponse) in
+                    guard let data = dataResponse.data else { return }
+                    
+                    if !FileManager.default.fileExists(atPath: imagePathURL.path) {
+                        NCCBF_iOS.debugPrint(.saveDownloadedImageInCachesDirectory)
+                        let dispatchQueue = DispatchQueue(label: "saving_image_nccbf")
+                        dispatchQueue.async {
+                            do {
+                                try data.write(to: imagePathURL)
+                                NCCBF_iOS.debugPrint(.writingImageSucceeded)
+                            } catch {
+                                fatalError(error.localizedDescription)
+                            }
+                        }
+                    }
+                })
+            }
+            
+        } else {
+            imageView.image = #imageLiteral(resourceName: "placeholder")
+        }
     }
 }
 
