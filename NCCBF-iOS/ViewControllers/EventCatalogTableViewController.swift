@@ -9,39 +9,28 @@
 import UIKit
 import CoreData
 
-class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate {
     
     // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Properties
     var context: NSManagedObjectContext?
-    var events = [Event]()
-    let sampleDataName = "SFCherryBlossomSampleData2"
-    let sampleDataType = "json"
+    var fetchedResultsController: NSFetchedResultsController<Event>?
     
     // MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        initializeFetchedResultsController()
         setupTableView()
         setupUI()
-//        loadJSONFileInternally()
         
-        guard let context = context else { return }
-        
-        let fetchRequest: NSFetchRequest<Event> = Event.fetchRequest()
         do {
-            let fetchResult = try context.fetch(fetchRequest)
-            print(fetchResult.count)
-            print("fetchRequest succeeded.")
-            
-            events = fetchResult
-            
+            try fetchedResultsController?.performFetch()
         } catch {
-            print(error)
-            fatalError("fetchRequest failed.")
+            fatalError(error.localizedDescription)
         }
     }
     
@@ -55,19 +44,25 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
     
     // MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return events.count
+        return fetchedResultsController?.sections?[section].numberOfObjects ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let event = events[indexPath.row]
+        guard let event = fetchedResultsController?.object(at: indexPath) else {
+            fatalError("Event object is not found.")
+        }
+        
         cell.textLabel?.text = event.name
+        
         return cell
     }
     
     // MARK: - UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let event = events[indexPath.row]
+        guard let event = fetchedResultsController?.object(at: indexPath) else {
+            fatalError("Event object is not found.")
+        }
         let eventDetails = EventDetailsViewModel(event: event)
         let storyboard = UIStoryboard(name: "EventDetailsViewController", bundle: Bundle.main)
         if let vc = storyboard.instantiateInitialViewController() as? EventDetailsViewController {
@@ -87,16 +82,14 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
         title = "Events"
     }
     
-    private func loadJSONFileInternally() {
-        do {
-            let url = try ResourceLoader.load(resource: sampleDataName, ofType: sampleDataType)
-            let jsonData = try Data(contentsOf: url)
-            let jsonObject = try JSONSerialization.jsonObject(with: jsonData)
-            guard let context = context else { fatalError("context is nil.") }
-            events = try JSONParser.parse(json: jsonObject, context: context)
-        } catch {
-            print(error)
-        }
+    private func initializeFetchedResultsController() {
+        guard let context = context else { fatalError("context is nil.") }
+        let request: NSFetchRequest<Event> = Event.fetchRequest()
+        let idSort = NSSortDescriptor(key: "id", ascending: true)
+        request.sortDescriptors = [idSort]
+        
+        fetchedResultsController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        fetchedResultsController?.delegate = self
     }
 }
 
