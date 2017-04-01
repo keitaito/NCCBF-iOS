@@ -28,7 +28,7 @@ class RootContainerViewController: UIViewController {
         }
         
         // Fetch event data from the server.
-        Networking.downloadJSON(from: NCCBFEventScheduleData2017URL) { json in
+        Networking.downloadJSON(from: NCCBF2017EventScheduleDataURL) { json in
             do {
                 _ = try JSONParser.parse(json: json, context: context)
                 
