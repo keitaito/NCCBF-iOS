@@ -15,6 +15,8 @@ class RootContainerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupCacheDownloadedImageDirectory()
 
         // Set up CoreData.
         let context = dataController.persistentContainer.viewContext
@@ -67,5 +69,15 @@ class RootContainerViewController: UIViewController {
         let context = dataController.persistentContainer.viewContext
         tc.eventCatalogTableViewController.context = context
         tc.scheduleTableViewController.context = context
+    }
+    
+    private func setupCacheDownloadedImageDirectory() {
+        if !FileManager.default.fileExists(atPath: FileManager.NCCBF2017EventImagesCachesDirectory.path) {
+            do {
+                try FileManager.default.createDirectory(at: FileManager.NCCBF2017EventImagesCachesDirectory, withIntermediateDirectories: false, attributes: nil)
+            } catch {
+                print(error); fatalError(error.localizedDescription)
+            }
+        }
     }
 }
