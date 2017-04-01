@@ -69,6 +69,7 @@ class RootContainerViewController: UIViewController {
         let context = dataController.persistentContainer.viewContext
         tc.eventCatalogTableViewController.context = context
         tc.scheduleTableViewController.context = context
+        tc.mapViewController.context = context
     }
     
     private func setupCacheDownloadedImageDirectory() {

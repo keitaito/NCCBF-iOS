@@ -8,22 +8,36 @@
 
 import UIKit
 import MapKit
+import CoreData
 
-class MapViewController: UIViewController, MKMapViewDelegate {
+class MapViewController: UIViewController, MKMapViewDelegate, NSFetchedResultsControllerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     
-    var mapAnnotations = [MKAnnotation]()
+    var context: NSManagedObjectContext?
+    var fetchedResultsController: NSFetchedResultsController<Event>?
+    
+    var mapAnnotations = [EventLocationAnnotation]()
     
     let reuseIdentifier = "resueIdentifier"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        initializeFetchedResultsController()
+        do {
+            try fetchedResultsController?.performFetch()
+        } catch {
+            fatalError(error.localizedDescription)
+        }
+        
+        guard let sections = fetchedResultsController?.sections else { fatalError("sections is nil.") }
+        mapAnnotations = EventLocationAnnotationFactory.createAnnotations(with: sections)
+        
         setupUI()
         setupMapView()
         goToDefaultLocation()
-        testAnnotations()
+//        testAnnotations()
     }
     
     // MARK: - MKMapViewDelegate
@@ -49,6 +63,17 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     }
     
     // MARK: - Private Methods
+    
+    private func initializeFetchedResultsController() {
+        guard let context = context else { fatalError("context is nil.") }
+        let request: NSFetchRequest<Event> = Event.fetchRequest()
+        let idSort = NSSortDescriptor(key: "id", ascending: true)
+        request.sortDescriptors = [idSort]
+        
+        fetchedResultsController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: "location", cacheName: nil)
+        fetchedResultsController?.delegate = self
+    }
+    
     private func setupUI() {
         title = "Map"
     }
@@ -60,11 +85,11 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         mapView.setRegion(MKCoordinateRegion(center: japantownCoordinate, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)), animated: true)
     }
     
-    private func testAnnotations() {
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = japantownCoordinate
-        annotation.title = "Japantown"
-        mapAnnotations.append(annotation)
-        mapView.addAnnotations(mapAnnotations)
-    }
+//    private func testAnnotations() {
+//        let annotation = MKPointAnnotation()
+//        annotation.coordinate = japantownCoordinate
+//        annotation.title = "Japantown"
+//        mapAnnotations.append(annotation)
+//        mapView.addAnnotations(mapAnnotations)
+//    }
 }

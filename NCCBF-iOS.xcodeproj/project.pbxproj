@@ -33,6 +33,8 @@
 		8779ADD01E8F8E1300D77D3E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8779ADCF1E8F8E1300D77D3E /* MapKit.framework */; };
 		8779ADD21E8F990300D77D3E /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8779ADD11E8F990300D77D3E /* MapViewController.storyboard */; };
 		8779ADD41E8F995500D77D3E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779ADD31E8F995500D77D3E /* MapViewController.swift */; };
+		8779ADD61E9054EB00D77D3E /* EventLocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779ADD51E9054EB00D77D3E /* EventLocationAnnotation.swift */; };
+		8779ADD81E905AB800D77D3E /* EventLocationAnnotationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779ADD71E905AB800D77D3E /* EventLocationAnnotationFactory.swift */; };
 		87941A951E8D0E4800218A6C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A941E8D0E4800218A6C /* DateExtension.swift */; };
 		87941A971E8D168900218A6C /* NSPredicateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A961E8D168900218A6C /* NSPredicateExtension.swift */; };
 		87941A991E8D1CA900218A6C /* ScheduleDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */; };
@@ -94,6 +96,8 @@
 		8779ADCF1E8F8E1300D77D3E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8779ADD11E8F990300D77D3E /* MapViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MapViewController.storyboard; path = Storyboards/MapViewController.storyboard; sourceTree = "<group>"; };
 		8779ADD31E8F995500D77D3E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ViewControllers/MapViewController.swift; sourceTree = "<group>"; };
+		8779ADD51E9054EB00D77D3E /* EventLocationAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventLocationAnnotation.swift; path = Models/EventLocationAnnotation.swift; sourceTree = "<group>"; };
+		8779ADD71E905AB800D77D3E /* EventLocationAnnotationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventLocationAnnotationFactory.swift; path = Utilities/EventLocationAnnotationFactory.swift; sourceTree = "<group>"; };
 		87941A941E8D0E4800218A6C /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = Extensions/DateExtension.swift; sourceTree = "<group>"; };
 		87941A961E8D168900218A6C /* NSPredicateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSPredicateExtension.swift; path = Extensions/NSPredicateExtension.swift; sourceTree = "<group>"; };
 		87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleDateFormatter.swift; path = Utilities/ScheduleDateFormatter.swift; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 				87FC32991E821F4C007F1B4A /* MenuItem.swift */,
 				87D0528E1E8DF747009FD35F /* ScheduleDate.swift */,
 				8779ADCD1E8F8C3D00D77D3E /* EventLocation.swift */,
+				8779ADD51E9054EB00D77D3E /* EventLocationAnnotation.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 				87FC329F1E830E19007F1B4A /* Networking.swift */,
 				87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */,
 				8779ADC11E8F4DEE00D77D3E /* ImageConfigurator.swift */,
+				8779ADD71E905AB800D77D3E /* EventLocationAnnotationFactory.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -475,7 +481,9 @@
 				87941A991E8D1CA900218A6C /* ScheduleDateFormatter.swift in Sources */,
 				87FC329E1E824A42007F1B4A /* MoreInfoDetailViewController.swift in Sources */,
 				87C5F7F91E553B3D001D7B09 /* AppDelegate.swift in Sources */,
+				8779ADD61E9054EB00D77D3E /* EventLocationAnnotation.swift in Sources */,
 				8779ADCA1E8F681D00D77D3E /* EventCatalogTableViewCell.swift in Sources */,
+				8779ADD81E905AB800D77D3E /* EventLocationAnnotationFactory.swift in Sources */,
 				87FC32A21E830E6E007F1B4A /* Constants.swift in Sources */,
 				87C431101E8C853C00180374 /* RootContainerViewController.swift in Sources */,
 			);
