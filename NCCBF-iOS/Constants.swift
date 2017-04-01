@@ -24,3 +24,6 @@ enum ImageHandlingMessage: String {
     case writingImageSucceeded = "Writing the image succeeded."
 }
 
+func debugPrint(_ imageHandlingMessage: ImageHandlingMessage) {
+    debugPrint(imageHandlingMessage.rawValue)
+}
