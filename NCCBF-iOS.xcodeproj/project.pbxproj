@@ -29,6 +29,8 @@
 		8779ADCA1E8F681D00D77D3E /* EventCatalogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779ADC91E8F681D00D77D3E /* EventCatalogTableViewCell.swift */; };
 		8779ADCB1E8F861C00D77D3E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8779ADB51E8F0FFF00D77D3E /* Alamofire.framework */; };
 		8779ADCC1E8F861C00D77D3E /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8779ADB61E8F0FFF00D77D3E /* AlamofireImage.framework */; };
+		8779ADCE1E8F8C3D00D77D3E /* EventLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779ADCD1E8F8C3D00D77D3E /* EventLocation.swift */; };
+		8779ADD01E8F8E1300D77D3E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8779ADCF1E8F8E1300D77D3E /* MapKit.framework */; };
 		87941A951E8D0E4800218A6C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A941E8D0E4800218A6C /* DateExtension.swift */; };
 		87941A971E8D168900218A6C /* NSPredicateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A961E8D168900218A6C /* NSPredicateExtension.swift */; };
 		87941A991E8D1CA900218A6C /* ScheduleDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */; };
@@ -86,6 +88,8 @@
 		8779ADC11E8F4DEE00D77D3E /* ImageConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageConfigurator.swift; path = Utilities/ImageConfigurator.swift; sourceTree = "<group>"; };
 		8779ADC51E8F657800D77D3E /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		8779ADC91E8F681D00D77D3E /* EventCatalogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventCatalogTableViewCell.swift; path = ViewControllers/EventCatalogTableViewCell.swift; sourceTree = "<group>"; };
+		8779ADCD1E8F8C3D00D77D3E /* EventLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventLocation.swift; path = Models/EventLocation.swift; sourceTree = "<group>"; };
+		8779ADCF1E8F8E1300D77D3E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		87941A941E8D0E4800218A6C /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = Extensions/DateExtension.swift; sourceTree = "<group>"; };
 		87941A961E8D168900218A6C /* NSPredicateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSPredicateExtension.swift; path = Extensions/NSPredicateExtension.swift; sourceTree = "<group>"; };
 		87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleDateFormatter.swift; path = Utilities/ScheduleDateFormatter.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8779ADD01E8F8E1300D77D3E /* MapKit.framework in Frameworks */,
 				8779ADB91E8F132000D77D3E /* Alamofire.framework in Frameworks */,
 				8779ADBA1E8F132000D77D3E /* AlamofireImage.framework in Frameworks */,
 			);
@@ -168,6 +173,7 @@
 				8756D4AE1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift */,
 				87FC32991E821F4C007F1B4A /* MenuItem.swift */,
 				87D0528E1E8DF747009FD35F /* ScheduleDate.swift */,
+				8779ADCD1E8F8C3D00D77D3E /* EventLocation.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -247,6 +253,7 @@
 		8779ADB41E8F0FFF00D77D3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8779ADCF1E8F8E1300D77D3E /* MapKit.framework */,
 				8779ADB51E8F0FFF00D77D3E /* Alamofire.framework */,
 				8779ADB61E8F0FFF00D77D3E /* AlamofireImage.framework */,
 			);
@@ -349,6 +356,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = D433NUFZ5K;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -435,6 +447,7 @@
 				8772FE621E8868540048B2C0 /* NCCBF-iOS.xcdatamodeld in Sources */,
 				8779ADC21E8F4DEE00D77D3E /* ImageConfigurator.swift in Sources */,
 				8779ADC61E8F657800D77D3E /* UIImageViewExtension.swift in Sources */,
+				8779ADCE1E8F8C3D00D77D3E /* EventLocation.swift in Sources */,
 				875975341E8C893D0018233F /* NCCBFTabBarController.swift in Sources */,
 				873F0A041E63791000BECCD2 /* EventDetailsViewController.swift in Sources */,
 				8733C5A51E5A220B00140899 /* JSON.swift in Sources */,
