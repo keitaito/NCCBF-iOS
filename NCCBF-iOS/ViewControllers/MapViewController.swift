@@ -13,12 +13,39 @@ class MapViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     
+    var mapAnnotations = [MKAnnotation]()
+    
+    let reuseIdentifier = "resueIdentifier"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupUI()
         setupMapView()
         goToDefaultLocation()
+        testAnnotations()
+    }
+    
+    // MARK: - MKMapViewDelegate
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        guard let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier) else {
+            let pinAnnotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseIdentifier)
+            let rightButton = UIButton(type: .detailDisclosure)
+            pinAnnotationView.rightCalloutAccessoryView = rightButton
+            
+            pinAnnotationView.canShowCallout = true
+            pinAnnotationView.animatesDrop = true
+            pinAnnotationView.pinTintColor = .purple
+            
+            return pinAnnotationView
+        }
+        return annotationView
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        guard let annotation = view.annotation else { return }
+        print(annotation)
     }
     
     // MARK: - Private Methods
@@ -31,5 +58,13 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     private func goToDefaultLocation() {
         mapView.setRegion(MKCoordinateRegion(center: japantownCoordinate, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)), animated: true)
+    }
+    
+    private func testAnnotations() {
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = japantownCoordinate
+        annotation.title = "Japantown"
+        mapAnnotations.append(annotation)
+        mapView.addAnnotations(mapAnnotations)
     }
 }
