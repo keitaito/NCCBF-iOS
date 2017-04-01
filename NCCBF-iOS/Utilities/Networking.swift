@@ -26,5 +26,5 @@ class Networking {
         }
         task.resume()
     }
-    }
 }
+
