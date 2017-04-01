@@ -48,13 +48,11 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: EventCatalogTableViewCell.ReuseIdentifier, for: indexPath) as! EventCatalogTableViewCell
         guard let event = fetchedResultsController?.object(at: indexPath) else {
             fatalError("Event object is not found.")
         }
-        
-        cell.textLabel?.text = event.name
-        
+        cell.configure(with: event)
         return cell
     }
     
