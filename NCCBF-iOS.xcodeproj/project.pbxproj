@@ -50,6 +50,7 @@
 		87D054F51E90787000E86247 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D054F41E90787000E86247 /* UIColorExtension.swift */; };
 		87D054F71E9085FC00E86247 /* EventLocationCoordinateList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87D054F61E9085FC00E86247 /* EventLocationCoordinateList.plist */; };
 		87D054FC1E90AE6700E86247 /* NCCBFNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D054FB1E90AE6700E86247 /* NCCBFNavigationController.swift */; };
+		87D054FE1E90B44300E86247 /* UIActivityIndicatorViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D054FD1E90B44300E86247 /* UIActivityIndicatorViewExtension.swift */; };
 		87FC32941E81F54B007F1B4A /* SFCherryBlossomSampleData2.json in Resources */ = {isa = PBXBuildFile; fileRef = 87FC32931E81F54B007F1B4A /* SFCherryBlossomSampleData2.json */; };
 		87FC32961E81FF04007F1B4A /* MoreInfoTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FC32951E81FF04007F1B4A /* MoreInfoTableViewController.storyboard */; };
 		87FC32981E81FF87007F1B4A /* MoreInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC32971E81FF87007F1B4A /* MoreInfoTableViewController.swift */; };
@@ -119,6 +120,7 @@
 		87D054F41E90787000E86247 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Extensions/UIColorExtension.swift; sourceTree = "<group>"; };
 		87D054F61E9085FC00E86247 /* EventLocationCoordinateList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = EventLocationCoordinateList.plist; path = Resources/EventLocationCoordinateList.plist; sourceTree = "<group>"; };
 		87D054FB1E90AE6700E86247 /* NCCBFNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NCCBFNavigationController.swift; path = ViewControllers/NCCBFNavigationController.swift; sourceTree = "<group>"; };
+		87D054FD1E90B44300E86247 /* UIActivityIndicatorViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIActivityIndicatorViewExtension.swift; path = Extensions/UIActivityIndicatorViewExtension.swift; sourceTree = "<group>"; };
 		87FC32931E81F54B007F1B4A /* SFCherryBlossomSampleData2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SFCherryBlossomSampleData2.json; path = Resources/SFCherryBlossomSampleData2.json; sourceTree = "<group>"; };
 		87FC32951E81FF04007F1B4A /* MoreInfoTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MoreInfoTableViewController.storyboard; path = Storyboards/MoreInfoTableViewController.storyboard; sourceTree = "<group>"; };
 		87FC32971E81FF87007F1B4A /* MoreInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreInfoTableViewController.swift; path = ViewControllers/MoreInfoTableViewController.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				8779ADBC1E8F1CCE00D77D3E /* FileManagerExtension.swift */,
 				8779ADC51E8F657800D77D3E /* UIImageViewExtension.swift */,
 				87D054F41E90787000E86247 /* UIColorExtension.swift */,
+				87D054FD1E90B44300E86247 /* UIActivityIndicatorViewExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				875975361E8C899B0018233F /* UIStoryboardExtension.swift in Sources */,
 				8779ADD41E8F995500D77D3E /* MapViewController.swift in Sources */,
 				873F0A061E63891200BECCD2 /* EventDetailsView.swift in Sources */,
+				87D054FE1E90B44300E86247 /* UIActivityIndicatorViewExtension.swift in Sources */,
 				87A703301E887BEF00CDF31D /* Event+CoreDataProperties.swift in Sources */,
 				87D054F51E90787000E86247 /* UIColorExtension.swift in Sources */,
 				8756D4AF1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift in Sources */,
