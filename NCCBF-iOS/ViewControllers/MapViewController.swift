@@ -72,7 +72,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, NSFetchedResultsCo
     private func initializeFetchedResultsController() {
         guard let context = context else { fatalError("context is nil.") }
         let request: NSFetchRequest<Event> = Event.fetchRequest()
-        let idSort = NSSortDescriptor(key: "id", ascending: true)
+        let idSort = NSSortDescriptor(key: "location", ascending: true)
         request.sortDescriptors = [idSort]
         
         fetchedResultsController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: "location", cacheName: nil)
