@@ -87,6 +87,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, NSFetchedResultsCo
     }
     
     private func goToDefaultLocation() {
-        mapView.setRegion(MKCoordinateRegion(center: japantownCoordinate, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)), animated: true)
+        mapView.setRegion(MKCoordinateRegion(center: defaultLocationCoordinate, span: MKCoordinateSpan(latitudeDelta: 0.008  , longitudeDelta: 0.008)), animated: true)
     }
 }

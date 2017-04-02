@@ -9,6 +9,7 @@
 import Foundation
 import MapKit
 
+let defaultLocationCoordinate = CLLocationCoordinate2D(latitude: 37.785585, longitude: -122.429826)
 let japantownCoordinate = CLLocationCoordinate2D(latitude: 37.785939, longitude: -122.430485)
 
 enum EventLocation {
