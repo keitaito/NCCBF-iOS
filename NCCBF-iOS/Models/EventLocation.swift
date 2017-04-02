@@ -40,49 +40,67 @@ enum EventLocation {
 
 extension EventLocation {
     init(locationName: String) {
+        
+        guard let path = Bundle.main.path(forResource: "EventLocationCoordinateList", ofType: "plist") else {
+            fatalError("Reading plist failed.")
+        }
+        guard let coordinateDictionary = NSDictionary(contentsOfFile: path) as? [String: Any] else {
+            fatalError("coordinateDictionary instantiation failed.")
+        }
+        
+        var coordinate = japantownCoordinate
+        if let location = coordinateDictionary[locationName] as? [String: Double],
+            let latitude = location["latitude"],
+            let longitude = location["longitude"] {
+            coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        }
+        
+        
+        
+        
         switch locationName {
         case "Hokka Nichibei Kai":
-            self = .HokkaNichibeiKai(japantownCoordinate, locationName)
+            self = .HokkaNichibeiKai(coordinate, locationName)
         case "Hotel Kabuki Sakura Room":
-            self = .HotelKabukiSakuraRoom(japantownCoordinate, locationName)
+            self = .HotelKabukiSakuraRoom(coordinate, locationName)
         case "JCCCNC":
-            self = .JCCCNC(japantownCoordinate, locationName)
+            self = .JCCCNC(coordinate, locationName)
         case "JCCCNC - Classroom One":
-            self = .JCCCNC_ClassroomOne(japantownCoordinate, locationName)
+            self = .JCCCNC_ClassroomOne(coordinate, locationName)
         case "JCCCNC - Classroom Two":
-            self = .JCCCNC_ClassroomTwo(japantownCoordinate, locationName)
+            self = .JCCCNC_ClassroomTwo(coordinate, locationName)
         case "JCCCNC - Gym":
-            self = .JCCCNC_Gym(japantownCoordinate, locationName)
+            self = .JCCCNC_Gym(coordinate, locationName)
         case "JCCCNC - Issei Memorial Hall":
-            self = .JCCCNC_IsseiMemorialHall(japantownCoordinate, locationName)
+            self = .JCCCNC_IsseiMemorialHall(coordinate, locationName)
         case "Kabuki Cinemas":
-            self = .KabukiCinemas(japantownCoordinate, locationName)
+            self = .KabukiCinemas(coordinate, locationName)
         case "Kinokuniya Bookstore":
-            self = .KinokuniyaBookstore(japantownCoordinate, locationName)
+            self = .KinokuniyaBookstore(coordinate, locationName)
         case "Konko Church":
-            self = .KonkoChurch(japantownCoordinate, locationName)
+            self = .KonkoChurch(coordinate, locationName)
         case "National JACL Building":
-            self = .NationalJACLBuilding(japantownCoordinate, locationName)
+            self = .NationalJACLBuilding(coordinate, locationName)
         case "National Japanese American Historical Society":
-            self = .NationalJapaneseAmericanHistoricalSociety(japantownCoordinate, locationName)
+            self = .NationalJapaneseAmericanHistoricalSociety(coordinate, locationName)
         case "New People":
-            self = .NewPeople(japantownCoordinate, locationName)
+            self = .NewPeople(coordinate, locationName)
         case "Peace Plaza Stage":
-            self = .PeacePlazaStage(japantownCoordinate, locationName)
+            self = .PeacePlazaStage(coordinate, locationName)
         case "Post & Buchanan":
-            self = .PostAndBuchanan(japantownCoordinate, locationName)
+            self = .PostAndBuchanan(coordinate, locationName)
         case "Sakura 360":
-            self = .Sakura360(japantownCoordinate, locationName)
+            self = .Sakura360(coordinate, locationName)
         case "Sakura 360 Stage":
-            self = .Sakura360Stage(japantownCoordinate, locationName)
+            self = .Sakura360Stage(coordinate, locationName)
         case "Sequoias Auditorium":
-            self = .SequoiasAuditorium(japantownCoordinate, locationName)
+            self = .SequoiasAuditorium(coordinate, locationName)
         case "Tateuchi Auditorium":
-            self = .TateuchiAuditorium(japantownCoordinate, locationName)
+            self = .TateuchiAuditorium(coordinate, locationName)
         case "Union Bank Community Room":
-            self = .UnionBankCommunityRoom(japantownCoordinate, locationName)
+            self = .UnionBankCommunityRoom(coordinate, locationName)
         case "Webster Street Stage":
-            self = .WebsterStreetStage(japantownCoordinate, locationName)
+            self = .WebsterStreetStage(coordinate, locationName)
             
         default:
             self = .unknown

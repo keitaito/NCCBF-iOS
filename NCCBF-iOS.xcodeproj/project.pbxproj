@@ -48,6 +48,7 @@
 		87D0528F1E8DF747009FD35F /* ScheduleDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0528E1E8DF747009FD35F /* ScheduleDate.swift */; };
 		87D052911E8DFFF5009FD35F /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D052901E8DFFF5009FD35F /* ScheduleTableViewCell.swift */; };
 		87D054F51E90787000E86247 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D054F41E90787000E86247 /* UIColorExtension.swift */; };
+		87D054F71E9085FC00E86247 /* EventLocationCoordinateList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87D054F61E9085FC00E86247 /* EventLocationCoordinateList.plist */; };
 		87FC32941E81F54B007F1B4A /* SFCherryBlossomSampleData2.json in Resources */ = {isa = PBXBuildFile; fileRef = 87FC32931E81F54B007F1B4A /* SFCherryBlossomSampleData2.json */; };
 		87FC32961E81FF04007F1B4A /* MoreInfoTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FC32951E81FF04007F1B4A /* MoreInfoTableViewController.storyboard */; };
 		87FC32981E81FF87007F1B4A /* MoreInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC32971E81FF87007F1B4A /* MoreInfoTableViewController.swift */; };
@@ -115,6 +116,7 @@
 		87D0528E1E8DF747009FD35F /* ScheduleDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleDate.swift; path = Models/ScheduleDate.swift; sourceTree = "<group>"; };
 		87D052901E8DFFF5009FD35F /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleTableViewCell.swift; path = ViewControllers/ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		87D054F41E90787000E86247 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Extensions/UIColorExtension.swift; sourceTree = "<group>"; };
+		87D054F61E9085FC00E86247 /* EventLocationCoordinateList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = EventLocationCoordinateList.plist; path = Resources/EventLocationCoordinateList.plist; sourceTree = "<group>"; };
 		87FC32931E81F54B007F1B4A /* SFCherryBlossomSampleData2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SFCherryBlossomSampleData2.json; path = Resources/SFCherryBlossomSampleData2.json; sourceTree = "<group>"; };
 		87FC32951E81FF04007F1B4A /* MoreInfoTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MoreInfoTableViewController.storyboard; path = Storyboards/MoreInfoTableViewController.storyboard; sourceTree = "<group>"; };
 		87FC32971E81FF87007F1B4A /* MoreInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreInfoTableViewController.swift; path = ViewControllers/MoreInfoTableViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				87C5F8041E553B3D001D7B09 /* Info.plist */,
 				8733C5891E5A1B9600140899 /* SFCherryBlossomSampleData.json */,
 				87FC32931E81F54B007F1B4A /* SFCherryBlossomSampleData2.json */,
+				87D054F61E9085FC00E86247 /* EventLocationCoordinateList.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				87FC32A41E83176C007F1B4A /* ScheduleTableViewController.storyboard in Resources */,
 				87FC32961E81FF04007F1B4A /* MoreInfoTableViewController.storyboard in Resources */,
 				87C5F8001E553B3D001D7B09 /* Assets.xcassets in Resources */,
+				87D054F71E9085FC00E86247 /* EventLocationCoordinateList.plist in Resources */,
 				87FC329C1E824887007F1B4A /* MoreInfoDetailViewController.storyboard in Resources */,
 				8733C58A1E5A1B9600140899 /* SFCherryBlossomSampleData.json in Resources */,
 				8756D9621E81101B00C0CFAC /* NCCBFTabBarController.storyboard in Resources */,
