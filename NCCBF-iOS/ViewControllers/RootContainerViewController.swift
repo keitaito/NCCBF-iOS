@@ -29,6 +29,12 @@ class RootContainerViewController: UIViewController {
             return
         }
         
+        let spinner = UIActivityIndicatorView.largeSpinner
+        spinner.center = view.center
+        view.addSubview(spinner)
+        spinner.startAnimating()
+        
+        
         // Fetch event data from the server.
         Networking.downloadJSON(from: NCCBF2017EventScheduleDataURL) { json in
             do {
@@ -41,6 +47,8 @@ class RootContainerViewController: UIViewController {
                 UserDefaults.standard.set(true, forKey: launchedBefore)
                 
                 DispatchQueue.main.async {
+                    spinner.stopAnimating()
+                    spinner.removeFromSuperview()
                     self.setupChildVC()
                 }
                 
