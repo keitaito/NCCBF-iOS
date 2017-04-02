@@ -20,9 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
         
-        // Set status bar text color to white.
-        UIApplication.shared.statusBarStyle = .lightContent
-        
         // Instantiate the initial VC.
         window?.rootViewController = RootContainerViewController()
         
