@@ -17,8 +17,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, NSFetchedResultsCo
     var context: NSManagedObjectContext?
     var fetchedResultsController: NSFetchedResultsController<Event>?
     
-    var mapAnnotations = [EventLocationAnnotation]()
-    
     let reuseIdentifier = "resueIdentifier"
     
     override func viewDidLoad() {
@@ -32,12 +30,11 @@ class MapViewController: UIViewController, MKMapViewDelegate, NSFetchedResultsCo
         }
         
         guard let sections = fetchedResultsController?.sections else { fatalError("sections is nil.") }
-        mapAnnotations = EventLocationAnnotationFactory.createAnnotations(with: sections)
+        mapView.addAnnotations(EventLocationAnnotationFactory.createAnnotations(with: sections))
         
         setupUI()
         setupMapView()
         goToDefaultLocation()
-//        testAnnotations()
     }
     
     // MARK: - MKMapViewDelegate
@@ -58,8 +55,16 @@ class MapViewController: UIViewController, MKMapViewDelegate, NSFetchedResultsCo
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        guard let annotation = view.annotation else { return }
-        print(annotation)
+        guard let annotation = view.annotation as? EventLocationAnnotation else { return }
+        showTableView(with: annotation)
+    }
+    
+    // MARK: - Action Methods
+    
+    private func showTableView(with annotation: EventLocationAnnotation) {
+        let eventListVC = EventListViewController(events: annotation.events, tableViewStyle: .grouped)
+        eventListVC.title = annotation.title
+        navigationController?.pushViewController(eventListVC, animated: true)
     }
     
     // MARK: - Private Methods
@@ -84,12 +89,4 @@ class MapViewController: UIViewController, MKMapViewDelegate, NSFetchedResultsCo
     private func goToDefaultLocation() {
         mapView.setRegion(MKCoordinateRegion(center: japantownCoordinate, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)), animated: true)
     }
-    
-//    private func testAnnotations() {
-//        let annotation = MKPointAnnotation()
-//        annotation.coordinate = japantownCoordinate
-//        annotation.title = "Japantown"
-//        mapAnnotations.append(annotation)
-//        mapView.addAnnotations(mapAnnotations)
-//    }
 }
