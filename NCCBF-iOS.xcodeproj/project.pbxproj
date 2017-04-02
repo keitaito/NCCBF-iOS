@@ -27,6 +27,15 @@
 		8779ADC21E8F4DEE00D77D3E /* ImageConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779ADC11E8F4DEE00D77D3E /* ImageConfigurator.swift */; };
 		8779ADC61E8F657800D77D3E /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779ADC51E8F657800D77D3E /* UIImageViewExtension.swift */; };
 		8779ADCA1E8F681D00D77D3E /* EventCatalogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779ADC91E8F681D00D77D3E /* EventCatalogTableViewCell.swift */; };
+		8779ADCB1E8F861C00D77D3E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8779ADB51E8F0FFF00D77D3E /* Alamofire.framework */; };
+		8779ADCC1E8F861C00D77D3E /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8779ADB61E8F0FFF00D77D3E /* AlamofireImage.framework */; };
+		8779ADCE1E8F8C3D00D77D3E /* EventLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779ADCD1E8F8C3D00D77D3E /* EventLocation.swift */; };
+		8779ADD01E8F8E1300D77D3E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8779ADCF1E8F8E1300D77D3E /* MapKit.framework */; };
+		8779ADD21E8F990300D77D3E /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8779ADD11E8F990300D77D3E /* MapViewController.storyboard */; };
+		8779ADD41E8F995500D77D3E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779ADD31E8F995500D77D3E /* MapViewController.swift */; };
+		8779ADD61E9054EB00D77D3E /* EventLocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779ADD51E9054EB00D77D3E /* EventLocationAnnotation.swift */; };
+		8779ADD81E905AB800D77D3E /* EventLocationAnnotationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779ADD71E905AB800D77D3E /* EventLocationAnnotationFactory.swift */; };
+		8779ADDC1E906D6700D77D3E /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779ADDB1E906D6700D77D3E /* EventListViewController.swift */; };
 		87941A951E8D0E4800218A6C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A941E8D0E4800218A6C /* DateExtension.swift */; };
 		87941A971E8D168900218A6C /* NSPredicateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A961E8D168900218A6C /* NSPredicateExtension.swift */; };
 		87941A991E8D1CA900218A6C /* ScheduleDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */; };
@@ -38,6 +47,10 @@
 		87C5F8031E553B3D001D7B09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C5F8011E553B3D001D7B09 /* LaunchScreen.storyboard */; };
 		87D0528F1E8DF747009FD35F /* ScheduleDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0528E1E8DF747009FD35F /* ScheduleDate.swift */; };
 		87D052911E8DFFF5009FD35F /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D052901E8DFFF5009FD35F /* ScheduleTableViewCell.swift */; };
+		87D054F51E90787000E86247 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D054F41E90787000E86247 /* UIColorExtension.swift */; };
+		87D054F71E9085FC00E86247 /* EventLocationCoordinateList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87D054F61E9085FC00E86247 /* EventLocationCoordinateList.plist */; };
+		87D054FC1E90AE6700E86247 /* NCCBFNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D054FB1E90AE6700E86247 /* NCCBFNavigationController.swift */; };
+		87D054FE1E90B44300E86247 /* UIActivityIndicatorViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D054FD1E90B44300E86247 /* UIActivityIndicatorViewExtension.swift */; };
 		87FC32941E81F54B007F1B4A /* SFCherryBlossomSampleData2.json in Resources */ = {isa = PBXBuildFile; fileRef = 87FC32931E81F54B007F1B4A /* SFCherryBlossomSampleData2.json */; };
 		87FC32961E81FF04007F1B4A /* MoreInfoTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FC32951E81FF04007F1B4A /* MoreInfoTableViewController.storyboard */; };
 		87FC32981E81FF87007F1B4A /* MoreInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC32971E81FF87007F1B4A /* MoreInfoTableViewController.swift */; };
@@ -84,6 +97,13 @@
 		8779ADC11E8F4DEE00D77D3E /* ImageConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageConfigurator.swift; path = Utilities/ImageConfigurator.swift; sourceTree = "<group>"; };
 		8779ADC51E8F657800D77D3E /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		8779ADC91E8F681D00D77D3E /* EventCatalogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventCatalogTableViewCell.swift; path = ViewControllers/EventCatalogTableViewCell.swift; sourceTree = "<group>"; };
+		8779ADCD1E8F8C3D00D77D3E /* EventLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventLocation.swift; path = Models/EventLocation.swift; sourceTree = "<group>"; };
+		8779ADCF1E8F8E1300D77D3E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8779ADD11E8F990300D77D3E /* MapViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MapViewController.storyboard; path = Storyboards/MapViewController.storyboard; sourceTree = "<group>"; };
+		8779ADD31E8F995500D77D3E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ViewControllers/MapViewController.swift; sourceTree = "<group>"; };
+		8779ADD51E9054EB00D77D3E /* EventLocationAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventLocationAnnotation.swift; path = Models/EventLocationAnnotation.swift; sourceTree = "<group>"; };
+		8779ADD71E905AB800D77D3E /* EventLocationAnnotationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventLocationAnnotationFactory.swift; path = Utilities/EventLocationAnnotationFactory.swift; sourceTree = "<group>"; };
+		8779ADDB1E906D6700D77D3E /* EventListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventListViewController.swift; path = ViewControllers/EventListViewController.swift; sourceTree = "<group>"; };
 		87941A941E8D0E4800218A6C /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = Extensions/DateExtension.swift; sourceTree = "<group>"; };
 		87941A961E8D168900218A6C /* NSPredicateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSPredicateExtension.swift; path = Extensions/NSPredicateExtension.swift; sourceTree = "<group>"; };
 		87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleDateFormatter.swift; path = Utilities/ScheduleDateFormatter.swift; sourceTree = "<group>"; };
@@ -97,6 +117,10 @@
 		87C5F8041E553B3D001D7B09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87D0528E1E8DF747009FD35F /* ScheduleDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleDate.swift; path = Models/ScheduleDate.swift; sourceTree = "<group>"; };
 		87D052901E8DFFF5009FD35F /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleTableViewCell.swift; path = ViewControllers/ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		87D054F41E90787000E86247 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Extensions/UIColorExtension.swift; sourceTree = "<group>"; };
+		87D054F61E9085FC00E86247 /* EventLocationCoordinateList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = EventLocationCoordinateList.plist; path = Resources/EventLocationCoordinateList.plist; sourceTree = "<group>"; };
+		87D054FB1E90AE6700E86247 /* NCCBFNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NCCBFNavigationController.swift; path = ViewControllers/NCCBFNavigationController.swift; sourceTree = "<group>"; };
+		87D054FD1E90B44300E86247 /* UIActivityIndicatorViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIActivityIndicatorViewExtension.swift; path = Extensions/UIActivityIndicatorViewExtension.swift; sourceTree = "<group>"; };
 		87FC32931E81F54B007F1B4A /* SFCherryBlossomSampleData2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SFCherryBlossomSampleData2.json; path = Resources/SFCherryBlossomSampleData2.json; sourceTree = "<group>"; };
 		87FC32951E81FF04007F1B4A /* MoreInfoTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MoreInfoTableViewController.storyboard; path = Storyboards/MoreInfoTableViewController.storyboard; sourceTree = "<group>"; };
 		87FC32971E81FF87007F1B4A /* MoreInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreInfoTableViewController.swift; path = ViewControllers/MoreInfoTableViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +138,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8779ADCB1E8F861C00D77D3E /* Alamofire.framework in Frameworks */,
+				8779ADCC1E8F861C00D77D3E /* AlamofireImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8779ADD01E8F8E1300D77D3E /* MapKit.framework in Frameworks */,
 				8779ADB91E8F132000D77D3E /* Alamofire.framework in Frameworks */,
 				8779ADBA1E8F132000D77D3E /* AlamofireImage.framework in Frameworks */,
 			);
@@ -137,6 +164,7 @@
 				87C5F8041E553B3D001D7B09 /* Info.plist */,
 				8733C5891E5A1B9600140899 /* SFCherryBlossomSampleData.json */,
 				87FC32931E81F54B007F1B4A /* SFCherryBlossomSampleData2.json */,
+				87D054F61E9085FC00E86247 /* EventLocationCoordinateList.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -146,6 +174,7 @@
 			children = (
 				87C4310F1E8C853C00180374 /* RootContainerViewController.swift */,
 				875975331E8C893D0018233F /* NCCBFTabBarController.swift */,
+				87D054FB1E90AE6700E86247 /* NCCBFNavigationController.swift */,
 				8733C58C1E5A1C8900140899 /* EventCatalogTableViewController.swift */,
 				8779ADC91E8F681D00D77D3E /* EventCatalogTableViewCell.swift */,
 				873F0A031E63791000BECCD2 /* EventDetailsViewController.swift */,
@@ -153,6 +182,8 @@
 				87FC329D1E824A42007F1B4A /* MoreInfoDetailViewController.swift */,
 				87FC32A51E831924007F1B4A /* ScheduleTableViewController.swift */,
 				87D052901E8DFFF5009FD35F /* ScheduleTableViewCell.swift */,
+				8779ADD31E8F995500D77D3E /* MapViewController.swift */,
+				8779ADDB1E906D6700D77D3E /* EventListViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -164,6 +195,8 @@
 				8756D4AE1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift */,
 				87FC32991E821F4C007F1B4A /* MenuItem.swift */,
 				87D0528E1E8DF747009FD35F /* ScheduleDate.swift */,
+				8779ADCD1E8F8C3D00D77D3E /* EventLocation.swift */,
+				8779ADD51E9054EB00D77D3E /* EventLocationAnnotation.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -175,6 +208,7 @@
 				87FC329F1E830E19007F1B4A /* Networking.swift */,
 				87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */,
 				8779ADC11E8F4DEE00D77D3E /* ImageConfigurator.swift */,
+				8779ADD71E905AB800D77D3E /* EventLocationAnnotationFactory.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -197,6 +231,7 @@
 				87FC32951E81FF04007F1B4A /* MoreInfoTableViewController.storyboard */,
 				87FC329B1E824887007F1B4A /* MoreInfoDetailViewController.storyboard */,
 				87FC32A31E83176C007F1B4A /* ScheduleTableViewController.storyboard */,
+				8779ADD11E8F990300D77D3E /* MapViewController.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -217,6 +252,8 @@
 				87941A961E8D168900218A6C /* NSPredicateExtension.swift */,
 				8779ADBC1E8F1CCE00D77D3E /* FileManagerExtension.swift */,
 				8779ADC51E8F657800D77D3E /* UIImageViewExtension.swift */,
+				87D054F41E90787000E86247 /* UIColorExtension.swift */,
+				87D054FD1E90B44300E86247 /* UIActivityIndicatorViewExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -243,6 +280,7 @@
 		8779ADB41E8F0FFF00D77D3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8779ADCF1E8F8E1300D77D3E /* MapKit.framework */,
 				8779ADB51E8F0FFF00D77D3E /* Alamofire.framework */,
 				8779ADB61E8F0FFF00D77D3E /* AlamofireImage.framework */,
 			);
@@ -253,9 +291,9 @@
 			isa = PBXGroup;
 			children = (
 				87C5F7F71E553B3D001D7B09 /* NCCBF-iOS */,
+				8779ADB41E8F0FFF00D77D3E /* Frameworks */,
 				8756D9261E7F734D00C0CFAC /* NCCBF-iOSTests */,
 				87C5F7F61E553B3D001D7B09 /* Products */,
-				8779ADB41E8F0FFF00D77D3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -345,6 +383,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = D433NUFZ5K;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -385,10 +428,12 @@
 				87FC32A41E83176C007F1B4A /* ScheduleTableViewController.storyboard in Resources */,
 				87FC32961E81FF04007F1B4A /* MoreInfoTableViewController.storyboard in Resources */,
 				87C5F8001E553B3D001D7B09 /* Assets.xcassets in Resources */,
+				87D054F71E9085FC00E86247 /* EventLocationCoordinateList.plist in Resources */,
 				87FC329C1E824887007F1B4A /* MoreInfoDetailViewController.storyboard in Resources */,
 				8733C58A1E5A1B9600140899 /* SFCherryBlossomSampleData.json in Resources */,
 				8756D9621E81101B00C0CFAC /* NCCBFTabBarController.storyboard in Resources */,
 				8733C58F1E5A1C8900140899 /* EventCatalogTableViewController.storyboard in Resources */,
+				8779ADD21E8F990300D77D3E /* MapViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,16 +474,22 @@
 				87D0528F1E8DF747009FD35F /* ScheduleDate.swift in Sources */,
 				87941A951E8D0E4800218A6C /* DateExtension.swift in Sources */,
 				8772FE621E8868540048B2C0 /* NCCBF-iOS.xcdatamodeld in Sources */,
+				8779ADDC1E906D6700D77D3E /* EventListViewController.swift in Sources */,
 				8779ADC21E8F4DEE00D77D3E /* ImageConfigurator.swift in Sources */,
 				8779ADC61E8F657800D77D3E /* UIImageViewExtension.swift in Sources */,
+				87D054FC1E90AE6700E86247 /* NCCBFNavigationController.swift in Sources */,
+				8779ADCE1E8F8C3D00D77D3E /* EventLocation.swift in Sources */,
 				875975341E8C893D0018233F /* NCCBFTabBarController.swift in Sources */,
 				873F0A041E63791000BECCD2 /* EventDetailsViewController.swift in Sources */,
 				8733C5A51E5A220B00140899 /* JSON.swift in Sources */,
 				8733C58E1E5A1C8900140899 /* EventCatalogTableViewController.swift in Sources */,
 				87941A971E8D168900218A6C /* NSPredicateExtension.swift in Sources */,
 				875975361E8C899B0018233F /* UIStoryboardExtension.swift in Sources */,
+				8779ADD41E8F995500D77D3E /* MapViewController.swift in Sources */,
 				873F0A061E63891200BECCD2 /* EventDetailsView.swift in Sources */,
+				87D054FE1E90B44300E86247 /* UIActivityIndicatorViewExtension.swift in Sources */,
 				87A703301E887BEF00CDF31D /* Event+CoreDataProperties.swift in Sources */,
+				87D054F51E90787000E86247 /* UIColorExtension.swift in Sources */,
 				8756D4AF1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift in Sources */,
 				87A7032F1E887BEF00CDF31D /* Event+CoreDataClass.swift in Sources */,
 				87D052911E8DFFF5009FD35F /* ScheduleTableViewCell.swift in Sources */,
@@ -450,7 +501,9 @@
 				87941A991E8D1CA900218A6C /* ScheduleDateFormatter.swift in Sources */,
 				87FC329E1E824A42007F1B4A /* MoreInfoDetailViewController.swift in Sources */,
 				87C5F7F91E553B3D001D7B09 /* AppDelegate.swift in Sources */,
+				8779ADD61E9054EB00D77D3E /* EventLocationAnnotation.swift in Sources */,
 				8779ADCA1E8F681D00D77D3E /* EventCatalogTableViewCell.swift in Sources */,
+				8779ADD81E905AB800D77D3E /* EventLocationAnnotationFactory.swift in Sources */,
 				87FC32A21E830E6E007F1B4A /* Constants.swift in Sources */,
 				87C431101E8C853C00180374 /* RootContainerViewController.swift in Sources */,
 			);
@@ -484,6 +537,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = D433NUFZ5K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "NCCBF-iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keitaito.NCCBF-iOSTests";
@@ -500,6 +557,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = D433NUFZ5K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "NCCBF-iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.keitaito.NCCBF-iOSTests";

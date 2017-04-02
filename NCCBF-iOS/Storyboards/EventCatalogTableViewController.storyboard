@@ -42,8 +42,6 @@
                             <constraint firstAttribute="trailing" secondItem="kFC-l5-LHV" secondAttribute="trailing" id="Fq8-1N-Vu6"/>
                             <constraint firstItem="kFC-l5-LHV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HYK-mY-rhf"/>
                             <constraint firstItem="kFC-l5-LHV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="T8U-o6-Fvr"/>
-                            <constraint firstAttribute="trailing" secondItem="kFC-l5-LHV" secondAttribute="trailing" id="c2F-EU-Hbb"/>
-                            <constraint firstItem="kFC-l5-LHV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w2K-xf-HkC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8bD-WW-vlC"/>
@@ -55,11 +53,13 @@
             </objects>
             <point key="canvasLocation" x="1076" y="137.18140929535232"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Events-->
         <scene sceneID="OFN-B6-7oG">
             <objects>
-                <navigationController storyboardIdentifier="EventCatalogNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="fo5-AO-Tki" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="EventCatalogNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="fo5-AO-Tki" customClass="NCCBFNavigationController" customModule="NCCBF_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Events" image="event" id="bNQ-xn-Lvp"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qp8-PV-96R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -74,4 +74,7 @@
             <point key="canvasLocation" x="252" y="137"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="event" width="32" height="32"/>
+    </resources>
 </document>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hokka Nichibei Kai</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.7864059</real>
+		<key>longitude</key>
+		<real>-122.4291876</real>
+	</dict>
+	<key>Hotel Kabuki Sakura Room</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.785453</real>
+		<key>longitude</key>
+		<real>-122.428636</real>
+	</dict>
+	<key>JCCCNC</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.7865043</real>
+		<key>longitude</key>
+		<real>-122.4308199</real>
+	</dict>
+	<key>JCCCNC - Classroom One</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.7865043</real>
+		<key>longitude</key>
+		<real>-122.4308199</real>
+	</dict>
+	<key>JCCCNC - Classroom Two</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.7865043</real>
+		<key>longitude</key>
+		<real>-122.4308199</real>
+	</dict>
+	<key>JCCCNC - Gym</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.7865043</real>
+		<key>longitude</key>
+		<real>-122.4308199</real>
+	</dict>
+	<key>JCCCNC - Issei Memorial Hall</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.7865043</real>
+		<key>longitude</key>
+		<real>-122.4308199</real>
+	</dict>
+	<key>Kabuki Cinemas</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.785059</real>
+		<key>longitude</key>
+		<real>-122.432536</real>
+	</dict>
+	<key>Kinokuniya Bookstore</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.785148</real>
+		<key>longitude</key>
+		<real>-122.430418</real>
+	</dict>
+	<key>Konko Church</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.7876277</real>
+		<key>longitude</key>
+		<real>-122.4285936</real>
+	</dict>
+	<key>National JACL Building</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.786354</real>
+		<key>longitude</key>
+		<real>-122.429286</real>
+	</dict>
+	<key>National Japanese American Historical Society</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.7857539</real>
+		<key>longitude</key>
+		<real>-122.4294358</real>
+	</dict>
+	<key>New People</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.7857073</real>
+		<key>longitude</key>
+		<real>-122.4305571</real>
+	</dict>
+	<key>Peace Plaza Stage</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.7850247</real>
+		<key>longitude</key>
+		<real>-122.4296397</real>
+	</dict>
+	<key>Post &amp; Buchanan</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.785585</real>
+		<key>longitude</key>
+		<real>-122.429826</real>
+	</dict>
+	<key>Sakura 360</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.7873671</real>
+		<key>longitude</key>
+		<real>-122.4302003</real>
+	</dict>
+	<key>Sakura 360 Stage</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.7873671</real>
+		<key>longitude</key>
+		<real>-122.4302003</real>
+	</dict>
+	<key>Sequoias Auditorium</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.785658</real>
+		<key>longitude</key>
+		<real>-122.426507</real>
+	</dict>
+	<key>Tateuchi Auditorium</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.7865637</real>
+		<key>longitude</key>
+		<real>-122.4305463</real>
+	</dict>
+	<key>Union Bank Community Room</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.7853809</real>
+		<key>longitude</key>
+		<real>-122.4291891</real>
+	</dict>
+	<key>Webster Street Stage</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.7853427</real>
+		<key>longitude</key>
+		<real>-122.4313509</real>
+	</dict>
+	<key>Japantown</key>
+	<dict>
+		<key>latitude</key>
+		<real>37.785939</real>
+		<key>longitude</key>
+		<real>-122.430485</real>
+	</dict>
+</dict>
+</plist>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hdW-yK-iOs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hdW-yK-iOs">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,7 +21,8 @@
                     <connections>
                         <segue destination="Dw5-zO-bDY" kind="relationship" relationship="viewControllers" id="RWm-qX-6pQ"/>
                         <segue destination="RcJ-mb-AEK" kind="relationship" relationship="viewControllers" id="gCe-ep-wna"/>
-                        <segue destination="aLe-DK-1ML" kind="relationship" relationship="viewControllers" id="y0w-hT-GX2"/>
+                        <segue destination="UBm-e0-IlH" kind="relationship" relationship="viewControllers" id="Mdo-oW-SZC"/>
+                        <segue destination="aLe-DK-1ML" kind="relationship" relationship="viewControllers" id="Gcg-ks-hyb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tx6-Ef-Buz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -36,7 +37,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VbP-Zn-BYw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-369" y="-309"/>
+            <point key="canvasLocation" x="-367" y="-390"/>
         </scene>
         <!--ScheduleTableViewController-->
         <scene sceneID="E2w-X1-Wh7">
@@ -46,7 +47,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rWb-bh-rcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-390" y="-252"/>
+            <point key="canvasLocation" x="-390" y="-332"/>
+        </scene>
+        <!--MapNavigationController-->
+        <scene sceneID="CY4-Bv-o6P">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MapViewController" referencedIdentifier="MapNavigationController" id="UBm-e0-IlH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="BkS-wM-5m5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FCJ-Pd-feL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-411" y="-268"/>
         </scene>
         <!--MoreInfoNavigationController-->
         <scene sceneID="xyr-Cq-JVC">
@@ -56,7 +67,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gor-x9-qlA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-389" y="-191"/>
+            <point key="canvasLocation" x="-389" y="-206"/>
         </scene>
     </scenes>
 </document>

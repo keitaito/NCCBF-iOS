@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,17 +21,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NCCBF-iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4g-ps-Dj4">
-                                <rect key="frame" x="142" y="323" width="91" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PtP-Fc-9MR">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items/>
+                            </tabBar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAV-rN-NUj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="7ib-ja-PE6"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.95686274510000002" green="0.54901960780000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NCCBF-2017-logo-image" translatesAutoresizingMaskIntoConstraints="NO" id="wvm-mN-Y9V">
+                                <rect key="frame" x="43" y="189" width="288" height="288"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="kLB-DI-BJZ"/>
+                                    <constraint firstAttribute="height" constant="288" id="lu6-8V-GSR"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="g4g-ps-Dj4" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="C7g-kY-57F"/>
-                            <constraint firstItem="g4g-ps-Dj4" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="DjF-wG-zuZ"/>
+                            <constraint firstItem="pAV-rN-NUj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Hy0-eu-khx"/>
+                            <constraint firstItem="wvm-mN-Y9V" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Kjb-pl-Eqf"/>
+                            <constraint firstAttribute="trailing" secondItem="PtP-Fc-9MR" secondAttribute="trailing" id="aoY-a3-4Yx"/>
+                            <constraint firstItem="wvm-mN-Y9V" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="mbD-yQ-jfg"/>
+                            <constraint firstAttribute="trailing" secondItem="pAV-rN-NUj" secondAttribute="trailing" id="nGb-G3-xGe"/>
+                            <constraint firstItem="PtP-Fc-9MR" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="uHN-lS-q8n"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="PtP-Fc-9MR" secondAttribute="bottom" id="vha-tL-1cm"/>
+                            <constraint firstItem="pAV-rN-NUj" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="xPr-rv-F5w"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,4 +59,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NCCBF-2017-logo-image" width="16" height="16"/>
+    </resources>
 </document>

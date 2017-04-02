@@ -7,6 +7,8 @@
 //
 
 import XCTest
+import Alamofire
+@testable import NCCBF_iOS
 
 class NetworkingTests: XCTestCase {
     
@@ -36,5 +38,34 @@ class NetworkingTests: XCTestCase {
                 print(error)
             }
         }
+    }
+    
+    func testWithAlamofire() {
+        
+        let testExpectation = expectation(description: "testWithAlamofire")
+        
+        var locations = [String: Int]()
+        
+        Alamofire.request(NCCBF2017EventScheduleDataURL).responseJSON { (dataResponse) in
+            if let json = dataResponse.result.value,
+                let array = json as? [Any] {
+                for element in array {
+                    if let dictionary = element as? [String: Any] {
+                        if let locationValue = dictionary["location"] as? String {
+                            if let value = locations[locationValue] {
+                                locations[locationValue] = value + 1
+                            } else {
+                                locations[locationValue] = 1
+                            }
+                        }
+                    }
+                }
+                
+                print(locations)
+                testExpectation.fulfill()
+            }
+        }
+        
+        waitForExpectations(timeout: 10, handler: nil)
     }
 }

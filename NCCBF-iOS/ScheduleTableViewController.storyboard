@@ -93,11 +93,13 @@
             </objects>
             <point key="canvasLocation" x="1080.8" y="152.47376311844079"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Schedule-->
         <scene sceneID="Yek-Ow-gIN">
             <objects>
-                <navigationController storyboardIdentifier="ScheduleNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="XwR-WS-W6M" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ScheduleNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="XwR-WS-W6M" customClass="NCCBFNavigationController" customModule="NCCBF_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Schedule" image="schedule" id="Hxa-Na-u4y"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hy4-7D-3ah">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -112,4 +114,7 @@
             <point key="canvasLocation" x="141.59999999999999" y="152.47376311844079"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="schedule" width="32" height="32"/>
+    </resources>
 </document>

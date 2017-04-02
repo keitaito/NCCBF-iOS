@@ -26,8 +26,16 @@ class NCCBFTabBarController: UITabBarController {
         return vc
     }
     
-    var moreInfoTableViewController: MoreInfoTableViewController {
+    var mapViewController: MapViewController {
         guard let nc = viewControllers?[2] as? UINavigationController,
+            let vc = nc.topViewController as? MapViewController else {
+                fatalError("MapViewController instantiation failed.")
+        }
+        return vc
+    }
+    
+    var moreInfoTableViewController: MoreInfoTableViewController {
+        guard let nc = viewControllers?[3] as? UINavigationController,
             let vc = nc.topViewController as? MoreInfoTableViewController else {
                 fatalError("MoreInfoTableViewController instantiation failed.")
         }
@@ -38,5 +46,6 @@ class NCCBFTabBarController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        tabBar.tintColor = .sakuraPink
     }
 }
