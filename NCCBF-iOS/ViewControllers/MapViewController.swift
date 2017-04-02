@@ -47,7 +47,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, NSFetchedResultsCo
             
             pinAnnotationView.canShowCallout = true
             pinAnnotationView.animatesDrop = true
-            pinAnnotationView.pinTintColor = .purple
+            pinAnnotationView.pinTintColor = .sakuraPink
             
             return pinAnnotationView
         }
