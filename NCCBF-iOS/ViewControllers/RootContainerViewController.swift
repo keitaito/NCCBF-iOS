@@ -16,6 +16,8 @@ class RootContainerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupUI()
+        
         setupCacheDownloadedImageDirectory()
 
         // Set up CoreData.
@@ -56,6 +58,15 @@ class RootContainerViewController: UIViewController {
     }
     
     // MARK: - Private Methods
+    
+    private func setupUI() {
+        let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: UIApplication.shared.statusBarFrame.size.height + 44))
+        navBar.barTintColor = .sakuraPink
+        view.addSubview(navBar)
+        
+        let tabBar = UITabBar(frame: CGRect(x: 0, y: view.bounds.size.height - 49, width: view.bounds.size.width, height: 49))
+        view.addSubview(tabBar)
+    }
     
     private func setupChildVC() {
         guard let tc = UIStoryboard.instantiateViewController(withIdentifier: "NCCBFTabBarController") as? NCCBFTabBarController else {
