@@ -45,7 +45,7 @@
         <!--Map-->
         <scene sceneID="PsP-RJ-shm">
             <objects>
-                <navigationController storyboardIdentifier="MapNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="qWH-yK-I2W" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MapNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="qWH-yK-I2W" customClass="NCCBFNavigationController" customModule="NCCBF_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="map" id="tSQ-1u-YRy"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

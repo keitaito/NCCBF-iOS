@@ -41,7 +41,7 @@
         <!--More-->
         <scene sceneID="nOC-6T-RiA">
             <objects>
-                <navigationController storyboardIdentifier="MoreInfoNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="hsn-db-MNe" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MoreInfoNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="hsn-db-MNe" customClass="NCCBFNavigationController" customModule="NCCBF_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="More" image="more" id="qYb-No-A3M"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

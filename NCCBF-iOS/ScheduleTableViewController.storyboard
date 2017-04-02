@@ -96,7 +96,7 @@
         <!--Schedule-->
         <scene sceneID="Yek-Ow-gIN">
             <objects>
-                <navigationController storyboardIdentifier="ScheduleNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="XwR-WS-W6M" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ScheduleNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="XwR-WS-W6M" customClass="NCCBFNavigationController" customModule="NCCBF_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Schedule" image="schedule" id="Hxa-Na-u4y"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

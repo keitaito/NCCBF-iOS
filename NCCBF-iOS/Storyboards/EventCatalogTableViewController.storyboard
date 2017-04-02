@@ -56,7 +56,7 @@
         <!--Events-->
         <scene sceneID="OFN-B6-7oG">
             <objects>
-                <navigationController storyboardIdentifier="EventCatalogNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="fo5-AO-Tki" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="EventCatalogNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="fo5-AO-Tki" customClass="NCCBFNavigationController" customModule="NCCBF_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Events" image="event" id="bNQ-xn-Lvp"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

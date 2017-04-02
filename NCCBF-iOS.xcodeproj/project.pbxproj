@@ -49,6 +49,7 @@
 		87D052911E8DFFF5009FD35F /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D052901E8DFFF5009FD35F /* ScheduleTableViewCell.swift */; };
 		87D054F51E90787000E86247 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D054F41E90787000E86247 /* UIColorExtension.swift */; };
 		87D054F71E9085FC00E86247 /* EventLocationCoordinateList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87D054F61E9085FC00E86247 /* EventLocationCoordinateList.plist */; };
+		87D054FC1E90AE6700E86247 /* NCCBFNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D054FB1E90AE6700E86247 /* NCCBFNavigationController.swift */; };
 		87FC32941E81F54B007F1B4A /* SFCherryBlossomSampleData2.json in Resources */ = {isa = PBXBuildFile; fileRef = 87FC32931E81F54B007F1B4A /* SFCherryBlossomSampleData2.json */; };
 		87FC32961E81FF04007F1B4A /* MoreInfoTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FC32951E81FF04007F1B4A /* MoreInfoTableViewController.storyboard */; };
 		87FC32981E81FF87007F1B4A /* MoreInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC32971E81FF87007F1B4A /* MoreInfoTableViewController.swift */; };
@@ -117,6 +118,7 @@
 		87D052901E8DFFF5009FD35F /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleTableViewCell.swift; path = ViewControllers/ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		87D054F41E90787000E86247 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Extensions/UIColorExtension.swift; sourceTree = "<group>"; };
 		87D054F61E9085FC00E86247 /* EventLocationCoordinateList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = EventLocationCoordinateList.plist; path = Resources/EventLocationCoordinateList.plist; sourceTree = "<group>"; };
+		87D054FB1E90AE6700E86247 /* NCCBFNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NCCBFNavigationController.swift; path = ViewControllers/NCCBFNavigationController.swift; sourceTree = "<group>"; };
 		87FC32931E81F54B007F1B4A /* SFCherryBlossomSampleData2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SFCherryBlossomSampleData2.json; path = Resources/SFCherryBlossomSampleData2.json; sourceTree = "<group>"; };
 		87FC32951E81FF04007F1B4A /* MoreInfoTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MoreInfoTableViewController.storyboard; path = Storyboards/MoreInfoTableViewController.storyboard; sourceTree = "<group>"; };
 		87FC32971E81FF87007F1B4A /* MoreInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreInfoTableViewController.swift; path = ViewControllers/MoreInfoTableViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			children = (
 				87C4310F1E8C853C00180374 /* RootContainerViewController.swift */,
 				875975331E8C893D0018233F /* NCCBFTabBarController.swift */,
+				87D054FB1E90AE6700E86247 /* NCCBFNavigationController.swift */,
 				8733C58C1E5A1C8900140899 /* EventCatalogTableViewController.swift */,
 				8779ADC91E8F681D00D77D3E /* EventCatalogTableViewCell.swift */,
 				873F0A031E63791000BECCD2 /* EventDetailsViewController.swift */,
@@ -471,6 +474,7 @@
 				8779ADDC1E906D6700D77D3E /* EventListViewController.swift in Sources */,
 				8779ADC21E8F4DEE00D77D3E /* ImageConfigurator.swift in Sources */,
 				8779ADC61E8F657800D77D3E /* UIImageViewExtension.swift in Sources */,
+				87D054FC1E90AE6700E86247 /* NCCBFNavigationController.swift in Sources */,
 				8779ADCE1E8F8C3D00D77D3E /* EventLocation.swift in Sources */,
 				875975341E8C893D0018233F /* NCCBFTabBarController.swift in Sources */,
 				873F0A041E63791000BECCD2 /* EventDetailsViewController.swift in Sources */,
