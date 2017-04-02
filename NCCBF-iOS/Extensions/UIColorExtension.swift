@@ -10,7 +10,7 @@ import UIKit
 
 extension UIColor {
     class var sakuraPink: UIColor {
-        return UIColor(red: 0.957, green: 0.549, blue: 0.62, alpha: 1.0)
-//        colorWithRed:0.957 green:0.549 blue:0.62 alpha:1.0]
+        // HEX color code: #F48C9E
+        return UIColor(red: 0.96, green: 0.55, blue: 0.62, alpha: 1.0)
     }
 }
