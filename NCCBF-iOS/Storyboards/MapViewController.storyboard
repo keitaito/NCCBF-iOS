@@ -42,11 +42,13 @@
             </objects>
             <point key="canvasLocation" x="1128.8" y="141.67916041979012"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Map-->
         <scene sceneID="PsP-RJ-shm">
             <objects>
                 <navigationController storyboardIdentifier="MapNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="qWH-yK-I2W" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" image="map" id="tSQ-1u-YRy"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eCO-Cu-M3t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -61,4 +63,7 @@
             <point key="canvasLocation" x="189.59999999999999" y="141.67916041979012"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map" width="32" height="32"/>
+    </resources>
 </document>

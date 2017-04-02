@@ -38,11 +38,13 @@
             </objects>
             <point key="canvasLocation" x="724" y="125.4872563718141"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--More-->
         <scene sceneID="nOC-6T-RiA">
             <objects>
                 <navigationController storyboardIdentifier="MoreInfoNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="hsn-db-MNe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="More" image="more" id="qYb-No-A3M"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fyx-6Q-gWU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -57,4 +59,7 @@
             <point key="canvasLocation" x="-215.19999999999999" y="125.4872563718141"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="more" width="32" height="32"/>
+    </resources>
 </document>
