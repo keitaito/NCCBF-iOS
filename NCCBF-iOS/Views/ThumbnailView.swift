@@ -15,6 +15,6 @@ class ThumbnailView: UIImageView {
         layer.cornerRadius = min(frame.width/2, frame.height/2)
         layer.masksToBounds = true
         layer.borderWidth = 1
-        layer.borderColor = UIColor.sakuraPink.cgColor
+        layer.borderColor = UIColor.matsuriGold.cgColor
     }
 }
