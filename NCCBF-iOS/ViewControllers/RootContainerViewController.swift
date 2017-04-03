@@ -8,59 +8,84 @@
 
 import UIKit
 import CoreData
+import Alamofire
 
 class RootContainerViewController: UIViewController {
     
     let dataController = DataController()
+    
+    let sessionManager: Alamofire.SessionManager = {
+        let configuration = URLSessionConfiguration.default
+        configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
+        configuration.urlCache = nil
+        return Alamofire.SessionManager(configuration: configuration)
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupUI()
         
+        setupUserDefaults()
         setupCacheDownloadedImageDirectory()
-
         // Set up CoreData.
         let context = dataController.persistentContainer.viewContext
         
-        let isLaunchedBefore = UserDefaults.standard.bool(forKey: launchedBefore)
-        if isLaunchedBefore {
-            setupChildVC()
-            return
-        }
+        let spinner = createSpinner()
         
-        let spinner = UIActivityIndicatorView.largeSpinner
-        spinner.center = view.center
-        view.addSubview(spinner)
-        spinner.startAnimating()
-        
-        
-        // Fetch event data from the server.
-        Networking.downloadJSON(from: NCCBF2017EventScheduleDataURL) { json in
-            do {
-                _ = try JSONParser.parse(json: json, context: context)
-                
-                // Save events to CoreData.
-                try context.save()
-                print("context save succeeded.")
-                
-                UserDefaults.standard.set(true, forKey: launchedBefore)
-                
-                DispatchQueue.main.async {
-                    spinner.stopAnimating()
-                    spinner.removeFromSuperview()
-                    self.setupChildVC()
+        sessionManager.request(NCCBF2017EventScheduleDataURL).responseJSON { (response) in
+            debugPrint(response)
+            guard let httpURLResponse = response.response else {
+                fatalError("httpURLResponse is nil.")
+            }
+            guard let lastModifiedDate = ResponseParser.lastModifiedDate(from: httpURLResponse) else { fatalError("lastModifiedDate is nil.")
+            }
+            guard let savedDate = UserDefaults.standard.object(forKey: UserDefaultsKey.lastModified) as? Date else {
+                fatalError("lastModifiedDate is missing.")
+            }
+            if lastModifiedDate.isLater(than: savedDate) {
+                // JSON is updated. Parse and instantiate objects.
+                guard let json = response.result.value else {
+                    fatalError("response result value is nil.")
                 }
                 
-            } catch let JSONError.parsingError(error, json) {
-                print(error)
-                print(json)
-            } catch let EventError.initializingError(error, event) {
-                print(error)
-                print(event)
-            } catch {
-                print("context save failed.")
-                print(error)
+                do {
+                    _ = try JSONParser.parse(json: json, context: context)
+                    
+                    // Delete existing objects.
+                    if try context.count(for: Event.fetchRequest()) > 0 {
+                        let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: Event.fetchRequest())
+                        try context.execute(batchDeleteRequest)
+                    }
+                    
+                    // Save events to CoreData.
+                    try context.save()
+                    debugPrint("context save succeeded.")
+                    
+                    // Save lastModifiedDate to UserDefaults.
+                    UserDefaults.standard.set(lastModifiedDate, forKey: UserDefaultsKey.lastModified)
+                    
+                    DispatchQueue.main.async {
+                        self.removeSpinner(spinner)
+                        self.setupChildVC()
+                    }
+                    
+                } catch let JSONError.parsingError(error, json) {
+                    debugPrint(error)
+                    debugPrint(json)
+                } catch let EventError.initializingError(error, event) {
+                    debugPrint(error)
+                    debugPrint(event)
+                } catch {
+                    debugPrint("context save failed.")
+                    debugPrint(error)
+                }
+                
+            } else {
+                // JSON is not updated. Use the existing objects.
+                DispatchQueue.main.async {
+                    self.setupChildVC()
+                }
             }
         }
     }
@@ -74,6 +99,12 @@ class RootContainerViewController: UIViewController {
         
         let tabBar = UITabBar(frame: CGRect(x: 0, y: view.bounds.size.height - 49, width: view.bounds.size.width, height: 49))
         view.addSubview(tabBar)
+    }
+    
+    private func setupUserDefaults() {
+        if UserDefaults.standard.object(forKey: UserDefaultsKey.lastModified) == nil {
+            UserDefaults.standard.set(Date.jan1st2017, forKey: UserDefaultsKey.lastModified)
+        }
     }
     
     private func setupChildVC() {
@@ -90,6 +121,8 @@ class RootContainerViewController: UIViewController {
         tc.eventCatalogTableViewController.context = context
         tc.scheduleTableViewController.context = context
         tc.mapViewController.context = context
+        
+//        tc.eventCatalogTableViewController.sessionManager = sessionManager
     }
     
     private func setupCacheDownloadedImageDirectory() {
@@ -101,4 +134,17 @@ class RootContainerViewController: UIViewController {
             }
         }
     }
+    
+    private func createSpinner() -> UIActivityIndicatorView {
+        let spinner = UIActivityIndicatorView.largeSpinner
+        spinner.center = view.center
+        view.addSubview(spinner)
+        spinner.startAnimating()
+        return spinner
+    }
+    private func removeSpinner(_ spinner: UIActivityIndicatorView) {
+        spinner.stopAnimating()
+        spinner.removeFromSuperview()
+    }
+    
 }

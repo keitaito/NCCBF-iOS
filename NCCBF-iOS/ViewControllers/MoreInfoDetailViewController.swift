@@ -10,7 +10,7 @@ import UIKit
 
 class MoreInfoDetailViewController: UIViewController {
     
-    @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet weak var textView: UITextView!
     
     var item: MenuItem?
 
@@ -20,10 +20,17 @@ class MoreInfoDetailViewController: UIViewController {
         setupUI()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        // Display textView at the beginning.
+        textView.setContentOffset(CGPoint.zero, animated: false)
+    }
+    
     // MARK: - Private Methods
     
     private func setupUI() {
         title = item?.title
-        infoLabel.text = item?.info
+        textView.text = item?.info
     }
 }

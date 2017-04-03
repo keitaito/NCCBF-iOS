@@ -20,9 +20,20 @@ extension Date {
     
     var string: String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMM d, h:mm a"
+        dateFormatter.dateFormat = "h:mm a"
         dateFormatter.timeZone = TimeZone(abbreviation: "PDT")
         return dateFormatter.string(from: self)
+    }
+    
+    static var jan1st2017: Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        dateFormatter.timeZone = TimeZone.current
+        return dateFormatter.date(from: "2017-01-01")!
+    }
+    
+    func isLater(than date: Date) -> Bool {
+        return self > date
     }
 }
 

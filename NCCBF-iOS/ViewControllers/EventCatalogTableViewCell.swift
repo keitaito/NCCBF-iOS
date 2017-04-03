@@ -10,6 +10,9 @@ import UIKit
 
 class EventCatalogTableViewCell: UITableViewCell {
     class var ReuseIdentifier: String { return "\(type(of: self))" }
+    
+    @IBOutlet weak var thumbnailView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,24 +25,17 @@ class EventCatalogTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
-        imageView?.layer.masksToBounds = true
-        imageView?.layer.cornerRadius = min(imageView!.frame.width/2 , imageView!.frame.height/2)
-    }
-    
     override func prepareForReuse() {
         super.prepareForReuse()
         
-        imageView?.af_cancelImageRequest()
-        imageView?.layer.removeAllAnimations()
-        imageView?.image = nil
+        thumbnailView.af_cancelImageRequest()
+        thumbnailView.layer.removeAllAnimations()
+        thumbnailView.image = nil
     }
     
     func configure(with event: Event) {
-        self.textLabel?.text = event.name
-        self.imageView?.configure(with: event)
+        self.titleLabel.text = event.name
+        self.thumbnailView.configure(with: event)
     }
 
 }

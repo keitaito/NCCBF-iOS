@@ -31,7 +31,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="7ib-ja-PE6"/>
                                 </constraints>
-                                <color key="barTintColor" red="0.95686274510000002" green="0.54901960780000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.9137254901960784" green="0.25490196078431371" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NCCBF-2017-logo-image" translatesAutoresizingMaskIntoConstraints="NO" id="wvm-mN-Y9V">
                                 <rect key="frame" x="43" y="189" width="288" height="288"/>

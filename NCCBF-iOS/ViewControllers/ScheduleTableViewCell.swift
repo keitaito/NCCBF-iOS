@@ -11,7 +11,8 @@ import UIKit
 class ScheduleTableViewCell: UITableViewCell {
     class var ReuseIdentifier: String { return "\(type(of: self))" }
     
-    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var startTimeLabel: UILabel!
+    @IBOutlet weak var endTimeLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
 
     override func awakeFromNib() {
@@ -26,7 +27,8 @@ class ScheduleTableViewCell: UITableViewCell {
     }
     
     func configure(with event: Event) {
-        timeLabel.text = event.startAt.string
+        startTimeLabel.text = event.startAt.string
+        endTimeLabel.text = event.endAt?.string ?? "All day"
         titleLabel.text = event.name
     }
 

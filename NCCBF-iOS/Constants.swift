@@ -11,7 +11,12 @@ import Foundation
 public let NCCBF2017EventScheduleDataURL = URL(string: "https://sfcherryblossom.org/wp-content/uploads/2017/ScheduleData/NCCBFSchedule.json")!
 let NCCBF2017EventImageURL = URL(string: "https://sfcherryblossom.org/wp-content/uploads/2017/ScheduleData/Images/")!
 
-let launchedBefore = "launchedBefore"
+struct UserDefaultsKey {
+//    static let launchedBefore = "launchedBefore"
+    static let lastModified = "lastModified"
+}
+
+
 
 let NCCBF2017EventImagesString = "NCCBF2017EventImages"
 

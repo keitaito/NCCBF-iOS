@@ -91,3 +91,38 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
     }
 }
 
+//import Alamofire
+//
+//extension EventCatalogTableViewController {
+//    var refreshControl: UIRefreshControl!
+//    var sessionManager: Alamofire.SessionManager!
+//    
+//    func addRefreshControl() {
+//        refreshControl = UIRefreshControl()
+//        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+//        refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
+//        tableView.insertSubview(refreshControl, belowSubview: tableView)
+//    }
+//    
+//    func refresh(_ sender: UIRefreshControl) {
+//        sessionManager.updateSchedule(context: context!) { isUpdated in
+//            DispatchQueue.main.async {
+//                self.refreshControl.endRefreshing()
+//                
+//                if isUpdated {
+//                    try! self.fetchedResultsController?.performFetch()
+//                    self.tableView.reloadData()
+//                } else {
+//                    let alert = UIAlertController(title: nil, message: "Schedule is already updated.", preferredStyle: .alert)
+//                    self.present(alert, animated: true, completion: {
+//                        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: {
+//                            alert.dismiss(animated: true, completion: nil)
+//                        })
+//                    })
+//                }
+//                
+//            }
+//        }
+//    }
+//}
+
