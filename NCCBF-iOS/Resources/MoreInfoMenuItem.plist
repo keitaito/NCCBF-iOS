@@ -2,9 +2,73 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Licenses</key>
+	<string>This app uses the following open source libraries.
+
+- Alamofire and AlamofireImage
+
+Copyright (c) 2014-2016 Alamofire Software Foundation (http://alamofire.org/)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+This app uses free icons from 100 free iOS icons by Pixel Love Ltd (https://www.pixellove.com/free-icons). 100 free iOS icons is licensed under a Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/).</string>
 	<key>Copyright</key>
-	<string>copyright page</string>
+	<string>NCCBF is the official mobile app for Northern California Cherry Blossom Festival®, developed by Keita Ito: http://keitaito.com
+
+Photography except logo images of companies and organizations are the copyrighted property of Dave Golden: http://dave-golden.com
+
+All images on this website are the copyrighted property of their respective owners and may not be used without expressed permission from the owner/photographer. No usage in any public works is allowed without our permission.
+
+The “Northern California Cherry Blossom Festival”® name is a registered trademark of the Sakura Matsuri Inc. Northern California Cherry Blossom Festival trademarks may not be used in connection with any product or service that is not Northern California Cherry Blossom Festival’s, in any manner that is likely to cause confusion among customers or in any manner that disparages or discredits Northern California Cherry Blossom Festival. Other products or company names used on this website may be trademarks of their respective owners.</string>
 	<key>About</key>
-	<string>about page</string>
+	<string>Welcome to Northern California Cherry Blossom Festival
+
+The 2017 Northern California Cherry Blossom Festival now celebrating its 50th year, is one of California’s most prominent celebrations of Asian traditions. Each year, over 200,000 people attend this dazzling display showcasing the color and grace of the Japanese culture and the diversity of the Japanese American Community. Please join us and become a sponsor of this popular Japanese American community event. The event is free and open to the public. Vendors will be charging for their food goods and some retail products, and some specialized events will require a fee.
+
+This year’s Northern California Cherry Blossom Festival will be held on Saturday and Sunday, April 8-9 and April 15-16, 2017. All are welcome to join in the festivities as we celebrate Japanese and Japanese American culture in San Francisco’s Japantown!
+
+The festival will be held on Post Street between Laguna and Fillmore Streets. There will be food booths, cultural performances, martial arts, live bands, the annual Queen Program, and more. The Grand Parade will be held on Sunday, April 16, beginning at City Hall and concluding in Japantown.
+
+The Northern California Cherry Blossom Festival is said to be the second largest festival outside of Washington, D.C. to celebrate the blooming of cherry blossoms; and held at one of three remaining Japantowns in the United States.
+
+
+Sakura Matsuri, Inc.
+
+Sakura Matsuri, Inc. is a 501(c)(3) non-profit charitable organization that sponsors the annual Northern California Cherry Blossom Festival (NCCBF) also known as the San Francisco Cherry Blossom Festival (sfcherryblossom.org), to educate and promote the rich cultural heritage of Japan that is preserved by Northern California Japanese American communities by demonstrating and exhibiting Japanese customs and traditions. The Festival also serves to cultivate the alliance between Japan and United States.
+
+
+2016-2017 Sakura Matsuri Board of Directors
+
+Allen M. Okamoto, President
+T. Okamoto and Co. (Real Estate)
+Benh Nakajo, Vice President
+Retired – Japan Airlines North America
+Shinichi Seino, Treasurer
+Retired – Kinokuniya Bookstores of America
+Kiyomi Tanaka, Secretary
+Community Activist
+Richard Hashimoto, Board Member
+President, Japantown Merchants Association
+Steve Hirabayashi, Board Member
+Retired – SFUSD Principal
+Seiko Fujimoto, Board Member
+Retired – Japantown Merchant</string>
 </dict>
 </plist>
