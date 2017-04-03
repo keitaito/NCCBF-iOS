@@ -13,6 +13,12 @@ import Alamofire
 class RootContainerViewController: UIViewController {
     
     let dataController = DataController()
+    
+    var sessionManager: Alamofire.SessionManager = {
+        let configuration = URLSessionConfiguration.default
+        configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
+        return Alamofire.SessionManager(configuration: configuration)
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +31,8 @@ class RootContainerViewController: UIViewController {
         let context = dataController.persistentContainer.viewContext
         
         let spinner = createSpinner()
-        Alamofire.request(NCCBF2017EventScheduleDataURL).responseJSON { (response) in
+        
+        sessionManager.request(NCCBF2017EventScheduleDataURL).responseJSON { (response) in
             debugPrint(response)
             guard let httpURLResponse = response.response else {
                 fatalError("httpURLResponse is nil.")
