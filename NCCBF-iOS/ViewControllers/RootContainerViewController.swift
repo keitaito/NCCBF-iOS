@@ -121,6 +121,8 @@ class RootContainerViewController: UIViewController {
         tc.eventCatalogTableViewController.context = context
         tc.scheduleTableViewController.context = context
         tc.mapViewController.context = context
+        
+//        tc.eventCatalogTableViewController.sessionManager = sessionManager
     }
     
     private func setupCacheDownloadedImageDirectory() {
