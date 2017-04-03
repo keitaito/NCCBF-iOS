@@ -21,6 +21,7 @@ extension Date {
     var string: String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "h:mm a"
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
         dateFormatter.timeZone = TimeZone(abbreviation: "PDT")
         return dateFormatter.string(from: self)
     }
@@ -28,7 +29,8 @@ extension Date {
     static var jan1st2017: Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
-        dateFormatter.timeZone = TimeZone.current
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.timeZone = TimeZone(abbreviation: "PDT")
         return dateFormatter.date(from: "2017-01-01")!
     }
     
