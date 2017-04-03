@@ -14,9 +14,10 @@ class RootContainerViewController: UIViewController {
     
     let dataController = DataController()
     
-    var sessionManager: Alamofire.SessionManager = {
+    let sessionManager: Alamofire.SessionManager = {
         let configuration = URLSessionConfiguration.default
         configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
+        configuration.urlCache = nil
         return Alamofire.SessionManager(configuration: configuration)
     }()
 
