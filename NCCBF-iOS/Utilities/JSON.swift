@@ -9,20 +9,6 @@
 import Foundation
 import CoreData
 
-enum ResourceLoaderError: Error {
-    case loadingError(String, Any)
-}
-
-struct ResourceLoader {
-    public static func load(resource: String, ofType type: String) throws -> URL {
-        if let path = Bundle.main.path(forResource: resource, ofType: type) {
-            return URL(fileURLWithPath: path)
-        } else {
-            throw ResourceLoaderError.loadingError("Resource was not found.", resource)
-        }
-    }
-}
-
 enum JSONError: Error {
     case parsingError(String, Any)
 }

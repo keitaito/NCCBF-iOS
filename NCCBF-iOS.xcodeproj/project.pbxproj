@@ -39,6 +39,8 @@
 		877E8D6E1E91B848007A9AFC /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877E8D6D1E91B848007A9AFC /* ResponseParser.swift */; };
 		877E8D701E91CF5B007A9AFC /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877E8D6F1E91CF5B007A9AFC /* StringExtension.swift */; };
 		877E8D721E9219E4007A9AFC /* ThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877E8D711E9219E4007A9AFC /* ThumbnailView.swift */; };
+		877E8D741E92F452007A9AFC /* MoreInfoMenuItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 877E8D731E92F452007A9AFC /* MoreInfoMenuItem.plist */; };
+		877E8D761E92F534007A9AFC /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877E8D751E92F534007A9AFC /* ResourceLoader.swift */; };
 		87941A951E8D0E4800218A6C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A941E8D0E4800218A6C /* DateExtension.swift */; };
 		87941A971E8D168900218A6C /* NSPredicateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A961E8D168900218A6C /* NSPredicateExtension.swift */; };
 		87941A991E8D1CA900218A6C /* ScheduleDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */; };
@@ -110,6 +112,8 @@
 		877E8D6D1E91B848007A9AFC /* ResponseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseParser.swift; path = Utilities/ResponseParser.swift; sourceTree = "<group>"; };
 		877E8D6F1E91CF5B007A9AFC /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = Extensions/StringExtension.swift; sourceTree = "<group>"; };
 		877E8D711E9219E4007A9AFC /* ThumbnailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThumbnailView.swift; path = Views/ThumbnailView.swift; sourceTree = "<group>"; };
+		877E8D731E92F452007A9AFC /* MoreInfoMenuItem.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MoreInfoMenuItem.plist; path = Resources/MoreInfoMenuItem.plist; sourceTree = "<group>"; };
+		877E8D751E92F534007A9AFC /* ResourceLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResourceLoader.swift; path = Utilities/ResourceLoader.swift; sourceTree = "<group>"; };
 		87941A941E8D0E4800218A6C /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = Extensions/DateExtension.swift; sourceTree = "<group>"; };
 		87941A961E8D168900218A6C /* NSPredicateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSPredicateExtension.swift; path = Extensions/NSPredicateExtension.swift; sourceTree = "<group>"; };
 		87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleDateFormatter.swift; path = Utilities/ScheduleDateFormatter.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 				8733C5891E5A1B9600140899 /* SFCherryBlossomSampleData.json */,
 				87FC32931E81F54B007F1B4A /* SFCherryBlossomSampleData2.json */,
 				87D054F61E9085FC00E86247 /* EventLocationCoordinateList.plist */,
+				877E8D731E92F452007A9AFC /* MoreInfoMenuItem.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 				8779ADC11E8F4DEE00D77D3E /* ImageConfigurator.swift */,
 				8779ADD71E905AB800D77D3E /* EventLocationAnnotationFactory.swift */,
 				877E8D6D1E91B848007A9AFC /* ResponseParser.swift */,
+				877E8D751E92F534007A9AFC /* ResourceLoader.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -439,6 +445,7 @@
 				87C5F8001E553B3D001D7B09 /* Assets.xcassets in Resources */,
 				87D054F71E9085FC00E86247 /* EventLocationCoordinateList.plist in Resources */,
 				87FC329C1E824887007F1B4A /* MoreInfoDetailViewController.storyboard in Resources */,
+				877E8D741E92F452007A9AFC /* MoreInfoMenuItem.plist in Resources */,
 				8733C58A1E5A1B9600140899 /* SFCherryBlossomSampleData.json in Resources */,
 				8756D9621E81101B00C0CFAC /* NCCBFTabBarController.storyboard in Resources */,
 				8733C58F1E5A1C8900140899 /* EventCatalogTableViewController.storyboard in Resources */,
@@ -501,6 +508,7 @@
 				873F0A061E63891200BECCD2 /* EventDetailsView.swift in Sources */,
 				87D054FE1E90B44300E86247 /* UIActivityIndicatorViewExtension.swift in Sources */,
 				87A703301E887BEF00CDF31D /* Event+CoreDataProperties.swift in Sources */,
+				877E8D761E92F534007A9AFC /* ResourceLoader.swift in Sources */,
 				87D054F51E90787000E86247 /* UIColorExtension.swift in Sources */,
 				8756D4AF1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift in Sources */,
 				87A7032F1E887BEF00CDF31D /* Event+CoreDataClass.swift in Sources */,
