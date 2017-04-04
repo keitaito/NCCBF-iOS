@@ -21,18 +21,18 @@ struct EventDetailsViewModel {
     }
     
     public var startAt: String {
-        return dateFormatter.string(from: event.startAt)
+        return startTimeDateFormatter.string(from: event.startAt)
     }
     
     public var endAt: String? {
         guard let endAt = event.endAt else { return nil }
-        return dateFormatter.string(from: endAt)
+        return endTimeDateFormatter.string(from: endAt)
     }
     
     public var schedule: String {
         let df = DateFormatter()
         df.dateFormat = "h:mm a"
-        df.timeZone = TimeZone(abbreviation: "PST")
+        df.timeZone = TimeZone(abbreviation: "PDT")
         let endAtString = endAt ?? "all day"
         return "\(startAt) - \(endAtString)"
     }
@@ -45,13 +45,25 @@ struct EventDetailsViewModel {
         return event.imageName
     }
     
+    public var url: String? {
+        return event.url
+    }
+    
     // MARK: - Private properties
     
     private let event: Event
     
-    private var dateFormatter: DateFormatter {
+    private var startTimeDateFormatter: DateFormatter {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMM d, h:mm a"
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.timeZone = TimeZone(abbreviation: "PDT")
+        return dateFormatter
+    }
+    
+    private var endTimeDateFormatter: DateFormatter {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "h:mm a"
         dateFormatter.locale = Locale(identifier: "en_US_POSIX")
         dateFormatter.timeZone = TimeZone(abbreviation: "PDT")
         return dateFormatter

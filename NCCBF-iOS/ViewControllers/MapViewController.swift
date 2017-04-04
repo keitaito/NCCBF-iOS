@@ -43,6 +43,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, NSFetchedResultsCo
         guard let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier) else {
             let pinAnnotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseIdentifier)
             let rightButton = UIButton(type: .detailDisclosure)
+            rightButton.tintColor = .sakuraPink
             pinAnnotationView.rightCalloutAccessoryView = rightButton
             
             pinAnnotationView.canShowCallout = true
