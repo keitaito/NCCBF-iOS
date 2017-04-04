@@ -25,6 +25,7 @@ extension Event {
         
         let details = json["details"] as? String
         let imageName = json["imagename"] as? String
+        let url = json["url"] as? String
         
         guard let id = json["id"] as? Int else {
             context.delete(self)
@@ -66,5 +67,6 @@ extension Event {
         self.name = name
         self.details = details
         self.imageName = imageName
+        self.url = url
     }
 }

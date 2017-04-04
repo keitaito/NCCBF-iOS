@@ -23,5 +23,6 @@ extension Event {
     @NSManaged public var name: String
     @NSManaged public var startAt: Date
     @NSManaged public var imageName: String?
+    @NSManaged public var url: String?
 
 }

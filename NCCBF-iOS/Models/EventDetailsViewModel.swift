@@ -45,6 +45,10 @@ struct EventDetailsViewModel {
         return event.imageName
     }
     
+    public var url: String? {
+        return event.url
+    }
+    
     // MARK: - Private properties
     
     private let event: Event

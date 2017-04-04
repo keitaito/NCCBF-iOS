@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BQx-LB-LHO">
-                                        <rect key="frame" x="16" y="16" width="288" height="402"/>
+                                        <rect key="frame" x="16" y="16" width="288" height="440"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="200" translatesAutoresizingMaskIntoConstraints="NO" id="wfp-B2-pVX">
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="288"/>
@@ -58,6 +58,10 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClY-9o-hcJ">
+                                                <rect key="frame" x="0.0" y="410" width="288" height="30"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -83,6 +87,7 @@
                             <outlet property="locationLabel" destination="0Hq-1U-DDz" id="9UO-92-sdM"/>
                             <outlet property="nameLabel" destination="Dnf-od-bT5" id="xvE-P7-PtF"/>
                             <outlet property="scheduleLabel" destination="0k3-25-eZM" id="O1g-EE-jth"/>
+                            <outlet property="urlButton" destination="ClY-9o-hcJ" id="UFJ-ec-9V8"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="BDc-A6-AiB"/>
