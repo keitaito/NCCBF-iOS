@@ -29,6 +29,11 @@ xcode-select --install
 </table>
 # Available Actions
 ## iOS
+### ios bump
+```
+fastlane ios bump
+```
+Bump build number with commit counts
 ### ios screenshots
 ```
 fastlane ios screenshots
