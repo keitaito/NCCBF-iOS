@@ -110,7 +110,8 @@ class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITa
         let request: NSFetchRequest<Event> = Event.fetchRequest()
         request.predicate = ScheduleDateSegment(rawValue: dateSegmentedControl.selectedSegmentIndex)?.predicate
         let startAtSort = NSSortDescriptor(key: "startAt", ascending: true)
-        request.sortDescriptors = [startAtSort]
+        let endAtSort = NSSortDescriptor(key: "endAt", ascending: true)
+        request.sortDescriptors = [startAtSort, endAtSort]
         
         fetchedResultsController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         fetchedResultsController?.delegate = self
