@@ -20,6 +20,9 @@ class RootContainerViewController: UIViewController {
         configuration.urlCache = nil
         return Alamofire.SessionManager(configuration: configuration)
     }()
+    
+    var spinner: UIActivityIndicatorView?
+    var context: NSManagedObjectContext?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,65 +32,115 @@ class RootContainerViewController: UIViewController {
         setupUserDefaults()
         setupCacheDownloadedImageDirectory()
         // Set up CoreData.
-        let context = dataController.persistentContainer.viewContext
+        context = dataController.persistentContainer.viewContext
         
-        let spinner = createSpinner()
+        spinner = createSpinner()
         
         sessionManager.request(NCCBF2017EventScheduleDataURL).responseJSON { (response) in
             debugPrint(response)
-            guard let httpURLResponse = response.response else {
-                fatalError("httpURLResponse is nil.")
-            }
-            guard let lastModifiedDate = ResponseParser.lastModifiedDate(from: httpURLResponse) else { fatalError("lastModifiedDate is nil.")
-            }
-            guard let savedDate = UserDefaults.standard.object(forKey: UserDefaultsKey.lastModified) as? Date else {
-                fatalError("lastModifiedDate is missing.")
-            }
-            if lastModifiedDate.isLater(than: savedDate) {
-                // JSON is updated. Parse and instantiate objects.
-                guard let json = response.result.value else {
-                    fatalError("response result value is nil.")
+            
+            switch response.result {
+            case .success(_):
+                if let context = self.context {
+                    self.successHandling(response: response, context: context)
                 }
                 
-                do {
-                    _ = try JSONParser.parse(json: json, context: context)
-                    
-                    // Delete existing objects.
-                    if try context.count(for: Event.fetchRequest()) > 0 {
-                        let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: Event.fetchRequest())
-                        try context.execute(batchDeleteRequest)
-                    }
-                    
-                    // Save events to CoreData.
-                    try context.save()
-                    debugPrint("context save succeeded.")
-                    
-                    // Save lastModifiedDate to UserDefaults.
-                    UserDefaults.standard.set(lastModifiedDate, forKey: UserDefaultsKey.lastModified)
-                    
-                    DispatchQueue.main.async {
-                        self.removeSpinner(spinner)
-                        self.setupChildVC()
-                    }
-                    
-                } catch let JSONError.parsingError(error, json) {
-                    debugPrint(error)
-                    debugPrint(json)
-                } catch let EventError.initializingError(error, event) {
-                    debugPrint(error)
-                    debugPrint(event)
-                } catch {
-                    debugPrint("context save failed.")
-                    debugPrint(error)
+            case .failure(_):
+                self.errorHandling()
+            }
+
+        }
+    }
+    
+    func successHandling(response: DataResponse<Any>, context: NSManagedObjectContext) {
+        guard let httpURLResponse = response.response else {
+            fatalError("httpURLResponse is nil.")
+        }
+        guard let lastModifiedDate = ResponseParser.lastModifiedDate(from: httpURLResponse) else { fatalError("lastModifiedDate is nil.")
+        }
+        guard let savedDate = UserDefaults.standard.object(forKey: UserDefaultsKey.lastModified) as? Date else {
+            fatalError("lastModifiedDate is missing.")
+        }
+        if lastModifiedDate.isLater(than: savedDate) {
+            // JSON is updated. Parse and instantiate objects.
+            guard let json = response.result.value else {
+                fatalError("response result value is nil.")
+            }
+            
+            do {
+                _ = try JSONParser.parse(json: json, context: context)
+                
+                // Delete existing objects.
+                if try context.count(for: Event.fetchRequest()) > 0 {
+                    let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: Event.fetchRequest())
+                    try context.execute(batchDeleteRequest)
                 }
                 
-            } else {
-                // JSON is not updated. Use the existing objects.
+                // Save events to CoreData.
+                try context.save()
+                debugPrint("context save succeeded.")
+                
+                // Save lastModifiedDate to UserDefaults.
+                UserDefaults.standard.set(lastModifiedDate, forKey: UserDefaultsKey.lastModified)
+                
                 DispatchQueue.main.async {
+                    if let spinner = self.spinner {
+                        self.removeSpinner(spinner)
+                    }
                     self.setupChildVC()
                 }
+                
+            } catch let JSONError.parsingError(error, json) {
+                debugPrint(error)
+                debugPrint(json)
+            } catch let EventError.initializingError(error, event) {
+                debugPrint(error)
+                debugPrint(event)
+            } catch {
+                debugPrint("context save failed.")
+                debugPrint(error)
+            }
+            
+        } else {
+            // JSON is not updated. Use the existing objects.
+            DispatchQueue.main.async {
+                self.setupChildVC()
             }
         }
+    }
+    
+    func errorHandling() {
+        debugPrint("error is thorwn.")
+        // If error is thrown, Load the default JSON file in the app bundle.
+        let path = Bundle.main.path(forResource: "NCCBFSchedule", ofType: "json")!
+        let data = NSData(contentsOfFile: path)!
+        guard let context = context else { return }
+        
+        do {
+            let json = try JSONSerialization.jsonObject(with: data as Data)
+            _ = try JSONParser.parse(json: json, context: context)
+            
+            // Delete existing objects.
+            if try context.count(for: Event.fetchRequest()) > 0 {
+                let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: Event.fetchRequest())
+                try context.execute(batchDeleteRequest)
+            }
+            
+            // Save events to CoreData.
+            try context.save()
+            debugPrint("context save succeeded.")
+            
+            DispatchQueue.main.async {
+                if let spinner = self.spinner {
+                    self.removeSpinner(spinner)
+                }
+                self.setupChildVC()
+            }
+            
+        } catch {
+            print(error.localizedDescription)
+        }
+        
     }
     
     // MARK: - Private Methods
