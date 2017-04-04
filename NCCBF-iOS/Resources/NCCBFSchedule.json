@@ -6,7 +6,8 @@
         "location": "Peace Plaza Stage",
         "imagename": "TaikoDojo.jpg",
         "name": "San Francisco Taiko Dojo",
-        "url": "www.sftaiko.com",
+        "url": "http://www.sftaiko.com/",
+        "category": "Taiko",
         "details": "Grandmaster Seiichi Tanaka founded the San Francisco Taiko Dojo in 1968 and introduced the taiko art form to America. Over the years, Grandmaster Tanakaâ€™s students have traveled around the globe, forming new taiko ensembles and establishing taiko as an art form. San Francisco Taiko Dojo remains the most exciting and dynamic taiko group in the world. Grandmaster Tanakaâ€™s style has developed the taiko from a primitive folk art to a powerful, sophisticated synthesis of rhythm, harmony and body movements. "
     },
     {
@@ -25,6 +26,7 @@
         "location": "Peace Plaza Stage",
         "imagename": "Hanayagi.jpg",
         "name": "Michiya Hanayagi and Michisuya Hanayagi Kai",
+        "category": "Dance, Japanese classical",
         "details": "Michiya Hanayagi of Nagoya, Japan established a dance studio in 1956 with the desire to share Japanese culture throughout the United States. A er 55 years of teaching, her contributions towards promoting the Japanese culture through classical dance gained her the prestige of being honored in 2004 as one of the recipients of  e Foreign Ministerâ€™s Commendation in Commemoration of the 150th Anniversary of the U.S.-Japan Relationship."
     },
     {
@@ -35,7 +37,8 @@
         "imagename": "NihonBuyoKiyonomoto.jpg",
         "name": "Nihon Buyo Kiyonomoto",
         "url": "http://kiyonomotoryu.org/",
-        "details": "The Kiyonomoto Ryu USA classical dance group was established in 1994. Celebrating over 21 years, under the leadership of Kiyonomoto Katsunami (Minako Ohara)- head instructor\nand Kiyonomoto Katsuno (Kazuko Nishimura), the group has been performing at various venues to spread and promote their di erent style of traditional dancing. "
+        "category": "Dance, Japanese classical",
+        "details": "The Kiyonomoto Ryu USA classical dance group was established in 1994. Celebrating over 21 years, under the leadership of Kiyonomoto Katsunami (Minako Ohara)- head instructor and Kiyonomoto Katsuno (Kazuko Nishimura), the group has been performing at various venues to spread and promote their di erent style of traditional dancing. "
     },
     {
         "id": 5,
@@ -45,6 +48,7 @@
         "imagename": "WorldOyamaKarate.jpg",
         "name": "World Oyama Karate",
         "url": "http://www.oyamakarate-sf.com/",
+        "category": "Martial Arts, karate",
         "details": "We practice a full-contact style of Japanese karate founded by Soshu Shigeru Oyama and Saiko Shihan Yasuhiko Oyama. We have been in the Bay Area since 2001, with dojos in San Francisco and San Mateo. Our performance at the festival will include kata (forms), kihon (basics), kumite ( ghting), as well as breaking demonstrations of wood, baseball bats, and ice. We hope to inspire others to keep pushing themselves to do more and be more. We are all stronger than we realize. "
     },
     {
@@ -55,6 +59,7 @@
         "imagename": "ChildrenTsuzumiChallenge.jpg",
         "name": "Children's Tsuzumi",
         "url": "http://npoinfusion.org/",
+        "category": "Music, two-headed drum",
         "details": "The tsuzumi is a two-headed Japanese drum with an hourglass-shaped body, and is o en found in the music of noh and kabuki theater. e Childrenâ€™s Tsuzumi Challenge is an a er-school program run by NPO Infusion, which teaches elementary school students at the Clarendon School in San Francisco and Willow Creek Academy in Sausalito how to play the drum."
     },
     {
@@ -64,6 +69,7 @@
         "location": "Peace Plaza Stage",
         "imagename": "Essence.jpg",
         "name": "Essence with Masayuki Koga",
+        "category": "Music, shakuhachi",
         "details": "Essence is a musical group featuring shakuhachi master Masayuki Koga with Shota Osabe on keyboard and Jimi Nakagawa playing the taiko drum. e group has recorded several albums. Koga, who came to the United States in 1973, is a teacher of the Kinko and Tozan Ryu shakhachi and founded the Japanese Music Institute of America in San Francisco and Berkeley in 1981. e shakuhachi is a Japanese ute made of bamboo."
     },
     {
@@ -74,6 +80,7 @@
         "imagename": "Okinawa.jpg",
         "name": "SF Okinawa Kenjin Kai",
         "url": "https://www.sfokk.org/",
+        "category": "Dance and Music, Okinawan",
         "details": "The San Francisco Okinawa Kenjin-Kai is a social organization serving the local Bay Area community. e goal of the club is to share Okinawan culture with people around the world. Every year, during the Cherry Blossom Festival we perform traditional Okinawan music and dance on the Peace Plaza stage and at the Grand Parade. If you watch and listen closely, you will see that our music, dance, and costumes incorporate cultural in uences from Southeast Asia, China, Japan, and the U.S. You will also notice that our performers are of a wide range of ages, generations, ethnicities, and nationalities."
     },
     {
@@ -82,6 +89,7 @@
         "endat": "2017-04-08T23:15:00.000Z",
         "location": "Peace Plaza Stage",
         "name": "Yoko Fitzpatrick and the Sunshine Girls",
+        "category": "Dance",
         "details": "Yoko and the Sunshine Girls was established about 13 years ago by Yoko Fitzpatrick for all senior citizens to improve their brain and health condition and their enjoyment, as dancing is bene ts everything for seniors.  e average age of our members is about 80 years old; however, they are all in good health and young in mind since they have been dancing for 13 years. Dance classes are o ered at the Berkeley Senior Center every 2nd and 4th Saturday, and every Tuesday for 2 hours at the Richmond Annex Senior Center."
     },
     {
@@ -92,6 +100,7 @@
         "imagename": "Minyo.jpg",
         "name": "Sakura Minyo Doo Kai",
         "url": "http://sakuraminyo.weebly.com/",
+        "category": "Dance and Music, Japanese folk",
         "details": "A group of Issei singers came together shortly a er WWII to sing for each other. ey eventually started to act and sing to put on public performances. Singers of Japanese folk music broke away from the original group and formed their own club. ey added shamisen players and dancers and called themselves Sakura Minyo Doo Koo Kai."
     },
     {
@@ -101,7 +110,8 @@
         "location": "Peace Plaza Stage",
         "name": "Northern California Naginata",
         "url": "http://www.naginata.org/ncnf/ncnf.html",
-        "details": "Rarely seen outside of Japan, Naginata or Japanese polearm fencing, uses a sword mounted to the end of a sta .  e art of wielding the naginata has been handed down through the generations since its use in the battle elds in medieval Japan. For the last three centuries, the tradition of Naginata has been kept alive primarily by women. We practice both a traditional school called Tendo Ryu and the all-Japan version called Atarashii Naginata. Take this unique opportunity to see traditional battle eld arts that have been\npassed down from the 1500s to today!"
+        "category": "Martial Arts, polearm fencing",
+        "details": "Rarely seen outside of Japan, Naginata or Japanese polearm fencing, uses a sword mounted to the end of a shaft. The art of wielding the naginata has been handed down through the generations since its use in the battle elds in medieval Japan. For the last three centuries, the tradition of Naginata has been kept alive primarily by women. We practice both a traditional school called Tendo Ryu and the all-Japan version called Atarashii Naginata. Take this unique opportunity to see traditional battle eld arts that have been passed down from the 1500s to today!"
     },
     {
         "id": 12,
@@ -110,6 +120,7 @@
         "location": "Peace Plaza Stage",
         "name": "Ito Yosakoi",
         "url": "https://www.facebook.com/ItoYosakoi/",
+        "category": "Dance",
         "details": "Ito is a Yosakoi dance team in SF Japantown. Yosakoi is an energetic dance style embodies the power of ocean waves. Our name â€œItoâ€ (ç³¸ - â€œTapestryâ€) emphasizes the relationships woven together between members of a community. e dancers include alumni from the NSU Yosakoi at UC Berkeley."
     },
     {
@@ -118,7 +129,8 @@
         "endat": "2017-04-09T01:00:00.000Z",
         "location": "Peace Plaza Stage",
         "name": "Kendama",
-        "url": "http://kendamausa.com/"
+        "url": "http://kendamausa.com/",
+        "category": "Game"
     },
     {
         "id": 14,
@@ -126,7 +138,8 @@
         "endat": "2017-04-09T05:30:00.000Z",
         "location": "Kabuki Cinemas",
         "imagename": "QueenProgram.jpg",
-        "name": "2017 Cherry Blossom Queen Program  Cornonation Night"
+        "name": "2017 Cherry Blossom Queen Program  Cornonation Night",
+        "category": "Queen Program"
     },
     {
         "id": 15,
@@ -141,7 +154,8 @@
         "startat": "2017-04-09T18:00:00.000Z",
         "endat": "2017-04-10T00:00:00.000Z",
         "location": "Post & Buchanan",
-        "name": "Hula Dance and Prize Give-aways"
+        "name": "Hula Dance and Prize Give-aways",
+        "category": "Dance, Hula"
     },
     {
         "id": 17,
@@ -149,7 +163,8 @@
         "endat": "2017-04-08T18:30:00.000Z",
         "location": "Sakura 360 Stage",
         "imagename": "sakura360.png",
-        "name": "Games hosted by Robbie"
+        "name": "Games hosted by Robbie",
+        "category": "Game"
     },
     {
         "id": 18,
@@ -157,7 +172,8 @@
         "endat": "2017-04-08T19:00:00.000Z",
         "location": "Sakura 360 Stage",
         "imagename": "sakura360.png",
-        "name": "Name that Tune hosted by Robbie"
+        "name": "Name that Tune hosted by Robbie",
+        "category": "Game"
     },
     {
         "id": 19,
@@ -165,7 +181,8 @@
         "endat": "2017-04-08T19:30:00.000Z",
         "location": "Sakura 360 Stage",
         "imagename": "sakura360.png",
-        "name": "Catchy anime song Dance Along."
+        "name": "Catchy anime song Dance Along.",
+        "category": "Dance and Music"
     },
     {
         "id": 20,
@@ -173,7 +190,8 @@
         "endat": "2017-04-08T20:00:00.000Z",
         "location": "Sakura 360 Stage",
         "imagename": "sakura360.png",
-        "name": "Open mic: you sing anime/jpop songs"
+        "name": "Open mic: you sing anime/jpop songs",
+        "category": "Music"
     },
     {
         "id": 21,
@@ -181,7 +199,8 @@
         "endat": "2017-04-08T20:30:00.000Z",
         "location": "Sakura 360 Stage",
         "imagename": "sakura360.png",
-        "name": "Children's anime songs with Mari"
+        "name": "Children's anime songs with Mari",
+        "category": "Music"
     },
     {
         "id": 22,
@@ -189,7 +208,8 @@
         "endat": "2017-04-08T21:00:00.000Z",
         "location": "Sakura 360 Stage",
         "imagename": "sakura360.png",
-        "name": "Cherry blossoms and tea lolita fashion show"
+        "name": "Cherry blossoms and tea lolita fashion show",
+        "category": "Fashion"
     },
     {
         "id": 23,
@@ -221,7 +241,8 @@
         "endat": "2017-04-08T23:00:00.000Z",
         "location": "Sakura 360 Stage",
         "imagename": "sakura360.png",
-        "name": "Cosplay Runway"
+        "name": "Cosplay Runway",
+        "category": "Fashion"
     },
     {
         "id": 27,
@@ -237,7 +258,8 @@
         "endat": "2017-04-09T00:00:00.000Z",
         "location": "Sakura 360 Stage",
         "imagename": "sakura360.png",
-        "name": "Games/day prizes with robbie"
+        "name": "Games/day prizes with robbie",
+        "category": "Game"
     },
     {
         "id": 29,
@@ -245,7 +267,8 @@
         "endat": "2017-04-08T20:00:00.000Z",
         "location": "New People",
         "imagename": "FilmFestival.jpg",
-        "name": "Sailor Moon R The Movie"
+        "name": "Sailor Moon R The Movie",
+        "category": "Film"
     },
     {
         "id": 30,
@@ -253,7 +276,8 @@
         "endat": "2017-04-08T23:00:00.000Z",
         "location": "New People",
         "imagename": "FilmFestival.jpg",
-        "name": "Tampopo"
+        "name": "Tampopo",
+        "category": "Film"
     },
     {
         "id": 31,
@@ -261,15 +285,18 @@
         "endat": "2017-04-09T02:00:00.000Z",
         "location": "New People",
         "imagename": "FilmFestival.jpg",
-        "name": "Castle in the Sky"
+        "name": "Castle in the Sky",
+        "category": "Film"
     },
     {
         "id": 32,
         "startat": "2017-04-08T19:00:00.000Z",
         "endat": "2017-04-08T20:00:00.000Z",
         "location": "JCCCNC",
+        "imagename": "JCCCNC.jpg",
         "name": "Japanese Music Institute",
         "url": "http://jmia.org",
+        "category": "Music, shakuhachi",
         "details": "Offering shakuhachi instruction by Masayuki Koga, JMI is a nonpro t organization that breathes new life into traditional and modern Japanese music. Founded in 1981, JMI has performed and taught for over 30 years in the Bay Area, Canada, Germany, and Japan. Enjoy their Japanese traditional, folk, and ensemble performances at the festivalâ€”which includes Essence, a group consisting of instructors and guest teachers at JMI and led"
     },
     {
@@ -277,14 +304,18 @@
         "startat": "2017-04-08T20:00:00.000Z",
         "endat": "2017-04-08T21:30:00.000Z",
         "location": "JCCCNC",
-        "name": "Minyo Minbu"
+        "imagename": "JCCCNC.jpg",
+        "name": "Minyo Minbu",
+        "category": "Dance and Music, Japanese folk"
     },
     {
         "id": 34,
         "startat": "2017-04-08T21:30:00.000Z",
         "endat": "2017-04-08T22:00:00.000Z",
         "location": "JCCCNC",
+        "imagename": "JCCCNC.jpg",
         "name": "Marimo-Kai and Yukari Sakaguchi",
+        "category": "Music, koto",
         "details": "Founded in 2000, Marimo-kai is a koto performing group based in San Jose that plays both classical and modern music, as well as a number of pieces written for western instruments.  e group has been actively performing in the San Francisco Bay Area at cultural events, senior centers, weddings, social gatherings, and educational institutions.  e groupâ€™s name, Marimo, means green, spherical moss which grows in fresh water in northern parts of Japan. It is round, so  and mesmerizing. It starts its life very small, but it grows slowly but surely, which is just what this group is."
     },
     {
@@ -292,8 +323,10 @@
         "startat": "2017-04-08T22:00:00.000Z",
         "endat": "2017-04-08T22:30:00.000Z",
         "location": "JCCCNC",
+        "imagename": "JCCCNC.jpg",
         "name": "Nishikawa Ryu",
         "url": "https://sites.google.com/site/nishikawaryuca/home",
+        "category": "Dance, Japanese classical",
         "details": "Students of Minosuke Nishikawa V perform Nihon Buyo. Practices are held twice a year with Minosuke Nishikawa V at 1759 Sutter Street, San Francisco. "
     },
     {
@@ -301,15 +334,19 @@
         "startat": "2017-04-08T22:30:00.000Z",
         "endat": "2017-04-09T00:30:00.000Z",
         "location": "JCCCNC",
-        "name": "Rakugo"
+        "imagename": "JCCCNC.jpg",
+        "name": "Rakugo",
+        "category": "Comedy / Story-telling"
     },
     {
         "id": 37,
         "startat": "2017-04-09T01:00:00.000Z",
         "endat": "2017-04-09T02:00:00.000Z",
         "location": "JCCCNC",
+        "imagename": "JCCCNC.jpg",
         "name": "Shigin",
-        "details": "Shigin is the art of chanting. Japanese or Chinese poems are o en sung to express the feeling\nof joy or sorrow, the beauty of nature, or to o er a spiritual message. e ability to sing well and be able\nto express the feeling and concept of the author is very important to this art form. Shigin is attributed to a Japanese priest who brought the written language from China and introduced poems to Japan over 1,500 years ago. Gradually, Japanese scholars created and recited their own poems. Later, warriors added to the rich heritage, expressing their joyful victories or sorrowful defeats. Five Shigin Groups from San Francisco have performed for 49 years, going on its 50th year!"
+        "category": "Chinese Poem Recitation",
+        "details": "Shigin is the art of chanting. Japanese or Chinese poems are o en sung to express the feeling of joy or sorrow, the beauty of nature, or to o er a spiritual message. e ability to sing well and be able to express the feeling and concept of the author is very important to this art form. Shigin is attributed to a Japanese priest who brought the written language from China and introduced poems to Japan over 1,500 years ago. Gradually, Japanese scholars created and recited their own poems. Later, warriors added to the rich heritage, expressing their joyful victories or sorrowful defeats. Five Shigin Groups from San Francisco have performed for 49 years, going on its 50th year!"
     },
     {
         "id": 38,
@@ -317,7 +354,8 @@
         "endat": "2017-04-09T00:00:00.000Z",
         "location": "JCCCNC - Issei Memorial Hall",
         "imagename": "Ikebana.jpg",
-        "name": "Ikebana Exhibit & Demonstration"
+        "name": "Ikebana Exhibit & Demonstration",
+        "category": "Flower Arrangement"
     },
     {
         "id": 39,
@@ -325,14 +363,17 @@
         "endat": "2017-04-09T00:00:00.000Z",
         "location": "JCCCNC - Classroom One",
         "imagename": "WashiNingyo.jpg",
-        "name": "Washi Ningyo"
+        "name": "Washi Ningyo",
+        "category": "Handmade Dollls"
     },
     {
         "id": 40,
         "startat": "2017-04-08T18:00:00.000Z",
         "endat": "2017-04-08T23:00:00.000Z",
         "location": "JCCCNC - Classroom Two",
-        "name": "Shishu (Japanese Embroidery)"
+        "imagename": "JCCCNC.jpg",
+        "name": "Shishu (Japanese Embroidery)",
+        "category": "Embroidery"
     },
     {
         "id": 41,
@@ -340,7 +381,8 @@
         "endat": "2017-04-08T20:15:00.000Z",
         "location": "Hokka Nichibei Kai",
         "imagename": "TeaCeremony.jpg",
-        "name": "Ura-Senke Tankokai"
+        "name": "Ura-Senke Tankokai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 42,
@@ -348,7 +390,8 @@
         "endat": "2017-04-08T21:15:00.000Z",
         "location": "Hokka Nichibei Kai",
         "imagename": "TeaCeremony.jpg",
-        "name": "Ura-Senke Tankokai"
+        "name": "Ura-Senke Tankokai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 43,
@@ -356,7 +399,8 @@
         "endat": "2017-04-08T22:45:00.000Z",
         "location": "Hokka Nichibei Kai",
         "imagename": "TeaCeremony.jpg",
-        "name": "Ura-Senke Tankokai"
+        "name": "Ura-Senke Tankokai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 44,
@@ -364,7 +408,8 @@
         "endat": "2017-04-08T23:15:00.000Z",
         "location": "Hokka Nichibei Kai",
         "imagename": "TeaCeremony.jpg",
-        "name": "Ura-Senke Tankokai"
+        "name": "Ura-Senke Tankokai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 45,
@@ -372,7 +417,8 @@
         "endat": "2017-04-08T20:30:00.000Z",
         "location": "Tateuchi Auditorium",
         "imagename": "TeaCeremony.jpg",
-        "name": "Omote-Senke Domonkai"
+        "name": "Omote-Senke Domonkai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 46,
@@ -380,7 +426,8 @@
         "endat": "2017-04-08T21:30:00.000Z",
         "location": "Tateuchi Auditorium",
         "imagename": "TeaCeremony.jpg",
-        "name": "Omote-Senke Domonkai"
+        "name": "Omote-Senke Domonkai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 47,
@@ -388,7 +435,8 @@
         "endat": "2017-04-08T22:30:00.000Z",
         "location": "Tateuchi Auditorium",
         "imagename": "TeaCeremony.jpg",
-        "name": "Omote-Senke Domonkai"
+        "name": "Omote-Senke Domonkai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 48,
@@ -396,7 +444,8 @@
         "endat": "2017-04-08T23:30:00.000Z",
         "location": "Tateuchi Auditorium",
         "imagename": "TeaCeremony.jpg",
-        "name": "Omote-Senke Domonkai"
+        "name": "Omote-Senke Domonkai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 49,
@@ -404,21 +453,24 @@
         "endat": "2017-04-09T00:00:00.000Z",
         "location": "National JACL Building",
         "imagename": "Oragami.jpg",
-        "name": "Origami"
+        "name": "Origami",
+        "category": "Origami"
     },
     {
         "id": 50,
         "startat": "2017-04-08T18:00:00.000Z",
         "endat": "2017-04-09T00:00:00.000Z",
         "location": "Union Bank Community Room",
-        "name": "Japanese Sword Club"
+        "name": "Japanese Sword Club",
+        "category": "Sword Display"
     },
     {
         "id": 51,
         "startat": "2017-04-08T22:00:00.000Z",
         "endat": "2017-04-08T23:00:00.000Z",
         "location": "Sequoias Auditorium",
-        "name": "Music from Japan and Other Countries"
+        "name": "Music from Japan and Other Countries",
+        "category": "Music"
     },
     {
         "id": 52,
@@ -427,21 +479,24 @@
         "location": "National Japanese American Historical Society",
         "imagename": "NJHAS.jpg",
         "name": "Children of the Camp - 75th Anniversary of Executive Oder 9066 Exhibit; Japanese sword display",
-        "url": "https://www.njahs.org/children-camps-exhibit-series-open/"
+        "url": "https://www.njahs.org/children-camps-exhibit-series-open/",
+        "category": "Sword Display; Exhibit"
     },
     {
         "id": 53,
         "startat": "2017-04-08T18:00:00.000Z",
         "endat": "2017-04-09T00:00:00.000Z",
         "location": "Kinokuniya Bookstore",
-        "name": "Japanese Patchwork and Sashiki Demomstration"
+        "name": "Japanese Patchwork and Sashiki Demonstration",
+        "category": "Arts & Crafts, Patchwork"
     },
     {
         "id": 54,
         "startat": "2017-04-08T18:00:00.000Z",
         "endat": "2017-04-08T23:00:00.000Z",
         "location": "Hotel Kabuki Sakura Room",
-        "name": "Kyoto Arts and Crafts"
+        "name": "Kyoto Arts and Crafts",
+        "category": "Arts & Crafts"
     },
     {
         "id": 55,
@@ -450,6 +505,7 @@
         "location": "Webster Street Stage",
         "imagename": "YamashiKai.jpg",
         "name": "Yamasho-Kai",
+        "category": "Music",
         "details": "Yamasho Kai is a musical group featuring singer Yamada Akrirama with Buruman Mukoto Yoshiko playing taiko drum, Hideo Date on guitar, and Ruyuko Date and Tachibana GaYoko for festival music. e modern from of this musical group has origin from Osaka during the Edo period (1603-1868)."
     },
     {
@@ -457,28 +513,32 @@
         "startat": "2017-04-08T20:30:00.000Z",
         "endat": "2017-04-08T21:30:00.000Z",
         "location": "Webster Street Stage",
-        "name": "D'Groove"
+        "name": "D'Groove",
+        "category": "Music"
     },
     {
         "id": 57,
         "startat": "2017-04-08T22:00:00.000Z",
         "endat": "2017-04-08T23:00:00.000Z",
         "location": "Webster Street Stage",
-        "name": "Blessed Love Gospel Reggae"
+        "name": "Blessed Love Gospel Reggae",
+        "category": "Music"
     },
     {
         "id": 58,
         "startat": "2017-04-08T23:30:00.000Z",
         "endat": "2017-04-08T22:30:00.000Z",
         "location": "Webster Street Stage",
-        "name": "Bayonics"
+        "name": "Bayonics",
+        "category": "Music"
     },
     {
         "id": 59,
         "startat": "2017-04-09T19:00:00.000Z",
         "endat": "2017-04-10T00:00:00.000Z",
         "location": "Kabuki Cinemas",
-        "name": "Kayo Parade"
+        "name": "Kayo Parade",
+        "category": "Dance and Music"
     },
     {
         "id": 60,
@@ -486,14 +546,16 @@
         "endat": "2017-04-10T00:00:00.000Z",
         "location": "Post & Buchanan",
         "imagename": "NBC_Logo.jpg",
-        "name": "NBC Bay Area"
+        "name": "NBC Bay Area",
+        "category": "Music"
     },
     {
         "id": 61,
         "startat": "2017-04-09T18:00:00.000Z",
         "endat": "2017-04-10T00:00:00.000Z",
         "location": "Post & Buchanan",
-        "name": "Hula Dance and Prize Give-aways"
+        "name": "Hula Dance and Prize Give-aways",
+        "category": "Dance, Hula"
     },
     {
         "id": 62,
@@ -501,7 +563,8 @@
         "endat": "2017-04-09T20:00:00.000Z",
         "location": "Peace Plaza Stage",
         "imagename": "TaikoDojo.jpg",
-        "name": "San Francisco Taiko Dojo"
+        "name": "San Francisco Taiko Dojo",
+        "category": "Music, taiko"
     },
     {
         "id": 63,
@@ -509,7 +572,8 @@
         "endat": "2017-04-09T20:30:00.000Z",
         "location": "Peace Plaza Stage",
         "imagename": "QueenProgram.jpg",
-        "name": "2017 Queen Introductions"
+        "name": "2017 Queen Introductions",
+        "category": "Queen Program"
     },
     {
         "id": 64,
@@ -517,7 +581,8 @@
         "endat": "2017-04-09T21:00:00.000Z",
         "location": "Peace Plaza Stage",
         "imagename": "YamashiKai.jpg",
-        "name": "Yamasho-Kai"
+        "name": "Yamasho-Kai",
+        "category": "Music"
     },
     {
         "id": 65,
@@ -525,6 +590,7 @@
         "endat": "2017-04-09T21:30:00.000Z",
         "location": "Peace Plaza Stage",
         "name": "Soko Joshi Dojo",
+        "category": "Martial Arts, judo",
         "details": "Soko Joshi Judo Clubâ€™s founder was Keiko Fukuda Sensei, the highest ranking female judo Sensei in the world. Soko Joshi Judo Club has participated in the Cherry Blossom Festival for over 45 years. We are a womenâ€™s Judo Club in Noe Valley at the corner of Castro and 26th street. Class practice are Tuesday/  ursday from 6pm-8pm. www.sokojoshijudo.com"
     },
     {
@@ -534,6 +600,7 @@
         "location": "Peace Plaza Stage",
         "name": "Ensohza Minyoshu",
         "url": "http://www.ensohza.org/",
+        "category": "Dance and Music, Japanese",
         "details": "Formed in 2006, Ensohza Minyoshu is a Japanese folk performing ensemble based in the San Francisco Bay Area. The group performs music and dance that evokes the festival spirit and character of Japanâ€™s diverse rural communities. Ensohza Minyoshu o ers training in folk dance and the traditional festival arts of Japan, and is also available for performances."
     },
     {
@@ -543,6 +610,7 @@
         "location": "Peace Plaza Stage",
         "name": "Oshiro Karate",
         "url": "http://www.oshirodojo.com",
+        "category": "Martial Arts, karate",
         "details": "Oshiro Karate Dojo was founded in 1970s. We are located in San Mateo, and have multiple branch dojos in Okinawa, New York, and throughout Europe. Our style is Okinawa Matsubayashi-ryu. We practice karate, Yamanni-ryu bo-jutsu, and other kobudo. "
     },
     {
@@ -551,6 +619,7 @@
         "endat": "2017-04-09T22:45:00.000Z",
         "location": "Peace Plaza Stage",
         "name": "El Cerrito High School Japanese Club",
+        "category": "Dance, Soran Bushi",
         "details": "The mission of the Japanese Soran Bushi Club at El Cerrito High School is to spread Japanese culture through the art of modern and traditional Soran Bushi folk dancing. e club meets on Mondays and ursdays."
     },
     {
@@ -559,6 +628,7 @@
         "endat": "2017-04-09T23:15:00.000Z",
         "location": "Peace Plaza Stage",
         "name": "SF Wushu Team",
+        "category": "Martial Arts, wushu",
         "details": "The San Francisco Wushu Team is a martial art that in recent time has been developed as sport to promote health and exercise with a focus on performing art which had been used for self-defense against animals as well as opposing clans and nomads.  e team was formed a er a world tour of Chinaâ€™s National Wushu Team in 1974 and interest has grown over the years as students have spread the martial arts throughout the Bay Area"
     },
     {
@@ -568,6 +638,7 @@
         "location": "Peace Plaza Stage",
         "name": "Suio Ryu Iai Kendo",
         "url": "http://www.suioryu-usa.org/sf/",
+        "category": "Martials Arts, kendo",
         "details": "The Suio Ryu is one of the few extant koryu, or ancient systems of martial arts, practiced today. It was founded around 1600 by Mima Yoichizaemon Kagenobu, and has followed the traditional method of oral transmission. Today, the head of the Suio Ryu is Katsuse Yoshimitsu Kagehiro, who lives and teaches in the Shimizu ward of Shizuoka City in the Shizuoka prefecture of Japan. "
     },
     {
@@ -577,6 +648,7 @@
         "location": "Peace Plaza Stage",
         "imagename": "Rinka.jpg",
         "name": "Rinka Buyo",
+        "category": "Dance, Japanese classical",
         "details": "Rinka started performing Nihon buyo (classical dance) at San Francisco Japantownâ€™s Kimono Day in 2009. eir form is based on the minyo style of dance but also draws inspiration from other types of Nihon buyo. eir choreography includes contemporary and ethnic Japanese folk music"
     },
     {
@@ -585,14 +657,16 @@
         "endat": "2017-04-10T00:45:00.000Z",
         "location": "Peace Plaza Stage",
         "name": "Zanshin Dojo",
-        "details": "Zanshin Dojo is a martial art with a focus on health and self-defense in which students test their abilities and overcome inhibitions. Sensei Mirko Buchwal established the dojo in June 1988 to provide an opportunity\nfor learning the physical and mental aspects of martial arts, and through an a liation with the International Okinawan Goji, students can train in the U.S. and Japan."
+        "category": "Martial Arts, karate",
+        "details": "Zanshin Dojo is a martial art with a focus on health and self-defense in which students test their abilities and overcome inhibitions. Sensei Mirko Buchwal established the dojo in June 1988 to provide an opportunity for learning the physical and mental aspects of martial arts, and through an a liation with the International Okinawan Goji, students can train in the U.S. and Japan."
     },
     {
         "id": 73,
         "startat": "2017-04-10T00:45:00.000Z",
         "endat": "2017-04-10T01:30:00.000Z",
         "location": "Peace Plaza Stage",
-        "name": "Kendama USA "
+        "name": "Kendama USA ",
+        "category": "Game"
     },
     {
         "id": 74,
@@ -600,7 +674,8 @@
         "endat": "2017-04-09T19:00:00.000Z",
         "location": "Sakura 360 Stage",
         "imagename": "sakura360.png",
-        "name": "Games hosted by Robbie"
+        "name": "Games hosted by Robbie",
+        "category": "Game"
     },
     {
         "id": 75,
@@ -610,6 +685,7 @@
         "imagename": "sakura360.png",
         "name": "Melody Tanaka Genryu Arts.",
         "url": "http://www.genryuarts.org/",
+        "category": "Music, taiko",
         "details": "Founded as Gen Taiko in 1995 and incorporated as GenRyu Arts in August 2008, its mission is to promote, present and participate in Japanese and Japanese American culture through Taiko (Japanese Drumming) and other traditional and contemporary music and dance forms. Deeply rooted in San Franciscoâ€™s Japantown and in the Asian American Community. GenRyu Arts engages in art-making that merges Japanese cultural forms taiko, dance and folk songs with new music, spoken word and visual design into singular expressions that honor community heritage and address key issues stemming from the legacy of internment and redevelopment."
     },
     {
@@ -618,7 +694,8 @@
         "endat": "2017-04-09T20:00:00.000Z",
         "location": "Sakura 360 Stage",
         "imagename": "sakura360.png",
-        "name": "Open mic: you sing anime /jpop songs"
+        "name": "Open mic: you sing anime /jpop songs",
+        "category": "Music"
     },
     {
         "id": 77,
@@ -626,7 +703,8 @@
         "endat": "2017-04-09T20:30:00.000Z",
         "location": "Sakura 360 Stage",
         "imagename": "sakura360.png",
-        "name": "Japanese Anime Songs With Tsukino Mari"
+        "name": "Japanese Anime Songs With Tsukino Mari",
+        "category": "Music"
     },
     {
         "id": 78,
@@ -634,7 +712,8 @@
         "endat": "2017-04-09T21:00:00.000Z",
         "location": "Sakura 360 Stage",
         "imagename": "sakura360.png",
-        "name": "Kawaii fashion gathering"
+        "name": "Kawaii fashion gathering",
+        "category": "Fashion"
     },
     {
         "id": 79,
@@ -642,7 +721,9 @@
         "endat": "2017-04-09T22:00:00.000Z",
         "location": "Sakura 360 Stage",
         "imagename": "sakura360.png",
-        "name": "Ayakashi"
+        "name": "Ayakashi",
+        "url": "Pop Culture",
+        "category": "Pop Culture"
     },
     {
         "id": 80,
@@ -651,6 +732,7 @@
         "location": "Sakura 360 Stage",
         "imagename": "sakura360.png",
         "name": "Meet AnimeMyu",
+        "category": "Pop Culture",
         "details": "AnimeMyu is a Japanese animation performing group who is best known for their sailor moon musical performance in 2007. The group's main goal is to spread the Japanese language through songs. This year they are celebrating their 10th anniversary at Cherry blossom festival"
     },
     {
@@ -659,7 +741,8 @@
         "endat": "2017-04-09T23:00:00.000Z",
         "location": "Sakura 360 Stage",
         "imagename": "sakura360.png",
-        "name": "Fur Elite"
+        "name": "Fur Elite",
+        "category": "Pop Culture"
     },
     {
         "id": 82,
@@ -667,7 +750,8 @@
         "endat": "2017-04-09T23:30:00.000Z",
         "location": "Sakura 360 Stage",
         "imagename": "sakura360.png",
-        "name": "Cosplay Runway"
+        "name": "Cosplay Runway",
+        "category": "Fashion"
     },
     {
         "id": 83,
@@ -675,7 +759,8 @@
         "endat": "2017-04-10T00:00:00.000Z",
         "location": "Sakura 360 Stage",
         "imagename": "sakura360.png",
-        "name": "Prizes scavanger hunt"
+        "name": "Prizes scavanger hunt",
+        "category": "Game"
     },
     {
         "id": 84,
@@ -683,7 +768,8 @@
         "endat": "2017-04-09T22:00:00.000Z",
         "location": "New People",
         "imagename": "FilmFestival.jpg",
-        "name": "My Neighbor Totoro"
+        "name": "My Neighbor Totoro",
+        "category": "Film"
     },
     {
         "id": 85,
@@ -692,6 +778,7 @@
         "location": "JCCCNC",
         "imagename": "Koto.jpg",
         "name": "Koto-Sangen Masazuka-kai",
+        "category": "Music, koto",
         "details": "Koto-Sangen Masazuka-kai showcases ensemble and solo performances of koto and shamisen. e group is based in San Francisco and is active throughout the Bay Area. Koto-Sangen Masazuka-kai has participated in this Cherry Blossom Festival since its rst year! e goal of the group is to share the appreciation for Japanâ€™s traditional music through koto and shamisen."
     },
     {
@@ -699,14 +786,18 @@
         "startat": "2017-04-09T20:00:00.000Z",
         "endat": "2017-04-09T20:30:00.000Z",
         "location": "JCCCNC",
-        "name": "Gen Ryu Arts Presents"
+        "imagename": "JCCCNC.jpg",
+        "name": "Gen Ryu Arts Presents",
+        "category": "Music, taiko"
     },
     {
         "id": 87,
         "startat": "2017-04-09T20:30:00.000Z",
         "endat": "2017-04-09T21:30:00.000Z",
         "location": "JCCCNC",
+        "imagename": "Koto.jpg",
         "name": "Kazusa Shimaoka-kai SF Koto Ensemble",
+        "category": "Music, koto",
         "details": "Kazusa Shimaoka Kai with San Francisco Koto Ensemble was established by Madam Kazusa Shimaoka in 1967 and plays the traditional Japanese koto music. We have been performing through the Bay Area as well as Mexico, Canada, Japan and other countries. We belong to the Ikuta-ryu, Chikushi-school in Japan."
     },
     {
@@ -714,16 +805,20 @@
         "startat": "2017-04-09T21:30:00.000Z",
         "endat": "2017-04-09T22:30:00.000Z",
         "location": "JCCCNC",
+        "imagename": "JCCCNC.jpg",
         "name": "Chie & The Ronin",
         "url": "https://www.youtube.com/user/chietreagus",
-        "details": "A Kobe City native, Chie grew up with lots of music, Rakugo and\nkimchi. Chie moved to the U.S. in 1994 to look for something\nthat she could be passionate about.  at â€œsomethingâ€ turned out\nto be music. A er studying jazz and classical voice, she began\nperforming as a solo singer and also as a songwriter. Chie writes\nher original songs in both Japanese and English. Chieâ€™s band, â€œ e\nRonin,â€ includes her ace bass-player hubs and some very talented\nmusical friends who werenâ€™t doing anything else at the time."
+        "category": "Music, original and cover songs",
+        "details": "A Kobe City native, Chie grew up with lots of music, Rakugo and kimchi. Chie moved to the U.S. in 1994 to look for something that she could be passionate about. That â€œsomethingâ€ turned out to be music. A er studying jazz and classical voice, she began performing as a solo singer and also as a songwriter. Chie writes her original songs in both Japanese and English. Chieâ€™s band, \"The Ronin\" includes her ace bass-player hubs and some very talented musical friends who werenâ€™t doing anything else at the time."
     },
     {
         "id": 89,
         "startat": "2017-04-09T22:30:00.000Z",
         "endat": "2017-04-10T00:30:00.000Z",
         "location": "JCCCNC",
+        "imagename": "JCCCNC.jpg",
         "name": "Rakugo",
+        "category": "Comedy / Story-telling",
         "details": "In honor of the 50th Northern California Cherry Blossom Festival, the Government of Japan is proud to present a special 2-day only performance of traditional Japanese Osakan-style comedic Rakugo storytelling... in English! Headlined by the renowned Kaishi Katsura from Osaka. Come experience Japanâ€™s traditional â€œsit- downâ€ comedy!"
     },
     {
@@ -731,7 +826,9 @@
         "startat": "2017-04-09T18:00:00.000Z",
         "endat": "2017-04-10T00:00:00.000Z",
         "location": "JCCCNC - Issei Memorial Hall",
-        "name": "Ikebana Exhibit & Demonstration"
+        "imagename": "JCCCNC.jpg",
+        "name": "Ikebana Exhibit & Demonstration",
+        "category": "Flower Arrangement"
     },
     {
         "id": 91,
@@ -739,14 +836,17 @@
         "endat": "2017-04-10T00:00:00.000Z",
         "location": "JCCCNC - Classroom One",
         "imagename": "WashiNingyo.jpg",
-        "name": "Washi Ningyo"
+        "name": "Washi Ningyo",
+        "category": "Handmade Dolls"
     },
     {
         "id": 92,
         "startat": "2017-04-09T18:00:00.000Z",
         "endat": "2017-04-09T23:00:00.000Z",
         "location": "JCCCNC - Classroom Two",
-        "name": "Shishu (Japanese Embroidery)"
+        "imagename": "JCCCNC.jpg",
+        "name": "Shishu (Japanese Embroidery)",
+        "category": "Embroidery"
     },
     {
         "id": 93,
@@ -754,7 +854,8 @@
         "endat": "2017-04-09T20:15:00.000Z",
         "location": "Hokka Nichibei Kai",
         "imagename": "TeaCeremony.jpg",
-        "name": "Omote-Senke Domonkai"
+        "name": "Omote-Senke Domonkai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 94,
@@ -762,7 +863,8 @@
         "endat": "2017-04-09T21:15:00.000Z",
         "location": "Hokka Nichibei Kai",
         "imagename": "TeaCeremony.jpg",
-        "name": "Omote-Senke Domonkai"
+        "name": "Omote-Senke Domonkai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 95,
@@ -770,7 +872,8 @@
         "endat": "2017-04-09T22:15:00.000Z",
         "location": "Hokka Nichibei Kai",
         "imagename": "TeaCeremony.jpg",
-        "name": "Omote-Senke Domonkai"
+        "name": "Omote-Senke Domonkai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 96,
@@ -778,7 +881,8 @@
         "endat": "2017-04-09T23:15:00.000Z",
         "location": "Hokka Nichibei Kai",
         "imagename": "TeaCeremony.jpg",
-        "name": "Omote-Senke Domonkai"
+        "name": "Omote-Senke Domonkai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 97,
@@ -786,7 +890,8 @@
         "endat": "2017-04-09T20:30:00.000Z",
         "location": "Tateuchi Auditorium",
         "imagename": "TeaCeremony.jpg",
-        "name": "Ura-Senke Tankokai"
+        "name": "Ura-Senke Tankokai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 98,
@@ -794,7 +899,8 @@
         "endat": "2017-04-09T21:30:00.000Z",
         "location": "Tateuchi Auditorium",
         "imagename": "TeaCeremony.jpg",
-        "name": "Ura-Senke Tankokai"
+        "name": "Ura-Senke Tankokai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 99,
@@ -802,7 +908,8 @@
         "endat": "2017-04-09T22:30:00.000Z",
         "location": "Tateuchi Auditorium",
         "imagename": "TeaCeremony.jpg",
-        "name": "Ura-Senke Tankokai"
+        "name": "Ura-Senke Tankokai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 100,
@@ -810,14 +917,16 @@
         "endat": "2017-04-09T23:30:00.000Z",
         "location": "Tateuchi Auditorium",
         "imagename": "TeaCeremony.jpg",
-        "name": "Ura-Senke Tankokai"
+        "name": "Ura-Senke Tankokai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 101,
         "startat": "2017-04-09T23:00:00.000Z",
         "endat": "2017-04-10T00:00:00.000Z",
         "location": "Tateuchi Auditorium",
-        "name": "Edo-Senke and Dai Nippon Chado Gakkai"
+        "name": "Edo-Senke and Dai Nippon Chado Gakkai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 102,
@@ -825,14 +934,16 @@
         "endat": "2017-04-10T00:00:00.000Z",
         "location": "National JACL Building",
         "imagename": "Oragami.jpg",
-        "name": "Origami"
+        "name": "Origami",
+        "category": "Origami"
     },
     {
         "id": 103,
         "startat": "2017-04-09T18:00:00.000Z",
         "endat": "2017-04-10T00:00:00.000Z",
         "location": "Union Bank Community Room",
-        "name": "Japanese Sword Club"
+        "name": "Japanese Sword Club",
+        "category": "Sword Display"
     },
     {
         "id": 104,
@@ -841,49 +952,56 @@
         "location": "National Japanese American Historical Society",
         "imagename": "NJHAS.jpg",
         "name": "Children of the Camp - 75th Anniversary of Executive Oder 9066 Exhibit; Japanese sword display",
-        "url": "https://www.njahs.org/children-camps-exhibit-series-open/"
+        "url": "https://www.njahs.org/children-camps-exhibit-series-open/",
+        "category": "Sword Display; Exhibit"
     },
     {
         "id": 105,
         "startat": "2017-04-09T18:00:00.000Z",
         "endat": "2017-04-10T00:00:00.000Z",
         "location": "Kinokuniya Bookstore",
-        "name": "Japanese Patchwork and Sashiki Demomstration"
+        "name": "Japanese Patchwork and Sashiki Demonstration",
+        "category": "Arts & Crafts, Patchwork"
     },
     {
         "id": 106,
         "startat": "2017-04-09T18:00:00.000Z",
         "endat": "2017-04-09T23:00:00.000Z",
         "location": "Hotel Kabuki Sakura Room",
-        "name": "Kyoto Arts and Crafts"
+        "name": "Kyoto Arts and Crafts",
+        "category": "Arts & Crafts"
     },
     {
         "id": 107,
         "startat": "2017-04-09T19:00:00.000Z",
         "endat": "2017-04-09T19:45:00.000Z",
         "location": "Webster Street Stage",
-        "name": "Mike Dayao"
+        "name": "Mike Dayao",
+        "category": "Music"
     },
     {
         "id": 108,
         "startat": "2017-04-09T20:30:00.000Z",
         "endat": "2017-04-09T21:30:00.000Z",
         "location": "Webster Street Stage",
-        "name": "Get Lucky"
+        "name": "Get Lucky",
+        "category": "Music"
     },
     {
         "id": 109,
         "startat": "2017-04-09T21:30:00.000Z",
         "endat": "2017-04-09T22:15:00.000Z",
         "location": "Webster Street Stage",
-        "name": "Reflex"
+        "name": "Reflex",
+        "category": "Music"
     },
     {
         "id": 110,
         "startat": "2017-04-09T23:00:00.000Z",
         "endat": "2017-04-10T00:00:00.000Z",
         "location": "Webster Street Stage",
-        "name": "Groove Foundation"
+        "name": "Groove Foundation",
+        "category": "Music"
     },
     {
         "id": 111,
@@ -891,7 +1009,8 @@
         "endat": "2017-04-15T18:30:00.000Z",
         "location": "Post & Buchanan",
         "imagename": "TaruMikoshi.jpg",
-        "name": "Taru Mikoshi Purification Ceremony"
+        "name": "Taru Mikoshi Purification Ceremony",
+        "category": "Mikoshi"
     },
     {
         "id": 112,
@@ -899,7 +1018,8 @@
         "endat": "2017-04-15T19:00:00.000Z",
         "location": "Post & Buchanan",
         "imagename": "KagamiKai.jpg",
-        "name": "Kagami Kai Mochitsuki"
+        "name": "Kagami Kai Mochitsuki",
+        "category": "Mochi Pounding"
     },
     {
         "id": 113,
@@ -908,14 +1028,16 @@
         "location": "Peace Plaza Stage",
         "imagename": "TaikoDojo.jpg",
         "name": "San Francisco Taiko Dojo",
-        "url": "http://www.sftaiko.com/"
+        "url": "http://www.sftaiko.com/",
+        "category": "Music, taiko"
     },
     {
         "id": 114,
         "startat": "2017-04-15T20:00:00.000Z",
         "endat": "2017-04-15T20:30:00.000Z",
         "location": "Peace Plaza Stage",
-        "name": "Juni Hitoe (Twelve Layers Kimono)"
+        "name": "Juni Hitoe (Twelve Layers Kimono)",
+        "category": "Demonstration, kimono"
     },
     {
         "id": 115,
@@ -924,6 +1046,7 @@
         "location": "Peace Plaza Stage",
         "name": "Rosa Parks Elementary School",
         "url": "https://www.jbbpsf.org/",
+        "category": "Learning language through culture",
         "details": "The only program of its kind in Northern California, the Rosa Parks Japanese Bilingual Bicultural Program (JBBP) is a Foreign Language in Elementary School (FLES) program, integrating instruction by native Japanese speaking Sensei with a rigorous core curriculum taught in English by credentialed teachers. Founded in 1973 and at Rosa Parks since 2006, the result is a truly unique and rich learning experience â€“ marked by academic excellence and pro ciency in a second language â€“ in an environment that promotes community, diversity, and positive values."
     },
     {
@@ -931,56 +1054,72 @@
         "startat": "2017-04-15T21:00:00.000Z",
         "endat": "2017-04-15T21:45:00.000Z",
         "location": "Peace Plaza Stage",
-        "name": "JR Tohoku Music Band and Ladies Singing Groups"
+        "name": "JR Tohoku Music Band and Ladies Singing Groups",
+        "category": "Music"
     },
     {
         "id": 117,
         "startat": "2017-04-15T21:45:00.000Z",
         "endat": "2017-04-15T22:00:00.000Z",
         "location": "Peace Plaza Stage",
-        "name": "Tsuzumi Challenge by Willow Creek Academy"
+        "name": "Tsuzumi Challenge by Willow Creek Academy",
+        "category": "Music"
     },
     {
         "id": 118,
         "startat": "2017-04-15T22:00:00.000Z",
         "endat": "2017-04-15T22:30:00.000Z",
         "location": "Peace Plaza Stage",
-        "name": "Nankin Tamasudare by Fumitaka Shizu and Kanako Shizu"
+        "name": "Nankin Tamasudare by Fumitaka Shizu and Kanako Shizu",
+        "category": "Performance"
     },
     {
         "id": 119,
         "startat": "2017-04-15T22:30:00.000Z",
         "endat": "2017-04-15T23:15:00.000Z",
         "location": "Peace Plaza Stage",
-        "name": "Deigo Musume"
+        "name": "Deigo Musume",
+        "category": "Minyo music"
     },
     {
         "id": 120,
         "startat": "2017-04-15T23:15:00.000Z",
         "endat": "2017-04-15T23:45:00.000Z",
         "location": "Peace Plaza Stage",
-        "name": "Taiko from Ishinomaki Accompanied by Aoba Daiko"
+        "name": "Taiko from Ishinomaki Accompanied by Aoba Daiko",
+        "category": "Music, taiko"
     },
     {
         "id": 121,
         "startat": "2017-04-15T23:45:00.000Z",
         "endat": "2017-04-16T00:15:00.000Z",
         "location": "Peace Plaza Stage",
-        "name": "Okinawa Miyagi Honryu Dance by Ryuma Chibana, Anjou Nakasone from Okinawa and Yukio Funabashi from Tokyo"
+        "name": "Okinawa Miyagi Honryu Dance by Ryuma Chibana, Anjou Nakasone from Okinawa and Yukio Funabashi from Tokyo",
+        "category": "Dance, Okinawan"
     },
     {
         "id": 122,
         "startat": "2017-04-16T00:15:00.000Z",
         "endat": "2017-04-16T00:45:00.000Z",
         "location": "Peace Plaza Stage",
-        "name": "Takarabune Dance Performers from Tokyo"
+        "name": "Takarabune Dance Performers from Tokyo",
+        "category": "Dance"
     },
     {
         "id": 123,
         "startat": "2017-04-16T02:00:00.000Z",
         "endat": "2017-04-16T04:00:00.000Z",
         "location": "Peace Plaza Stage",
-        "name": "CBF Dance Party"
+        "name": "Cherry Blossom Under the Stars:",
+        "category": "Night event"
+    },
+    {
+        "id": 180,
+        "startat": "2017-04-15T20:00:00.000Z",
+        "endat": "2017-04-15T21:00:00.000Z",
+        "location": "Kabuki Cinemas",
+        "name": "Hiro Kimono Show",
+        "category": "Kimono"
     },
     {
         "id": 124,
@@ -988,7 +1127,8 @@
         "endat": "2017-04-15T20:30:00.000Z",
         "location": "New People",
         "imagename": "FilmFestival.jpg",
-        "name": "My Neighbor Totoro"
+        "name": "My Neighbor Totoro",
+        "category": "Film"
     },
     {
         "id": 125,
@@ -996,7 +1136,8 @@
         "endat": "2017-04-15T23:00:00.000Z",
         "location": "New People",
         "imagename": "FilmFestival.jpg",
-        "name": "Like Father, Like Son"
+        "name": "Like Father, Like Son",
+        "category": "Film"
     },
     {
         "id": 126,
@@ -1004,14 +1145,17 @@
         "endat": "2017-04-16T01:30:00.000Z",
         "location": "New People",
         "imagename": "FilmFestival.jpg",
-        "name": "The Tale of Zatoichi"
+        "name": "The Tale of Zatoichi",
+        "category": "Film"
     },
     {
         "id": 127,
         "startat": "2017-04-15T19:00:00.000Z",
         "endat": "2017-04-15T20:00:00.000Z",
         "location": "JCCCNC",
+        "imagename": "JCCCNC.jpg",
         "name": "Wesley Ukulele Band",
+        "category": "Music, ukulele",
         "details": "Aloha! e Wesley Ukulele Band from San Jose, was founded in 2004 for fun and fellowship. We have performed at Wesley Methodist Church functions such as Aki Matsuri, Mission Luau, Christmas Hanging of the Greens, Wesley Church Picnic, and at other sister churchâ€™s related events. We have even performed at the Grand Opening of the Ukulele Source store across the street from Wesley, and as well as Sake San Jose and Spirit of Japantown. We have over y members, about half of which are the active core group. Mahalo."
     },
     {
@@ -1019,7 +1163,9 @@
         "startat": "2017-04-15T20:00:00.000Z",
         "endat": "2017-04-15T20:30:00.000Z",
         "location": "JCCCNC",
+        "imagename": "JCCCNC.jpg",
         "name": "Edo Ensemble",
+        "category": "Music, koto/shamisen/shakuhachi",
         "details": "Comprised of shakuhachi, koto, and shamisen, the Edo Ensemble began performing professionally in 2011. Elliot Kallen is a former concert pianist who began studying shakuhachi more than 15 years ago. He now performs and teaches Chikuyusha lineage Kinko-Ryu shakuhachi from his home in Northern California."
     },
     {
@@ -1027,8 +1173,10 @@
         "startat": "2017-04-15T20:30:00.000Z",
         "endat": "2017-04-15T21:00:00.000Z",
         "location": "JCCCNC",
+        "imagename": "JCCCNC.jpg",
         "name": "Hengenjizai Concert invitation Committee",
         "url": "http://www.matsuhidecompany.com/MatsuHide/Hengenjizia_Concert_Invitation_Committee.html",
+        "category": "Music, koto",
         "details": "The Hengenjizai Concert of the San Francisco Executive Committee was founded in July 2016. Our mission is to provide Hengenjizai, or world-class contemporary Japanese koto music performances, to San Francisco Bay Area audience. We also promote mutual understanding between Japan and the U.S. through musical exchange."
     },
     {
@@ -1036,6 +1184,7 @@
         "startat": "2017-04-15T21:00:00.000Z",
         "endat": "2017-04-15T21:30:00.000Z",
         "location": "JCCCNC",
+        "imagename": "JCCCNC.jpg",
         "name": "TBD"
     },
     {
@@ -1043,7 +1192,9 @@
         "startat": "2017-04-15T21:30:00.000Z",
         "endat": "2017-04-15T22:30:00.000Z",
         "location": "JCCCNC",
+        "imagename": "JCCCNC.jpg",
         "name": "Azama Honryu Seifu Ichisenkai USA",
+        "category": "Dance and Music, Okinawan",
         "details": "Born on Yonaguni, the most southwestern island in the Okinawan chain, Master Kinuko Mototake established her dance academy in 1996 on the island of Alameda, CA. She returns yearly to Okinawa to enhance and polish her skill with the original Azama Honryu group. She is the instructor and director of the Okinawa Eisa Shima Daiko group. She is also the Goodwill Ambassador to Okinawa and Arts and Culture Director of SF Okinawa Kenjinkai."
     },
     {
@@ -1051,8 +1202,10 @@
         "startat": "2017-04-15T22:30:00.000Z",
         "endat": "2017-04-16T00:00:00.000Z",
         "location": "JCCCNC",
+        "imagename": "JCCCNC.jpg",
         "name": "Choral May and Ensemble Shiki",
         "url": "http://choralemay.com/",
+        "category": "Music",
         "details": "Chorale May is a male choir group, formed in 1995. e group sings primarily in Japanese and has sung at various events and places, such as the commemoration of the bombing of Hiroshima/Nagasaki, NHK Nodo- Jiman, the reception for Japanese Emperorâ€™s birthday, the National Anthem at the Oakland Aâ€™s Major League Baseball game, and the Davies Symphony Hall. Chorale Mayâ€™s rehearsals meet on the 2nd and 4th Tuesday of each month at the Japanese Cultural and Community Center of Northern California (JCCCNC)."
     },
     {
@@ -1062,6 +1215,7 @@
         "location": "JCCCNC",
         "imagename": "TaikoDojo.jpg",
         "name": "Cherry Blossom Taiko Festival",
+        "category": "Music",
         "details": "Enjoy the thunderous beats of a number of taiko musicians on the evening of Saturday, April 15. e line-up includes the San Francisco Taiko Dojo, along with their â€œRising Starsâ€; student groups CAL Raijin Taiko and UC Davis Bakuhatsu Taiko; and a special guest from Japan, Reigen Fujii & the Wagakki Ensemble which features the tsugara shamisen, taiko, shakuhachi and koto. Tickets are $30 for adults and $25 for students and seniors!"
     },
     {
@@ -1070,7 +1224,8 @@
         "endat": "2017-04-15T23:00:00.000Z",
         "location": "JCCCNC - Issei Memorial Hall",
         "imagename": "Bonsai.jpg",
-        "name": "Bonsai/Suiseki Exhibit & Demonstration"
+        "name": "Bonsai/Suiseki Exhibit & Demonstration",
+        "category": "Art, potted trees & stones"
     },
     {
         "id": 135,
@@ -1078,7 +1233,8 @@
         "endat": "2017-04-15T23:00:00.000Z",
         "location": "JCCCNC - Classroom One",
         "imagename": "Shodo.jpg",
-        "name": "Shodo"
+        "name": "Shodo",
+        "category": "Calligraphy"
     },
     {
         "id": 136,
@@ -1086,14 +1242,17 @@
         "endat": "2017-04-15T23:00:00.000Z",
         "location": "JCCCNC - Classroom Two",
         "imagename": "Kurata.jpg",
-        "name": "Karuta Card Game"
+        "name": "Karuta Card Game",
+        "category": "Game / Poetry"
     },
     {
         "id": 137,
         "startat": "2017-04-15T18:00:00.000Z",
         "endat": "2017-04-15T23:00:00.000Z",
         "location": "JCCCNC - Gym",
-        "name": "Wahsi Ningyo Exhibit"
+        "imagename": "JCCCNC.jpg",
+        "name": "Wahsi Ningyo Exhibit",
+        "category": "Handmade Dolls"
     },
     {
         "id": 138,
@@ -1101,7 +1260,8 @@
         "endat": "2017-04-15T20:15:00.000Z",
         "location": "Hokka Nichibei Kai",
         "imagename": "TeaCeremony.jpg",
-        "name": "Ura-Senke Tankokai"
+        "name": "Ura-Senke Tankokai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 139,
@@ -1109,7 +1269,8 @@
         "endat": "2017-04-15T21:15:00.000Z",
         "location": "Hokka Nichibei Kai",
         "imagename": "TeaCeremony.jpg",
-        "name": "Ura-Senke Tankokai"
+        "name": "Ura-Senke Tankokai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 140,
@@ -1117,7 +1278,8 @@
         "endat": "2017-04-15T22:15:00.000Z",
         "location": "Hokka Nichibei Kai",
         "imagename": "TeaCeremony.jpg",
-        "name": "Ura-Senke Tankokai"
+        "name": "Ura-Senke Tankokai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 141,
@@ -1125,7 +1287,8 @@
         "endat": "2017-04-15T23:15:00.000Z",
         "location": "Hokka Nichibei Kai",
         "imagename": "TeaCeremony.jpg",
-        "name": "Ura-Senke Tankokai"
+        "name": "Ura-Senke Tankokai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 142,
@@ -1133,7 +1296,8 @@
         "endat": "2017-04-15T19:30:00.000Z",
         "location": "Tateuchi Auditorium",
         "imagename": "TeaCeremony.jpg",
-        "name": "Ura-Senke Foundation"
+        "name": "Ura-Senke Foundation",
+        "category": "Tea Ceremony"
     },
     {
         "id": 143,
@@ -1141,7 +1305,8 @@
         "endat": "2017-04-15T20:30:00.000Z",
         "location": "Tateuchi Auditorium",
         "imagename": "TeaCeremony.jpg",
-        "name": "Ura-Senke Foundation"
+        "name": "Ura-Senke Foundation",
+        "category": "Tea Ceremony"
     },
     {
         "id": 144,
@@ -1149,7 +1314,8 @@
         "endat": "2017-04-15T21:30:00.000Z",
         "location": "Tateuchi Auditorium",
         "imagename": "TeaCeremony.jpg",
-        "name": "Ura-Senke Foundation"
+        "name": "Ura-Senke Foundation",
+        "category": "Tea Ceremony"
     },
     {
         "id": 145,
@@ -1157,7 +1323,8 @@
         "endat": "2017-04-15T22:30:00.000Z",
         "location": "Tateuchi Auditorium",
         "imagename": "TeaCeremony.jpg",
-        "name": "Ura-Senke Foundation"
+        "name": "Ura-Senke Foundation",
+        "category": "Tea Ceremony"
     },
     {
         "id": 146,
@@ -1165,7 +1332,8 @@
         "endat": "2017-04-16T00:00:00.000Z",
         "location": "National JACL Building",
         "imagename": "Oragami.jpg",
-        "name": "Origami"
+        "name": "Origami",
+        "category": "Origami"
     },
     {
         "id": 147,
@@ -1173,7 +1341,8 @@
         "endat": "2017-04-16T00:00:00.000Z",
         "location": "Union Bank Community Room",
         "imagename": "MataroDolls.jpg",
-        "name": "Mataro Dolls Exhibit"
+        "name": "Mataro Dolls Exhibit",
+        "category": "Handmade Dolls"
     },
     {
         "id": 148,
@@ -1182,14 +1351,16 @@
         "location": "National Japanese American Historical Society",
         "imagename": "NJHAS.jpg",
         "name": "Children of the Camp - 75th Anniversary of Executive Oder 9066 Exhibit; Japanese sword display",
-        "url": "https://www.njahs.org/children-camps-exhibit-series-open/"
+        "url": "https://www.njahs.org/children-camps-exhibit-series-open/",
+        "category": "Sword Display; Exhibit"
     },
     {
         "id": 149,
         "startat": "2017-04-15T18:00:00.000Z",
         "endat": "2017-04-16T00:00:00.000Z",
         "location": "Kinokuniya Bookstore",
-        "name": "Japanese Patchwork and Sashiki Demomstration"
+        "name": "Japanese Patchwork and Sashiki Demonstration",
+        "category": "Arts & Crafts, Patchwork"
     },
     {
         "id": 150,
@@ -1197,21 +1368,24 @@
         "endat": "2017-04-16T00:00:00.000Z",
         "location": "Konko Church",
         "imagename": "Shodo.jpg",
-        "name": "Shodo Exhibit and Demonstration"
+        "name": "Shodo Exhibit and Demonstration",
+        "category": "Calligraphy"
     },
     {
         "id": 151,
         "startat": "2017-04-15T21:00:00.000Z",
         "endat": "2017-04-15T23:00:00.000Z",
         "location": "Konko Church",
-        "name": "Fusami Kudo - \"Miracle of Thankfulness\" a Cancer Survivor Story"
+        "name": "Fusami Kudo - \"Miracle of Thankfulness\" a Cancer Survivor Story",
+        "category": "Lecture"
     },
     {
         "id": 152,
         "startat": "2017-04-15T18:00:00.000Z",
         "endat": "2017-04-15T23:00:00.000Z",
         "location": "Hotel Kabuki Sakura Room",
-        "name": "Kyoto Arts and Crafts"
+        "name": "Kyoto Arts and Crafts",
+        "category": "Arts & Crafts"
     },
     {
         "id": 153,
@@ -1225,21 +1399,24 @@
         "startat": "2017-04-15T20:15:00.000Z",
         "endat": "2017-04-15T21:45:00.000Z",
         "location": "Webster Street Stage",
-        "name": "Pete Escovedo Orchestra"
+        "name": "Pete Escovedo Orchestra",
+        "category": "Music"
     },
     {
         "id": 155,
         "startat": "2017-04-15T22:15:00.000Z",
         "endat": "2017-04-15T23:15:00.000Z",
         "location": "Webster Street Stage",
-        "name": "Msbhavn"
+        "name": "Msbhavn",
+        "category": "Music"
     },
     {
         "id": 156,
         "startat": "2017-04-15T23:45:00.000Z",
         "endat": "2017-04-16T00:30:00.000Z",
         "location": "Webster Street Stage",
-        "name": "Mr. Mego"
+        "name": "Mr. Mego",
+        "category": "Music"
     },
     {
         "id": 157,
@@ -1256,6 +1433,7 @@
         "location": "Peace Plaza Stage",
         "name": "SF Kendo",
         "url": "http://sfkendo.github.io",
+        "category": "Martial Arts, kendo",
         "details": "San Francisco Kendo dojo has been in SF Japantown since 1957, studying the art of kendo, or the study of Japanese swordsmanship. Kendo is a full contact martial art using bamboo swords with the main purpose to become a better person and citizen through the study of the Japanese sword. SF Kendo dojo practices on Mondays at the Buddhist Church of SF and on  ursdays at the JCCCNC. "
     },
     {
@@ -1265,6 +1443,7 @@
         "location": "Peace Plaza Stage",
         "name": "Enshin Karate",
         "url": "http:// www.enshinsf.com/",
+        "category": "Martial Arts, karate",
         "details": "The name ENSHIN is derived from two Japanese words: â€œenâ€ meaning â€˜open or un nished circleâ€™ and â€œshinâ€ meaning â€˜heartâ€™ or â€˜inner.â€™  e combination of these two words and their meanings embody the most important aspects of Enshin Karate. Established by Grandmaster Kancho Joko Ninomiya in 1988, this style of full contact karate emphasizes taking an opponentâ€™s momentum to reposition oneself for a counterattack. The fighting technique involves kicks, punches, and blocks as well as grabs, throws, and takedowns. \n"
     },
     {
@@ -1273,6 +1452,7 @@
         "endat": "2017-04-16T20:00:00.000Z",
         "location": "Peace Plaza Stage",
         "name": "Shorinji Kempo",
+        "category": "Martial Arts",
         "details": "Shorinji Kempo is a martial art based on the concept of integrating body and spirit into a system of self- defense techniques with mental training to promote health.  e Japanese martial artist Doshin So developed this martial art in 1947 to help individuals develop self-con dence, courage, and a spirit of compassion."
     },
     {
@@ -1280,21 +1460,24 @@
         "startat": "2017-04-16T22:30:00.000Z",
         "endat": "2017-04-16T23:00:00.000Z",
         "location": "Peace Plaza Stage",
-        "name": "Tokushima Kenjin Kai"
+        "name": "Tokushima Kenjin Kai",
+        "category": "Dance"
     },
     {
         "id": 162,
         "startat": "2017-04-16T23:00:00.000Z",
         "endat": "2017-04-16T23:45:00.000Z",
         "location": "Peace Plaza Stage",
-        "name": "Anime Costume Contest and Talent Show"
+        "name": "Anime Costume Contest and Talent Show",
+        "category": "Fashion"
     },
     {
         "id": 163,
         "startat": "2017-04-16T23:45:00.000Z",
         "endat": "2017-04-17T00:15:00.000Z",
         "location": "Peace Plaza Stage",
-        "name": "Sakura Ren"
+        "name": "Sakura Ren",
+        "category": "Dance, Japanese"
     },
     {
         "id": 164,
@@ -1317,7 +1500,8 @@
         "endat": "2017-04-16T23:00:00.000Z",
         "location": "JCCCNC - Issei Memorial Hall",
         "imagename": "Bonsai.jpg",
-        "name": "Bonsai/Suiseki Exhibit & Demonstration"
+        "name": "Bonsai/Suiseki Exhibit & Demonstration",
+        "category": "Art, potted trees & stones"
     },
     {
         "id": 167,
@@ -1325,14 +1509,17 @@
         "endat": "2017-04-16T23:00:00.000Z",
         "location": "JCCCNC - Classroom One",
         "imagename": "Shodo.jpg",
-        "name": "Shodo"
+        "name": "Shodo",
+        "category": "Calligraphy"
     },
     {
         "id": 168,
         "startat": "2017-04-16T18:00:00.000Z",
         "endat": "2017-04-16T23:00:00.000Z",
         "location": "JCCCNC - Classroom Two",
-        "name": "Karuta Card Game"
+        "imagename": "JCCCNC.jpg",
+        "name": "Karuta Card Game",
+        "category": "Game / Poetry"
     },
     {
         "id": 169,
@@ -1340,7 +1527,8 @@
         "endat": "2017-04-16T20:15:00.000Z",
         "location": "Hokka Nichibei Kai",
         "imagename": "TeaCeremony.jpg",
-        "name": "Omote-Senke Domonkai"
+        "name": "Omote-Senke Domonkai",
+        "category": "Tea Ceremony"
     },
     {
         "id": 170,
@@ -1348,7 +1536,8 @@
         "endat": "2017-04-16T21:15:00.000Z",
         "location": "Hokka Nichibei Kai",
         "imagename": "TeaCeremony.jpg",
-        "name": "Omote-Senke"
+        "name": "Omote-Senke",
+        "category": "Tea Ceremony"
     },
     {
         "id": 171,
@@ -1356,7 +1545,8 @@
         "endat": "2017-04-16T22:15:00.000Z",
         "location": "Hokka Nichibei Kai",
         "imagename": "TeaCeremony.jpg",
-        "name": "Omote-Senke"
+        "name": "Omote-Senke",
+        "category": "Tea Ceremony"
     },
     {
         "id": 172,
@@ -1364,7 +1554,8 @@
         "endat": "2017-04-16T23:15:00.000Z",
         "location": "Hokka Nichibei Kai",
         "imagename": "TeaCeremony.jpg",
-        "name": "Omote-Senke"
+        "name": "Omote-Senke",
+        "category": "Tea Ceremony"
     },
     {
         "id": 173,
@@ -1372,7 +1563,8 @@
         "endat": "2017-04-17T00:00:00.000Z",
         "location": "National JACL Building",
         "imagename": "Oragami.jpg",
-        "name": "Origami"
+        "name": "Origami",
+        "category": "Origami"
     },
     {
         "id": 174,
@@ -1380,7 +1572,8 @@
         "endat": "2017-04-17T00:00:00.000Z",
         "location": "Union Bank Community Room",
         "imagename": "MataroDolls.jpg",
-        "name": "Mataro Dolls Exhibit"
+        "name": "Mataro Dolls Exhibit",
+        "category": "Handmade Dolls"
     },
     {
         "id": 175,
@@ -1389,14 +1582,16 @@
         "location": "National Japanese American Historical Society",
         "imagename": "NJHAS.jpg",
         "name": "Children of the Camp - 75th Anniversary of Executive Oder 9066 Exhibit; Japanese sword display",
-        "url": "https://www.njahs.org/children-camps-exhibit-series-open/"
+        "url": "https://www.njahs.org/children-camps-exhibit-series-open/",
+        "category": "Sword Display; Exhibit"
     },
     {
         "id": 176,
         "startat": "2017-04-16T18:00:00.000Z",
         "endat": "2017-04-17T00:00:00.000Z",
         "location": "Kinokuniya Bookstore",
-        "name": "Japanese Patchwork and Sashiki Demomstration"
+        "name": "Japanese Patchwork and Sashiki Demomstration",
+        "category": "Arts & Crafts, Patchwork"
     },
     {
         "id": 177,
@@ -1404,20 +1599,23 @@
         "endat": "2017-04-17T00:00:00.000Z",
         "location": "Konko Church",
         "imagename": "Shodo.jpg",
-        "name": "Shodo Exhibit and Demonstration"
+        "name": "Shodo Exhibit and Demonstration",
+        "category": "Calligraphy"
     },
     {
         "id": 178,
         "startat": "2017-04-16T18:00:00.000Z",
         "endat": "2017-04-16T23:00:00.000Z",
         "location": "Hotel Kabuki Sakura Room",
-        "name": "Kyoto Arts and Crafts"
+        "name": "Kyoto Arts and Crafts",
+        "category": "Arts & Crafts"
     },
     {
         "id": 179,
         "startat": "2017-04-16T22:30:00.000Z",
         "endat": "2017-04-17T00:00:00.000Z",
         "location": "Webster Street Stage",
-        "name": "Rendezvous"
+        "name": "Rendezvous",
+        "category": "Music"
     }
 ]

@@ -21,7 +21,7 @@ class EventLocationAnnotationFactory {
             
             let eventLocation = EventLocation(locationName: sectionName)
             
-            guard let objects = sectionInfo.objects as? [Event] else { fatalError("downcast failed.") }
+            guard let objects = sectionInfo.objects as? [Event] else { return result }
             
             let annotation = EventLocationAnnotation(events: objects, eventLocation: eventLocation)
             result.append(annotation)

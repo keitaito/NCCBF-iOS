@@ -27,7 +27,7 @@ class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITa
         do {
             try fetchedResultsController?.performFetch()
         } catch {
-            fatalError(error.localizedDescription)
+            print(error)
         }
     }
     
@@ -47,7 +47,7 @@ class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITa
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let sections = fetchedResultsController?.sections else {
-            fatalError("No sections in fetchedResultsController")
+            return 0
         }
         let sectionInfo = sections[section]
         return sectionInfo.numberOfObjects
@@ -57,7 +57,7 @@ class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITa
         let cell = tableView.dequeueReusableCell(withIdentifier: ScheduleTableViewCell.ReuseIdentifier, for: indexPath) as! ScheduleTableViewCell
 
         guard let event = fetchedResultsController?.object(at: indexPath) else {
-            fatalError("Event object is not found.")
+            return cell
         }
         
         cell.configure(with: event)
@@ -69,7 +69,7 @@ class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITa
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let event = fetchedResultsController?.object(at: indexPath) else {
-            fatalError("Event object is not found.")
+            return
         }
         guard let vc = UIStoryboard.instantiateViewController(withIdentifier: "EventDetailsViewController") as? EventDetailsViewController else {
             return
@@ -90,7 +90,7 @@ class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITa
             try fetchedResultsController?.performFetch()
             tableView.reloadData()
         } catch {
-            fatalError(error.localizedDescription)
+            print(error)
         }
     }
     
@@ -106,7 +106,7 @@ class ScheduleTableViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     private func initializeFetchedResultsController() {
-        guard let context = context else { fatalError("context is nil.") }
+        guard let context = context else { return }
         let request: NSFetchRequest<Event> = Event.fetchRequest()
         request.predicate = ScheduleDateSegment(rawValue: dateSegmentedControl.selectedSegmentIndex)?.predicate
         let startAtSort = NSSortDescriptor(key: "startAt", ascending: true)

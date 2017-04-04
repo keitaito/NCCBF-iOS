@@ -29,9 +29,9 @@ class ImageConfigurator {
         do {
             let imageData = try Data(contentsOf: imagePathURL)
             return UIImage(data: imageData)
-//            self?.detailsView.imageView.image = image
         } catch {
-            fatalError(error.localizedDescription)
+            print(error)
+            return nil
         }
     }
     
@@ -41,9 +41,9 @@ class ImageConfigurator {
         dispatchQueue.async {
             do {
                 try imageData.write(to: url)
-                NCCBF_iOS.debugPrint(.writingImageSucceeded)
+//                NCCBF_iOS.debugPrint(.writingImageSucceeded)
             } catch {
-                fatalError(error.localizedDescription)
+                print(error)
             }
             
         }
