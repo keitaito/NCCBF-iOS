@@ -78,7 +78,7 @@ class EventDetailsViewController: UIViewController {
                     NCCBF_iOS.debugPrint(.notFoundInCachesDirectory)
                     self?.detailsView.imageView.af_setImage(
                         withURL: imageConfigurator.downloadImageURL,
-                        placeholderImage: #imageLiteral(resourceName: "test-image"),
+                        placeholderImage: #imageLiteral(resourceName: "NCCBF-2017-icon-image"),
                         imageTransition: .crossDissolve(0.5),
                         runImageTransitionIfCached: false,
                         completion: { (dataResponse) in
@@ -93,7 +93,7 @@ class EventDetailsViewController: UIViewController {
                 }
                 
             } else {
-                self?.detailsView.imageView.image = #imageLiteral(resourceName: "placeholder")
+                self?.detailsView.imageView.image = #imageLiteral(resourceName: "NCCBF-2017-icon-image")
             }
         }
     }
