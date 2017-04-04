@@ -41,6 +41,7 @@
 		877E8D721E9219E4007A9AFC /* ThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877E8D711E9219E4007A9AFC /* ThumbnailView.swift */; };
 		877E8D741E92F452007A9AFC /* MoreInfoMenuItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 877E8D731E92F452007A9AFC /* MoreInfoMenuItem.plist */; };
 		877E8D761E92F534007A9AFC /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877E8D751E92F534007A9AFC /* ResourceLoader.swift */; };
+		877E8D781E932C63007A9AFC /* NCCBFSchedule.json in Resources */ = {isa = PBXBuildFile; fileRef = 877E8D771E932C63007A9AFC /* NCCBFSchedule.json */; };
 		87941A951E8D0E4800218A6C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A941E8D0E4800218A6C /* DateExtension.swift */; };
 		87941A971E8D168900218A6C /* NSPredicateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A961E8D168900218A6C /* NSPredicateExtension.swift */; };
 		87941A991E8D1CA900218A6C /* ScheduleDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */; };
@@ -114,6 +115,7 @@
 		877E8D711E9219E4007A9AFC /* ThumbnailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThumbnailView.swift; path = Views/ThumbnailView.swift; sourceTree = "<group>"; };
 		877E8D731E92F452007A9AFC /* MoreInfoMenuItem.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MoreInfoMenuItem.plist; path = Resources/MoreInfoMenuItem.plist; sourceTree = "<group>"; };
 		877E8D751E92F534007A9AFC /* ResourceLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResourceLoader.swift; path = Utilities/ResourceLoader.swift; sourceTree = "<group>"; };
+		877E8D771E932C63007A9AFC /* NCCBFSchedule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = NCCBFSchedule.json; path = Resources/NCCBFSchedule.json; sourceTree = "<group>"; };
 		87941A941E8D0E4800218A6C /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = Extensions/DateExtension.swift; sourceTree = "<group>"; };
 		87941A961E8D168900218A6C /* NSPredicateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSPredicateExtension.swift; path = Extensions/NSPredicateExtension.swift; sourceTree = "<group>"; };
 		87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleDateFormatter.swift; path = Utilities/ScheduleDateFormatter.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				87C5F8041E553B3D001D7B09 /* Info.plist */,
 				8733C5891E5A1B9600140899 /* SFCherryBlossomSampleData.json */,
 				87FC32931E81F54B007F1B4A /* SFCherryBlossomSampleData2.json */,
+				877E8D771E932C63007A9AFC /* NCCBFSchedule.json */,
 				87D054F61E9085FC00E86247 /* EventLocationCoordinateList.plist */,
 				877E8D731E92F452007A9AFC /* MoreInfoMenuItem.plist */,
 			);
@@ -438,6 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87FC32941E81F54B007F1B4A /* SFCherryBlossomSampleData2.json in Resources */,
+				877E8D781E932C63007A9AFC /* NCCBFSchedule.json in Resources */,
 				873F0A021E6378E200BECCD2 /* EventDetailsViewController.storyboard in Resources */,
 				87C5F8031E553B3D001D7B09 /* LaunchScreen.storyboard in Resources */,
 				87FC32A41E83176C007F1B4A /* ScheduleTableViewController.storyboard in Resources */,
