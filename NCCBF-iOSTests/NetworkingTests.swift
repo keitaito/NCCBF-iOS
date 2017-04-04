@@ -41,7 +41,7 @@ class NetworkingTests: XCTestCase {
         waitForExpectations(timeout: 10, handler: nil)
     }
     
-    func tewtItemCount() {
+    func testItemCount() {
         let testExpectation = expectation(description: "testImagenameCount")
         
         var ids = [Int: Int]()
