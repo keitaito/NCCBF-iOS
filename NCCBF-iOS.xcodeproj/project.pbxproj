@@ -47,6 +47,7 @@
 		87941A991E8D1CA900218A6C /* ScheduleDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */; };
 		87A7032F1E887BEF00CDF31D /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A7032D1E887BEF00CDF31D /* Event+CoreDataClass.swift */; };
 		87A703301E887BEF00CDF31D /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A7032E1E887BEF00CDF31D /* Event+CoreDataProperties.swift */; };
+		87B7BD901E935AAC008C8C0E /* NCCBF_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B7BD8F1E935AAC008C8C0E /* NCCBF_iOSUITests.swift */; };
 		87C431101E8C853C00180374 /* RootContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4310F1E8C853C00180374 /* RootContainerViewController.swift */; };
 		87C5F7F91E553B3D001D7B09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C5F7F81E553B3D001D7B09 /* AppDelegate.swift */; };
 		87C5F8001E553B3D001D7B09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87C5F7FF1E553B3D001D7B09 /* Assets.xcassets */; };
@@ -71,6 +72,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		8756D92A1E7F734D00C0CFAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87C5F7ED1E553B3D001D7B09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87C5F7F41E553B3D001D7B09;
+			remoteInfo = "NCCBF-iOS";
+		};
+		87B7BD921E935AAC008C8C0E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 87C5F7ED1E553B3D001D7B09 /* Project object */;
 			proxyType = 1;
@@ -121,6 +129,9 @@
 		87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleDateFormatter.swift; path = Utilities/ScheduleDateFormatter.swift; sourceTree = "<group>"; };
 		87A7032D1E887BEF00CDF31D /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Event+CoreDataClass.swift"; path = "CoreData/Entities/Event+CoreDataClass.swift"; sourceTree = "<group>"; };
 		87A7032E1E887BEF00CDF31D /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Event+CoreDataProperties.swift"; path = "CoreData/Entities/Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		87B7BD8D1E935AAC008C8C0E /* NCCBF-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NCCBF-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87B7BD8F1E935AAC008C8C0E /* NCCBF_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCCBF_iOSUITests.swift; sourceTree = "<group>"; };
+		87B7BD911E935AAC008C8C0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87C4310F1E8C853C00180374 /* RootContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootContainerViewController.swift; path = ViewControllers/RootContainerViewController.swift; sourceTree = "<group>"; };
 		87C5F7F51E553B3D001D7B09 /* NCCBF-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NCCBF-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C5F7F81E553B3D001D7B09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +163,13 @@
 			files = (
 				8779ADCB1E8F861C00D77D3E /* Alamofire.framework in Frameworks */,
 				8779ADCC1E8F861C00D77D3E /* AlamofireImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87B7BD8A1E935AAC008C8C0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,12 +323,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		87B7BD8E1E935AAC008C8C0E /* NCCBF-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				87B7BD8F1E935AAC008C8C0E /* NCCBF_iOSUITests.swift */,
+				87B7BD911E935AAC008C8C0E /* Info.plist */,
+			);
+			path = "NCCBF-iOSUITests";
+			sourceTree = "<group>";
+		};
 		87C5F7EC1E553B3D001D7B09 = {
 			isa = PBXGroup;
 			children = (
 				87C5F7F71E553B3D001D7B09 /* NCCBF-iOS */,
 				8779ADB41E8F0FFF00D77D3E /* Frameworks */,
 				8756D9261E7F734D00C0CFAC /* NCCBF-iOSTests */,
+				87B7BD8E1E935AAC008C8C0E /* NCCBF-iOSUITests */,
 				87C5F7F61E553B3D001D7B09 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -320,6 +348,7 @@
 			children = (
 				87C5F7F51E553B3D001D7B09 /* NCCBF-iOS.app */,
 				8756D9251E7F734D00C0CFAC /* NCCBF-iOSTests.xctest */,
+				87B7BD8D1E935AAC008C8C0E /* NCCBF-iOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -362,6 +391,24 @@
 			productReference = 8756D9251E7F734D00C0CFAC /* NCCBF-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		87B7BD8C1E935AAC008C8C0E /* NCCBF-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87B7BD961E935AAD008C8C0E /* Build configuration list for PBXNativeTarget "NCCBF-iOSUITests" */;
+			buildPhases = (
+				87B7BD891E935AAC008C8C0E /* Sources */,
+				87B7BD8A1E935AAC008C8C0E /* Frameworks */,
+				87B7BD8B1E935AAC008C8C0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87B7BD931E935AAC008C8C0E /* PBXTargetDependency */,
+			);
+			name = "NCCBF-iOSUITests";
+			productName = "NCCBF-iOSUITests";
+			productReference = 87B7BD8D1E935AAC008C8C0E /* NCCBF-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		87C5F7F41E553B3D001D7B09 /* NCCBF-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87C5F8071E553B3D001D7B09 /* Build configuration list for PBXNativeTarget "NCCBF-iOS" */;
@@ -386,7 +433,7 @@
 		87C5F7ED1E553B3D001D7B09 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Keita Ito";
 				TargetAttributes = {
@@ -394,6 +441,12 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = D433NUFZ5K;
 						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 87C5F7F41E553B3D001D7B09;
+					};
+					87B7BD8C1E935AAC008C8C0E = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = D433NUFZ5K;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 87C5F7F41E553B3D001D7B09;
 					};
@@ -424,12 +477,20 @@
 			targets = (
 				87C5F7F41E553B3D001D7B09 /* NCCBF-iOS */,
 				8756D9241E7F734D00C0CFAC /* NCCBF-iOSTests */,
+				87B7BD8C1E935AAC008C8C0E /* NCCBF-iOSUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8756D9231E7F734D00C0CFAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87B7BD8B1E935AAC008C8C0E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -483,6 +544,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8756D95B1E810A2C00C0CFAC /* NetworkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87B7BD891E935AAC008C8C0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B7BD901E935AAC008C8C0E /* NCCBF_iOSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +610,11 @@
 			target = 87C5F7F41E553B3D001D7B09 /* NCCBF-iOS */;
 			targetProxy = 8756D92A1E7F734D00C0CFAC /* PBXContainerItemProxy */;
 		};
+		87B7BD931E935AAC008C8C0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87C5F7F41E553B3D001D7B09 /* NCCBF-iOS */;
+			targetProxy = 87B7BD921E935AAC008C8C0E /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -591,6 +665,36 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NCCBF-iOS.app/NCCBF-iOS";
+			};
+			name = Release;
+		};
+		87B7BD941E935AAC008C8C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = D433NUFZ5K;
+				INFOPLIST_FILE = "NCCBF-iOSUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keitaito.NCCBF-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "NCCBF-iOS";
+			};
+			name = Debug;
+		};
+		87B7BD951E935AAC008C8C0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = D433NUFZ5K;
+				INFOPLIST_FILE = "NCCBF-iOSUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keitaito.NCCBF-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "NCCBF-iOS";
 			};
 			name = Release;
 		};
@@ -732,6 +836,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		87B7BD961E935AAD008C8C0E /* Build configuration list for PBXNativeTarget "NCCBF-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87B7BD941E935AAC008C8C0E /* Debug */,
+				87B7BD951E935AAC008C8C0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		87C5F7F01E553B3D001D7B09 /* Build configuration list for PBXProject "NCCBF-iOS" */ = {
 			isa = XCConfigurationList;
