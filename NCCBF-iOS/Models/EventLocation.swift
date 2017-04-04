@@ -41,12 +41,8 @@ enum EventLocation {
 extension EventLocation {
     init(locationName: String) {
         
-        guard let path = Bundle.main.path(forResource: "EventLocationCoordinateList", ofType: "plist") else {
-            fatalError("Reading plist failed.")
-        }
-        guard let coordinateDictionary = NSDictionary(contentsOfFile: path) as? [String: Any] else {
-            fatalError("coordinateDictionary instantiation failed.")
-        }
+        let path = Bundle.main.path(forResource: "EventLocationCoordinateList", ofType: "plist")!
+        let coordinateDictionary = NSDictionary(contentsOfFile: path) as! [String: Any]
         
         var coordinate = japantownCoordinate
         if let location = coordinateDictionary[locationName] as? [String: Double],

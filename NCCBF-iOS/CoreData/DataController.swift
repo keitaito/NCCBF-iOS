@@ -16,7 +16,6 @@ class DataController: NSObject {
         container.loadPersistentStores(completionHandler: { (persistentStoreDescription, error) in
             if let error = error {
                 print(error)
-                fatalError("NSPersistentContainer initialization failed.")
             }
         })
         return container

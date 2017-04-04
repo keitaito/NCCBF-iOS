@@ -37,7 +37,7 @@ class RootContainerViewController: UIViewController {
         spinner = createSpinner()
         
         sessionManager.request(NCCBF2017EventScheduleDataURL).responseJSON { (response) in
-            debugPrint(response)
+//            debugPrint(response)
             
             switch response.result {
             case .success(_):
@@ -54,17 +54,22 @@ class RootContainerViewController: UIViewController {
     
     func successHandling(response: DataResponse<Any>, context: NSManagedObjectContext) {
         guard let httpURLResponse = response.response else {
-            fatalError("httpURLResponse is nil.")
+            // httpURLResponse is nil.
+            return
         }
-        guard let lastModifiedDate = ResponseParser.lastModifiedDate(from: httpURLResponse) else { fatalError("lastModifiedDate is nil.")
+        guard let lastModifiedDate = ResponseParser.lastModifiedDate(from: httpURLResponse) else {
+            // lastModifiedDate is nil.
+            return
         }
         guard let savedDate = UserDefaults.standard.object(forKey: UserDefaultsKey.lastModified) as? Date else {
-            fatalError("lastModifiedDate is missing.")
+            // lastModifiedDate is missing.
+            return
         }
         if lastModifiedDate.isLater(than: savedDate) {
             // JSON is updated. Parse and instantiate objects.
             guard let json = response.result.value else {
-                fatalError("response result value is nil.")
+                // response result value is nil.
+                return
             }
             
             do {
@@ -138,7 +143,7 @@ class RootContainerViewController: UIViewController {
             }
             
         } catch {
-            print(error.localizedDescription)
+            print(error)
         }
         
     }
@@ -161,9 +166,7 @@ class RootContainerViewController: UIViewController {
     }
     
     private func setupChildVC() {
-        guard let tc = UIStoryboard.instantiateViewController(withIdentifier: "NCCBFTabBarController") as? NCCBFTabBarController else {
-            fatalError("NCCBFTabBarController instantiation failed.")
-        }
+        let tc = UIStoryboard.instantiateViewController(withIdentifier: "NCCBFTabBarController") as! NCCBFTabBarController
         
         addChildViewController(tc)
         tc.view.frame = view.frame
@@ -183,7 +186,7 @@ class RootContainerViewController: UIViewController {
             do {
                 try FileManager.default.createDirectory(at: FileManager.NCCBF2017EventImagesCachesDirectory, withIntermediateDirectories: false, attributes: nil)
             } catch {
-                print(error); fatalError(error.localizedDescription)
+                print(error)
             }
         }
     }

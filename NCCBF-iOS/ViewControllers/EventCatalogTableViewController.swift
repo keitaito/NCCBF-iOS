@@ -30,7 +30,7 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
         do {
             try fetchedResultsController?.performFetch()
         } catch {
-            fatalError(error.localizedDescription)
+            print(error)
         }
     }
     
@@ -49,18 +49,14 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: EventCatalogTableViewCell.ReuseIdentifier, for: indexPath) as! EventCatalogTableViewCell
-        guard let event = fetchedResultsController?.object(at: indexPath) else {
-            fatalError("Event object is not found.")
-        }
+        guard let event = fetchedResultsController?.object(at: indexPath) else { return cell }
         cell.configure(with: event)
         return cell
     }
     
     // MARK: - UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let event = fetchedResultsController?.object(at: indexPath) else {
-            fatalError("Event object is not found.")
-        }
+        guard let event = fetchedResultsController?.object(at: indexPath) else { return }
         let eventDetails = EventDetailsViewModel(event: event)
         let storyboard = UIStoryboard(name: "EventDetailsViewController", bundle: Bundle.main)
         if let vc = storyboard.instantiateInitialViewController() as? EventDetailsViewController {
@@ -81,7 +77,7 @@ class EventCatalogTableViewController: UIViewController, UITableViewDelegate, UI
     }
     
     private func initializeFetchedResultsController() {
-        guard let context = context else { fatalError("context is nil.") }
+        guard let context = context else { return }
         let request: NSFetchRequest<Event> = Event.fetchRequest()
         let idSort = NSSortDescriptor(key: "id", ascending: true)
         request.sortDescriptors = [idSort]

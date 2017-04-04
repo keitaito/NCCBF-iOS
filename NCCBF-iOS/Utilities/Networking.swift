@@ -36,19 +36,24 @@ extension Alamofire.SessionManager {
         var isUpdated = false
         
         self.request(NCCBF2017EventScheduleDataURL).responseJSON { (response) in
-            debugPrint(response)
+//            debugPrint(response)
             guard let httpURLResponse = response.response else {
-                fatalError("httpURLResponse is nil.")
+                // httpURLResponse is nil.
+                return
             }
-            guard let lastModifiedDate = ResponseParser.lastModifiedDate(from: httpURLResponse) else { fatalError("lastModifiedDate is nil.")
+            guard let lastModifiedDate = ResponseParser.lastModifiedDate(from: httpURLResponse) else {
+                // lastModifiedDate is nil.
+                return
             }
             guard let savedDate = UserDefaults.standard.object(forKey: UserDefaultsKey.lastModified) as? Date else {
-                fatalError("lastModifiedDate is missing.")
+                // lastModifiedDate is missing.
+                return
             }
             if lastModifiedDate.isLater(than: savedDate) {
                 // JSON is updated. Parse and instantiate objects.
                 guard let json = response.result.value else {
-                    fatalError("response result value is nil.")
+                    // response result value is nil.
+                    return
                 }
                 
                 do {

@@ -26,10 +26,10 @@ class MapViewController: UIViewController, MKMapViewDelegate, NSFetchedResultsCo
         do {
             try fetchedResultsController?.performFetch()
         } catch {
-            fatalError(error.localizedDescription)
+            print(error)
         }
         
-        guard let sections = fetchedResultsController?.sections else { fatalError("sections is nil.") }
+        guard let sections = fetchedResultsController?.sections else { return }
         mapView.addAnnotations(EventLocationAnnotationFactory.createAnnotations(with: sections))
         
         setupUI()
@@ -71,7 +71,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, NSFetchedResultsCo
     // MARK: - Private Methods
     
     private func initializeFetchedResultsController() {
-        guard let context = context else { fatalError("context is nil.") }
+        guard let context = context else { return }
         let request: NSFetchRequest<Event> = Event.fetchRequest()
         let idSort = NSSortDescriptor(key: "location", ascending: true)
         request.sortDescriptors = [idSort]

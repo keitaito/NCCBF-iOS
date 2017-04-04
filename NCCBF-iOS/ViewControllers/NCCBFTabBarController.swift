@@ -11,35 +11,23 @@ import UIKit
 class NCCBFTabBarController: UITabBarController {
     
     var eventCatalogTableViewController: EventCatalogTableViewController {
-        guard let nc = viewControllers?[0] as? UINavigationController,
-            let vc = nc.topViewController as? EventCatalogTableViewController else {
-                fatalError("EventCatalogTableViewController instantiation failed.")
-        }
-        return vc
+        let nc = viewControllers?[0] as? UINavigationController
+        return nc?.topViewController as! EventCatalogTableViewController
     }
     
     var scheduleTableViewController: ScheduleTableViewController {
-        guard let nc = viewControllers?[1] as? UINavigationController,
-            let vc = nc.topViewController as? ScheduleTableViewController else {
-                fatalError("ScheduleTableViewController instantiation failed.")
-        }
-        return vc
+        let nc = viewControllers?[1] as? UINavigationController
+        return nc?.topViewController as! ScheduleTableViewController
     }
     
     var mapViewController: MapViewController {
-        guard let nc = viewControllers?[2] as? UINavigationController,
-            let vc = nc.topViewController as? MapViewController else {
-                fatalError("MapViewController instantiation failed.")
-        }
-        return vc
+        let nc = viewControllers?[2] as? UINavigationController
+        return nc?.topViewController as! MapViewController
     }
     
     var moreInfoTableViewController: MoreInfoTableViewController {
-        guard let nc = viewControllers?[3] as? UINavigationController,
-            let vc = nc.topViewController as? MoreInfoTableViewController else {
-                fatalError("MoreInfoTableViewController instantiation failed.")
-        }
-        return vc
+        let nc = viewControllers?[3] as? UINavigationController
+        return nc?.topViewController as! MoreInfoTableViewController
     }
 
     override func viewDidLoad() {
