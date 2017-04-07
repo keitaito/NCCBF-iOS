@@ -13,6 +13,10 @@ class NCCBF_iOSUITests: XCTestCase {
     override func setUp() {
         super.setUp()
         
+        // Reset UserDefaults.
+        let domainName = Bundle.main.bundleIdentifier!
+        UserDefaults.standard.removePersistentDomain(forName: domainName)
+        
         let app = XCUIApplication()
         setupSnapshot(app)
         app.launch()
