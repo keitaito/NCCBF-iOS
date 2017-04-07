@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		872F7F9B1E97B19E00802758 /* FooterLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872F7F9A1E97B19E00802758 /* FooterLabel.swift */; };
+		872F7F9D1E97B30E00802758 /* BuildVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872F7F9C1E97B30E00802758 /* BuildVersion.swift */; };
 		8733C58A1E5A1B9600140899 /* SFCherryBlossomSampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8733C5891E5A1B9600140899 /* SFCherryBlossomSampleData.json */; };
 		8733C58E1E5A1C8900140899 /* EventCatalogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8733C58C1E5A1C8900140899 /* EventCatalogTableViewController.swift */; };
 		8733C58F1E5A1C8900140899 /* EventCatalogTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8733C58D1E5A1C8900140899 /* EventCatalogTableViewController.storyboard */; };
@@ -89,6 +91,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		872F7F9A1E97B19E00802758 /* FooterLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FooterLabel.swift; path = Views/FooterLabel.swift; sourceTree = "<group>"; };
+		872F7F9C1E97B30E00802758 /* BuildVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildVersion.swift; path = Utilities/BuildVersion.swift; sourceTree = "<group>"; };
 		8733C5891E5A1B9600140899 /* SFCherryBlossomSampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SFCherryBlossomSampleData.json; path = Resources/SFCherryBlossomSampleData.json; sourceTree = "<group>"; };
 		8733C58C1E5A1C8900140899 /* EventCatalogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventCatalogTableViewController.swift; path = ViewControllers/EventCatalogTableViewController.swift; sourceTree = "<group>"; };
 		8733C58D1E5A1C8900140899 /* EventCatalogTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = EventCatalogTableViewController.storyboard; path = Storyboards/EventCatalogTableViewController.storyboard; sourceTree = "<group>"; };
@@ -245,6 +249,7 @@
 				8779ADD71E905AB800D77D3E /* EventLocationAnnotationFactory.swift */,
 				877E8D6D1E91B848007A9AFC /* ResponseParser.swift */,
 				877E8D751E92F534007A9AFC /* ResourceLoader.swift */,
+				872F7F9C1E97B30E00802758 /* BuildVersion.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 			children = (
 				873F0A051E63891200BECCD2 /* EventDetailsView.swift */,
 				877E8D711E9219E4007A9AFC /* ThumbnailView.swift */,
+				872F7F9A1E97B19E00802758 /* FooterLabel.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -590,7 +596,9 @@
 				8756D4AF1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift in Sources */,
 				87A7032F1E887BEF00CDF31D /* Event+CoreDataClass.swift in Sources */,
 				87D052911E8DFFF5009FD35F /* ScheduleTableViewCell.swift in Sources */,
+				872F7F9D1E97B30E00802758 /* BuildVersion.swift in Sources */,
 				8779ADBD1E8F1CCE00D77D3E /* FileManagerExtension.swift in Sources */,
+				872F7F9B1E97B19E00802758 /* FooterLabel.swift in Sources */,
 				87FC329A1E821F4C007F1B4A /* MenuItem.swift in Sources */,
 				87FC32981E81FF87007F1B4A /* MoreInfoTableViewController.swift in Sources */,
 				8772FE641E8868700048B2C0 /* DataController.swift in Sources */,
