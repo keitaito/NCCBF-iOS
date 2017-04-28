@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8718B43A1EB4030300D5932F /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8718B4391EB4030300D5932F /* NetworkingTests.swift */; };
+		8718B43D1EB40E2700D5932F /* EventModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8718B43C1EB40E2700D5932F /* EventModelTests.swift */; };
 		872F7F9B1E97B19E00802758 /* FooterLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872F7F9A1E97B19E00802758 /* FooterLabel.swift */; };
 		872F7F9D1E97B30E00802758 /* BuildVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872F7F9C1E97B30E00802758 /* BuildVersion.swift */; };
 		8733C58A1E5A1B9600140899 /* SFCherryBlossomSampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8733C5891E5A1B9600140899 /* SFCherryBlossomSampleData.json */; };
@@ -92,6 +93,7 @@
 
 /* Begin PBXFileReference section */
 		8718B4391EB4030300D5932F /* NetworkingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkingTests.swift; path = Networking/NetworkingTests.swift; sourceTree = "<group>"; };
+		8718B43C1EB40E2700D5932F /* EventModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventModelTests.swift; path = Models/EventModelTests.swift; sourceTree = "<group>"; };
 		872F7F9A1E97B19E00802758 /* FooterLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FooterLabel.swift; path = Views/FooterLabel.swift; sourceTree = "<group>"; };
 		872F7F9C1E97B30E00802758 /* BuildVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildVersion.swift; path = Utilities/BuildVersion.swift; sourceTree = "<group>"; };
 		8733C5891E5A1B9600140899 /* SFCherryBlossomSampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SFCherryBlossomSampleData.json; path = Resources/SFCherryBlossomSampleData.json; sourceTree = "<group>"; };
@@ -191,6 +193,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8718B43B1EB40DFF00D5932F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8718B4391EB4030300D5932F /* NetworkingTests.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		8718B43E1EB40E2F00D5932F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8718B43C1EB40E2700D5932F /* EventModelTests.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		8733C58B1E5A1B9D00140899 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,8 +273,9 @@
 		8756D9261E7F734D00C0CFAC /* NCCBF-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				8718B43E1EB40E2F00D5932F /* Models */,
+				8718B43B1EB40DFF00D5932F /* Networking */,
 				8756D9291E7F734D00C0CFAC /* Info.plist */,
-				8718B4391EB4030300D5932F /* NetworkingTests.swift */,
 			);
 			path = "NCCBF-iOSTests";
 			sourceTree = "<group>";
@@ -550,6 +569,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8718B43D1EB40E2700D5932F /* EventModelTests.swift in Sources */,
 				8718B43A1EB4030300D5932F /* NetworkingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
