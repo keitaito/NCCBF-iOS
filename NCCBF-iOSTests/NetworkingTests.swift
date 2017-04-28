@@ -12,9 +12,9 @@ import Alamofire
 
 class NetworkingTests: XCTestCase {
     
-    func testWithAlamofire() {
-        
-        let testExpectation = expectation(description: "testWithAlamofire")
+    func testNetworkingForLocationCount() {
+        let testExpectation = expectation(description: "testNetworkingForLocationCount")
+        let expectedLocationCount = 17
         
         var locations = [String: Int]()
         
@@ -33,7 +33,8 @@ class NetworkingTests: XCTestCase {
                     }
                 }
                 
-                print(locations)
+//                print(locations)
+                XCTAssertEqual(locations.count, expectedLocationCount)
                 testExpectation.fulfill()
             }
         }
@@ -41,29 +42,17 @@ class NetworkingTests: XCTestCase {
         waitForExpectations(timeout: 10, handler: nil)
     }
     
-    func testItemCount() {
-        let testExpectation = expectation(description: "testImagenameCount")
+    func testNetworkingForImageCount() {
+        let testExpectation = expectation(description: "testNetworkingForImageCount")
+        let expectedImageCount = 33
         
-        var ids = [Int: Int]()
         var imageNames = [String: Int]()
-        
         
         Alamofire.request(NCCBF2017EventScheduleDataURL).responseJSON { (dataResponse) in
             if let json = dataResponse.result.value,
                 let array = json as? [Any] {
                 for element in array {
                     if let dictionary = element as? [String: Any] {
-                        
-                        if let id = dictionary["id"] as? Int {
-                            if let value = ids[id] {
-                                ids[id] = value + 1
-                            } else {
-                                ids[id] = 1
-                            }
-                        }
-                        
-                        
-                        
                         if let imagename = dictionary["imagename"] as? String {
                             if let value = imageNames[imagename] {
                                 imageNames[imagename] = value + 1
@@ -73,11 +62,9 @@ class NetworkingTests: XCTestCase {
                         }
                     }
                 }
-//                print(ids)
-//                print(ids.count)
-//                print("\n\n\n------\n\n\n")
+                
 //                print(imageNames)
-//                print(imageNames.count)
+                XCTAssertEqual(imageNames.count, expectedImageCount)
                 testExpectation.fulfill()
             }
         }
