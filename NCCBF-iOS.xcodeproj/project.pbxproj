@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8718B43A1EB4030300D5932F /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8718B4391EB4030300D5932F /* NetworkingTests.swift */; };
 		872F7F9B1E97B19E00802758 /* FooterLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872F7F9A1E97B19E00802758 /* FooterLabel.swift */; };
 		872F7F9D1E97B30E00802758 /* BuildVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872F7F9C1E97B30E00802758 /* BuildVersion.swift */; };
 		8733C58A1E5A1B9600140899 /* SFCherryBlossomSampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8733C5891E5A1B9600140899 /* SFCherryBlossomSampleData.json */; };
@@ -18,7 +19,6 @@
 		873F0A061E63891200BECCD2 /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F0A051E63891200BECCD2 /* EventDetailsView.swift */; };
 		874A7F271E9376DD00FB843C /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874A7F261E9376DD00FB843C /* SnapshotHelper.swift */; };
 		8756D4AF1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8756D4AE1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift */; };
-		8756D95B1E810A2C00C0CFAC /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8756D95A1E810A2C00C0CFAC /* NetworkingTests.swift */; };
 		8756D9621E81101B00C0CFAC /* NCCBFTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8756D9611E81101B00C0CFAC /* NCCBFTabBarController.storyboard */; };
 		875975341E8C893D0018233F /* NCCBFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875975331E8C893D0018233F /* NCCBFTabBarController.swift */; };
 		875975361E8C899B0018233F /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875975351E8C899B0018233F /* UIStoryboardExtension.swift */; };
@@ -91,6 +91,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8718B4391EB4030300D5932F /* NetworkingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkingTests.swift; path = Networking/NetworkingTests.swift; sourceTree = "<group>"; };
 		872F7F9A1E97B19E00802758 /* FooterLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FooterLabel.swift; path = Views/FooterLabel.swift; sourceTree = "<group>"; };
 		872F7F9C1E97B30E00802758 /* BuildVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildVersion.swift; path = Utilities/BuildVersion.swift; sourceTree = "<group>"; };
 		8733C5891E5A1B9600140899 /* SFCherryBlossomSampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SFCherryBlossomSampleData.json; path = Resources/SFCherryBlossomSampleData.json; sourceTree = "<group>"; };
@@ -104,7 +105,6 @@
 		8756D4AE1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventDetailsViewModel.swift; path = Models/EventDetailsViewModel.swift; sourceTree = "<group>"; };
 		8756D9251E7F734D00C0CFAC /* NCCBF-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NCCBF-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8756D9291E7F734D00C0CFAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8756D95A1E810A2C00C0CFAC /* NetworkingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
 		8756D9611E81101B00C0CFAC /* NCCBFTabBarController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = NCCBFTabBarController.storyboard; path = Storyboards/NCCBFTabBarController.storyboard; sourceTree = "<group>"; };
 		875975331E8C893D0018233F /* NCCBFTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NCCBFTabBarController.swift; path = ViewControllers/NCCBFTabBarController.swift; sourceTree = "<group>"; };
 		875975351E8C899B0018233F /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStoryboardExtension.swift; path = Extensions/UIStoryboardExtension.swift; sourceTree = "<group>"; };
@@ -256,7 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				8756D9291E7F734D00C0CFAC /* Info.plist */,
-				8756D95A1E810A2C00C0CFAC /* NetworkingTests.swift */,
+				8718B4391EB4030300D5932F /* NetworkingTests.swift */,
 			);
 			path = "NCCBF-iOSTests";
 			sourceTree = "<group>";
@@ -447,7 +447,7 @@
 					8756D9241E7F734D00C0CFAC = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = D433NUFZ5K;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 87C5F7F41E553B3D001D7B09;
 					};
@@ -550,7 +550,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8756D95B1E810A2C00C0CFAC /* NetworkingTests.swift in Sources */,
+				8718B43A1EB4030300D5932F /* NetworkingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
