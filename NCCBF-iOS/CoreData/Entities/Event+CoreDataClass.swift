@@ -48,9 +48,7 @@ extension Event {
             throw EventError.initializingError("endat is missing.", json)
         }
         
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.sss'Z'"
-        dateFormatter.timeZone = TimeZone(abbreviation: "GMT")
+        let dateFormatter = DateFormatter.eventScheduleJSONDateFormatter
         guard let startAtDate = dateFormatter.date(from: startAtString) else {
             context.delete(self)
             throw EventError.initializingError("startAtString is invalid.", startAtString)

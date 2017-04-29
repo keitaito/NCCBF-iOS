@@ -10,6 +10,7 @@
 		8718B43A1EB4030300D5932F /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8718B4391EB4030300D5932F /* NetworkingTests.swift */; };
 		8718B43D1EB40E2700D5932F /* EventModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8718B43C1EB40E2700D5932F /* EventModelTests.swift */; };
 		8718B4401EB4114E00D5932F /* DataControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8718B43F1EB4114E00D5932F /* DataControllerTests.swift */; };
+		8718B4431EB4803400D5932F /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8718B4421EB4803400D5932F /* DateFormatterExtension.swift */; };
 		872F7F9B1E97B19E00802758 /* FooterLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872F7F9A1E97B19E00802758 /* FooterLabel.swift */; };
 		872F7F9D1E97B30E00802758 /* BuildVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872F7F9C1E97B30E00802758 /* BuildVersion.swift */; };
 		8733C58A1E5A1B9600140899 /* SFCherryBlossomSampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8733C5891E5A1B9600140899 /* SFCherryBlossomSampleData.json */; };
@@ -96,6 +97,7 @@
 		8718B4391EB4030300D5932F /* NetworkingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkingTests.swift; path = Networking/NetworkingTests.swift; sourceTree = "<group>"; };
 		8718B43C1EB40E2700D5932F /* EventModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventModelTests.swift; path = Models/EventModelTests.swift; sourceTree = "<group>"; };
 		8718B43F1EB4114E00D5932F /* DataControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataControllerTests.swift; path = CoreData/DataControllerTests.swift; sourceTree = "<group>"; };
+		8718B4421EB4803400D5932F /* DateFormatterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateFormatterExtension.swift; path = Extensions/DateFormatterExtension.swift; sourceTree = "<group>"; };
 		872F7F9A1E97B19E00802758 /* FooterLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FooterLabel.swift; path = Views/FooterLabel.swift; sourceTree = "<group>"; };
 		872F7F9C1E97B30E00802758 /* BuildVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildVersion.swift; path = Utilities/BuildVersion.swift; sourceTree = "<group>"; };
 		8733C5891E5A1B9600140899 /* SFCherryBlossomSampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SFCherryBlossomSampleData.json; path = Resources/SFCherryBlossomSampleData.json; sourceTree = "<group>"; };
@@ -321,6 +323,7 @@
 				875975351E8C899B0018233F /* UIStoryboardExtension.swift */,
 				877E8D6F1E91CF5B007A9AFC /* StringExtension.swift */,
 				87941A941E8D0E4800218A6C /* DateExtension.swift */,
+				8718B4421EB4803400D5932F /* DateFormatterExtension.swift */,
 				87941A961E8D168900218A6C /* NSPredicateExtension.swift */,
 				8779ADBC1E8F1CCE00D77D3E /* FileManagerExtension.swift */,
 				8779ADC51E8F657800D77D3E /* UIImageViewExtension.swift */,
@@ -599,6 +602,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8718B4431EB4803400D5932F /* DateFormatterExtension.swift in Sources */,
 				87FC32A01E830E19007F1B4A /* Networking.swift in Sources */,
 				87D0528F1E8DF747009FD35F /* ScheduleDate.swift in Sources */,
 				87941A951E8D0E4800218A6C /* DateExtension.swift in Sources */,
