@@ -10,16 +10,28 @@ import Foundation
 import CoreData
 
 class DataController: NSObject {
-    
+
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "NCCBF-iOS")
-        container.loadPersistentStores(completionHandler: { (persistentStoreDescription, error) in
-            if let error = error {
-                print(error)
-            }
-        })
+        container.loadPersistentStores { (persistentStoreDescription, error) in
+            error.map { print($0.localizedDescription) }
+        }
         return container
     }()
-    
 }
 
+extension DataController {
+    
+    var persistentContainerInMemory: NSPersistentContainer {
+        let container = NSPersistentContainer(name: "NCCBF-iOS")
+        
+        let description = NSPersistentStoreDescription()
+        description.type = NSInMemoryStoreType
+        container.persistentStoreDescriptions = [description]
+        
+        container.loadPersistentStores { (persistentStoreDescription, error) in
+            error.map { print($0.localizedDescription) }
+        }
+        return container
+    }
+}
