@@ -7,6 +7,20 @@
 //
 
 import XCTest
+@testable import NCCBF_iOS
 
 class DataControllerTests: XCTestCase {
+    
+    func testDataControllerSetup() {
+        // given
+        let expectedPersistentContainerName = "NCCBF-iOS"
+        
+        // when
+        let dataController = DataController()
+        let persistentContainer = dataController.persistentContainer
+        
+        // then
+        XCTAssertEqual(persistentContainer.name, expectedPersistentContainerName)
+        XCTAssertNotNil(persistentContainer.viewContext)
+    }
 }
