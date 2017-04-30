@@ -19,3 +19,13 @@ class TestHelper {
         }
     }
 }
+
+extension TestHelper {
+    class var startTimeDateFormatter: DateFormatter {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM d, h:mm a"
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.timeZone = TimeZone(abbreviation: "PDT")
+        return dateFormatter
+    }
+}
