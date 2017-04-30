@@ -51,6 +51,7 @@
 		87941A951E8D0E4800218A6C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A941E8D0E4800218A6C /* DateExtension.swift */; };
 		87941A971E8D168900218A6C /* NSPredicateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A961E8D168900218A6C /* NSPredicateExtension.swift */; };
 		87941A991E8D1CA900218A6C /* ScheduleDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */; };
+		879EAF7E1EB5802400594C58 /* EventDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EAF7D1EB5802400594C58 /* EventDetailsViewModelTests.swift */; };
 		87A7032F1E887BEF00CDF31D /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A7032D1E887BEF00CDF31D /* Event+CoreDataClass.swift */; };
 		87A703301E887BEF00CDF31D /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A7032E1E887BEF00CDF31D /* Event+CoreDataProperties.swift */; };
 		87B7BD901E935AAC008C8C0E /* NCCBF_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B7BD8F1E935AAC008C8C0E /* NCCBF_iOSUITests.swift */; };
@@ -138,6 +139,7 @@
 		87941A941E8D0E4800218A6C /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = Extensions/DateExtension.swift; sourceTree = "<group>"; };
 		87941A961E8D168900218A6C /* NSPredicateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSPredicateExtension.swift; path = Extensions/NSPredicateExtension.swift; sourceTree = "<group>"; };
 		87941A981E8D1CA900218A6C /* ScheduleDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleDateFormatter.swift; path = Utilities/ScheduleDateFormatter.swift; sourceTree = "<group>"; };
+		879EAF7D1EB5802400594C58 /* EventDetailsViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventDetailsViewModelTests.swift; path = Models/EventDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		87A7032D1E887BEF00CDF31D /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Event+CoreDataClass.swift"; path = "CoreData/Entities/Event+CoreDataClass.swift"; sourceTree = "<group>"; };
 		87A7032E1E887BEF00CDF31D /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Event+CoreDataProperties.swift"; path = "CoreData/Entities/Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		87B7BD8D1E935AAC008C8C0E /* NCCBF-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NCCBF-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				8718B43C1EB40E2700D5932F /* EventModelTests.swift */,
+				879EAF7D1EB5802400594C58 /* EventDetailsViewModelTests.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -584,6 +587,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8718B43D1EB40E2700D5932F /* EventModelTests.swift in Sources */,
+				879EAF7E1EB5802400594C58 /* EventDetailsViewModelTests.swift in Sources */,
 				8718B4401EB4114E00D5932F /* DataControllerTests.swift in Sources */,
 				8718B43A1EB4030300D5932F /* NetworkingTests.swift in Sources */,
 			);
