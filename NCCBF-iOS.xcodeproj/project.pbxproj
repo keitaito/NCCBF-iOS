@@ -23,6 +23,7 @@
 		874A7F271E9376DD00FB843C /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874A7F261E9376DD00FB843C /* SnapshotHelper.swift */; };
 		8756D4AF1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8756D4AE1E6CB8DB00DE83D8 /* EventDetailsViewModel.swift */; };
 		8756D9621E81101B00C0CFAC /* NCCBFTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8756D9611E81101B00C0CFAC /* NCCBFTabBarController.storyboard */; };
+		875882831EB5A1C1003DA6E6 /* ScheduleDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875882821EB5A1C1003DA6E6 /* ScheduleDateTests.swift */; };
 		875975341E8C893D0018233F /* NCCBFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875975331E8C893D0018233F /* NCCBFTabBarController.swift */; };
 		875975361E8C899B0018233F /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875975351E8C899B0018233F /* UIStoryboardExtension.swift */; };
 		8772FE621E8868540048B2C0 /* NCCBF-iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8772FE601E8868540048B2C0 /* NCCBF-iOS.xcdatamodeld */; };
@@ -115,6 +116,7 @@
 		8756D9251E7F734D00C0CFAC /* NCCBF-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NCCBF-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8756D9291E7F734D00C0CFAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8756D9611E81101B00C0CFAC /* NCCBFTabBarController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = NCCBFTabBarController.storyboard; path = Storyboards/NCCBFTabBarController.storyboard; sourceTree = "<group>"; };
+		875882821EB5A1C1003DA6E6 /* ScheduleDateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleDateTests.swift; path = Models/ScheduleDateTests.swift; sourceTree = "<group>"; };
 		875975331E8C893D0018233F /* NCCBFTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NCCBFTabBarController.swift; path = ViewControllers/NCCBFTabBarController.swift; sourceTree = "<group>"; };
 		875975351E8C899B0018233F /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIStoryboardExtension.swift; path = Extensions/UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		8772FE611E8868540048B2C0 /* NCCBF-iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "NCCBF-iOS.xcdatamodel"; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 			children = (
 				8718B43C1EB40E2700D5932F /* EventModelTests.swift */,
 				879EAF7D1EB5802400594C58 /* EventDetailsViewModelTests.swift */,
+				875882821EB5A1C1003DA6E6 /* ScheduleDateTests.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -612,6 +615,7 @@
 				8718B43D1EB40E2700D5932F /* EventModelTests.swift in Sources */,
 				879EAF801EB5812100594C58 /* TestHelper.swift in Sources */,
 				879EAF7E1EB5802400594C58 /* EventDetailsViewModelTests.swift in Sources */,
+				875882831EB5A1C1003DA6E6 /* ScheduleDateTests.swift in Sources */,
 				8718B4401EB4114E00D5932F /* DataControllerTests.swift in Sources */,
 				8718B43A1EB4030300D5932F /* NetworkingTests.swift in Sources */,
 			);
