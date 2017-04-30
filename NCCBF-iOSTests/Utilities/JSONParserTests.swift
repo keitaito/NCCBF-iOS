@@ -7,6 +7,20 @@
 //
 
 import XCTest
+@testable import NCCBF_iOS
 
-class JSONParserTests: XCTestCase {    
+class JSONParserTests: XCTestCase {
+    
+    func testParsingJSON() {
+        let context = DataController().persistentContainerInMemory.viewContext
+        let json = TestHelper.jsonFromBundle()
+        
+        do {
+            let events = try JSONParser.parse(json: json, context: context)
+            XCTAssertNotNil(events)
+            XCTAssertEqual(events.count > 0, true)
+        } catch {
+            XCTFail(error.localizedDescription)
+        }
+    }
 }
