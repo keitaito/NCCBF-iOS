@@ -14,6 +14,12 @@ class MoreInfoTableViewController: UITableViewController {
     var items = MenuItem.itemsForMoreInfoTableVC()
     
     private let reuseIdentifier = "reuseIdentifier"
+    
+    override func loadView() {
+        super.loadView()
+        
+        tableView.tableFooterView = FooterLabel(text: "Version \(BuildVersion().string)", fontSize: 14)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
