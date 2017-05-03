@@ -58,6 +58,7 @@
 		87A7032F1E887BEF00CDF31D /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A7032D1E887BEF00CDF31D /* Event+CoreDataClass.swift */; };
 		87A703301E887BEF00CDF31D /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A7032E1E887BEF00CDF31D /* Event+CoreDataProperties.swift */; };
 		87B7BD901E935AAC008C8C0E /* NCCBF_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B7BD8F1E935AAC008C8C0E /* NCCBF_iOSUITests.swift */; };
+		87BC91C21EB99B71003690F2 /* EventLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BC91C11EB99B71003690F2 /* EventLocationTests.swift */; };
 		87C431101E8C853C00180374 /* RootContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C4310F1E8C853C00180374 /* RootContainerViewController.swift */; };
 		87C5F7F91E553B3D001D7B09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C5F7F81E553B3D001D7B09 /* AppDelegate.swift */; };
 		87C5F8001E553B3D001D7B09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87C5F7FF1E553B3D001D7B09 /* Assets.xcassets */; };
@@ -151,6 +152,7 @@
 		87B7BD8D1E935AAC008C8C0E /* NCCBF-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NCCBF-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B7BD8F1E935AAC008C8C0E /* NCCBF_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCCBF_iOSUITests.swift; sourceTree = "<group>"; };
 		87B7BD911E935AAC008C8C0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87BC91C11EB99B71003690F2 /* EventLocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventLocationTests.swift; path = Models/EventLocationTests.swift; sourceTree = "<group>"; };
 		87C4310F1E8C853C00180374 /* RootContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootContainerViewController.swift; path = ViewControllers/RootContainerViewController.swift; sourceTree = "<group>"; };
 		87C5F7F51E553B3D001D7B09 /* NCCBF-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NCCBF-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87C5F7F81E553B3D001D7B09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				8718B43C1EB40E2700D5932F /* EventModelTests.swift */,
 				879EAF7D1EB5802400594C58 /* EventDetailsViewModelTests.swift */,
 				875882821EB5A1C1003DA6E6 /* ScheduleDateTests.swift */,
+				87BC91C11EB99B71003690F2 /* EventLocationTests.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -612,6 +615,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				879EAF831EB581FC00594C58 /* JSONParserTests.swift in Sources */,
+				87BC91C21EB99B71003690F2 /* EventLocationTests.swift in Sources */,
 				8718B43D1EB40E2700D5932F /* EventModelTests.swift in Sources */,
 				879EAF801EB5812100594C58 /* TestHelper.swift in Sources */,
 				879EAF7E1EB5802400594C58 /* EventDetailsViewModelTests.swift in Sources */,
