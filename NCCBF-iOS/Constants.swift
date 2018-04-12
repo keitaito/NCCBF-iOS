@@ -8,8 +8,10 @@
 
 import Foundation
 
-public let NCCBF2017EventScheduleDataURL = URL(string: "https://sfcherryblossom.org/wp-content/uploads/2017/ScheduleData/NCCBFSchedule.json")!
-let NCCBF2017EventImageURL = URL(string: "https://sfcherryblossom.org/wp-content/uploads/2017/ScheduleData/Images/")!
+struct NCCBFConstant {
+    static let eventScheduleDataURL = URL(string: "https://sfcherryblossom.org/wp-content/uploads/2018/ScheduleData/NCCBFSchedule.json")!
+    static let eventImageURL = URL(string: "https://sfcherryblossom.org/wp-content/uploads/2017/ScheduleData/Images/")!
+}
 
 struct UserDefaultsKey {
 //    static let launchedBefore = "launchedBefore"

@@ -36,7 +36,7 @@ class RootContainerViewController: UIViewController {
         
         spinner = createSpinner()
         
-        sessionManager.request(NCCBF2017EventScheduleDataURL).responseJSON { (response) in
+        sessionManager.request(NCCBFConstant.eventScheduleDataURL).responseJSON { (response) in
 //            debugPrint(response)
             
             switch response.result {

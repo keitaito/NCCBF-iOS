@@ -12,7 +12,7 @@ import AlamofireImage
 extension UIImageView {
     func configure(with event: Event) {
         guard let imageName = event.imageName else {
-            self.image = #imageLiteral(resourceName: "NCCBF-2017-icon-image")
+            self.image = #imageLiteral(resourceName: "NCCBF2018Gold")
             return
         }
         
@@ -40,7 +40,7 @@ extension UIImageView {
 //            NCCBF_iOS.debugPrint(.notFoundInCachesDirectory)
             self.af_setImage(
                 withURL: imageConfigurator.downloadImageURL,
-                placeholderImage: #imageLiteral(resourceName: "NCCBF-2017-icon-image"),
+                placeholderImage: #imageLiteral(resourceName: "NCCBF2018Gold"),
                 imageTransition: .crossDissolve(0.2),
                 runImageTransitionIfCached: false,
                 completion: { (dataResponse) in

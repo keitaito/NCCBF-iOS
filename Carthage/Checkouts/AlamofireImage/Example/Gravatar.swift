@@ -1,7 +1,7 @@
 //
 //  Gravatar.swift
 //
-//  Copyright (c) 2015-2016 Alamofire Software Foundation (http://alamofire.org/)
+//  Copyright (c) 2015-2018 Alamofire Software Foundation (http://alamofire.org/)
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -105,7 +105,9 @@ public struct Gravatar {
         var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
 
         var queryItems = [defaultImage.queryItem, rating.queryItem]
-        queryItems.append(URLQueryItem(name: "f", value: forceDefault ? "y" : "n"))
+        if forceDefault {
+            queryItems.append(URLQueryItem(name: "f", value: "y"))
+        }
         queryItems.append(URLQueryItem(name: "s", value: String(format: "%.0f",size * scale)))
 
         components.queryItems = queryItems
