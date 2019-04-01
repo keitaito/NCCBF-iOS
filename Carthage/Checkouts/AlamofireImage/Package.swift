@@ -1,3 +1,4 @@
+// swift-tools-version:5.0
 //
 //  Package.swift
 //
@@ -26,8 +27,24 @@ import PackageDescription
 
 let package = Package(
     name: "AlamofireImage",
-    dependencies: [
-        .Package(url: "https://github.com/Alamofire/Alamofire.git", versions: Version(4, 7, 1)..<Version(5, 0, 0))
+    platforms: [
+        .iOS(.v8),
+        .macOS(.v10_10),
+        .tvOS(.v9),
+        .watchOS(.v2)
     ],
-    exclude: ["Tests"]
+    products: [
+        .library(name: "AlamofireImage", targets: ["AlamofireImage"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: Version(4, 8, 2)))
+    ],
+    targets: [
+        .target(
+            name: "AlamofireImage",
+            dependencies: ["Alamofire"],
+            path: "Source"
+        )
+    ],
+    swiftLanguageVersions: [.v5]
 )
