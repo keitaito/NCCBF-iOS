@@ -1,9 +1,9 @@
 # Change Log
 All notable changes to this project will be documented in this file.
-`Alamofire` adheres to [Semantic Versioning](http://semver.org/).
+`Alamofire` adheres to [Semantic Versioning](https://semver.org/).
 
 #### 4.x Releases
-- `4.7.x` Releases - [4.7.0](#470) | [4.7.1](#471)
+- `4.7.x` Releases - [4.7.0](#470) | [4.7.1](#471) | [4.7.2](#472) | [4.7.3](#473)
 - `4.6.x` Releases - [4.6.0](#460)
 - `4.5.x` Releases - [4.5.0](#450) | [4.5.1](#451)
 - `4.4.x` Releases - [4.4.0](#440)
@@ -33,39 +33,56 @@ All notable changes to this project will be documented in this file.
 - `1.0.x` Releases - [1.0.0](#100) | [1.0.1](#101)
 
 ---
+## [4.7.3](https://github.com/Alamofire/Alamofire/releases/tag/4.7.3)
+Released on 2018-7-8. All issues associated with this milestone can be found using this [filter](https://github.com/Alamofire/Alamofire/issues?utf8=✓&q=milestone%3A4.7.3).
+
+#### Updated
+- Project for Xcode 10 and Swift 4.2 beta versions.
+  - Updated by [Jon Shier](https://github.com/jshier) in Pull Request [#2552](https://github.com/Alamofire/Alamofire/pull/2552).
+- Documentation styling and content.
+  - Updated by [Constantin Lungu](https://github.com/nemesis) in Pull Request [#2505](https://github.com/Alamofire/Alamofire/pull/2505), [Xing He](https://github.com/kukushi) in Pull Request [#2484](https://github.com/Alamofire/Alamofire/pull/2484), and [Karim](https://github.com/karimhm) in Pull Request [#2550](https://github.com/Alamofire/Alamofire/pull/2550).
+
+
+## [4.7.2](https://github.com/Alamofire/Alamofire/releases/tag/4.7.2)
+Released on 2018-4-15. All issues associated with this milestone can be found using this [filter](https://github.com/Alamofire/Alamofire/issues?utf8=✓&q=milestone%3A4.7.2).
+
+#### Fixed
+- Leak of `Requests` after retry.
+  - Fixed by [Artem Shimankski](https://github.com/mrdepth) in Pull Request [#2412](https://github.com/Alamofire/Alamofire/pull/2412).
+
 ## [4.7.1](https://github.com/Alamofire/Alamofire/releases/tag/4.7.1)
 Released on 2018-3-31. All issues associated with this milestone can be found using this [filter](https://github.com/Alamofire/Alamofire/issues?utf8=✓&q=milestone%3A4.7.1).
 
 #### Updated
 - Project for Xcode 9.3 and Swift 4.1 release versions.
- - Updated by [Jon Shier](https://github.com/jshier) in Pull Request [#2473](https://github.com/Alamofire/Alamofire/pull/2473).
+  - Updated by [Jon Shier](https://github.com/jshier) in Pull Request [#2473](https://github.com/Alamofire/Alamofire/pull/2473).
 
 #### Fixed
 - Quote escaping in cURL representation.
- - Fixed by [Jonah](https://github.com/jonah-williams) in Pull Request [#2474](https://github.com/Alamofire/Alamofire/pull/2474).
+  - Fixed by [Jonah](https://github.com/jonah-williams) in Pull Request [#2474](https://github.com/Alamofire/Alamofire/pull/2474).
 
 ## [4.7.0](https://github.com/Alamofire/Alamofire/releases/tag/4.7.0)
 Released on 2018-3-5. All issues associated with this milestone can be found using this [filter](https://github.com/Alamofire/Alamofire/issues?utf8=✓&q=milestone%3A4.7.0).
 
 #### Added
 - Open accessibility to `NetworkReachabilityManager`
- - Added by [Pär Strindevall](https://github.com/parski) in Pull Request [#2393](https://github.com/Alamofire/Alamofire/pull/2393).
-- Configurable parameter encodding for `URLEncoding`
- - Added by [Morten Heiberg](https://github.com/heiberg) in Pull Request [#2431](https://github.com/Alamofire/Alamofire/pull/2431).
+  - Added by [Pär Strindevall](https://github.com/parski) in Pull Request [#2393](https://github.com/Alamofire/Alamofire/pull/2393).
+- Configurable parameter encoding for `URLEncoding`
+  - Added by [Morten Heiberg](https://github.com/heiberg) in Pull Request [#2431](https://github.com/Alamofire/Alamofire/pull/2431).
 - Response `Data` to `.DidComplete` notification.
- - Added by [Sven Driemecker](https://github.com/svendr) in Pull Request [#2427](https://github.com/Alamofire/Alamofire/pull/2427).
+  - Added by [Sven Driemecker](https://github.com/svendr) in Pull Request [#2427](https://github.com/Alamofire/Alamofire/pull/2427).
 - Radar link for `URLSessionTaskMetrics` bug on watchOS.
- - Added by [Christian Noon](https://github.com/cnoon) in Pull Request [#2387](https://github.com/Alamofire/Alamofire/pull/2387).
+  - Added by [Christian Noon](https://github.com/cnoon) in Pull Request [#2387](https://github.com/Alamofire/Alamofire/pull/2387).
 
 #### Updated
 - Project for Xcode 9.3 and Swift 4.1.
- - Updated by [Jon Shier](https://github.com/jshier) in Pull Request [#2441](https://github.com/Alamofire/Alamofire/pull/2441).
+  - Updated by [Jon Shier](https://github.com/jshier) in Pull Request [#2441](https://github.com/Alamofire/Alamofire/pull/2441).
 - OS versions affected by resume data bug.
- - Updated by [Aaron Brager](https://github.com/getaaron) in Pull Request [#2389](https://github.com/Alamofire/Alamofire/pull/2389).
+  - Updated by [Aaron Brager](https://github.com/getaaron) in Pull Request [#2389](https://github.com/Alamofire/Alamofire/pull/2389).
 
 #### Fixed
 - Typos in `ResultTests`.
- - Fixed by [Aleph Retamal](https://github.com/alaphao) in Pull Request [#2416](https://github.com/Alamofire/Alamofire/pull/2416).
+  - Fixed by [Aleph Retamal](https://github.com/alaphao) in Pull Request [#2416](https://github.com/Alamofire/Alamofire/pull/2416).
 
 ## [4.6.0](https://github.com/Alamofire/Alamofire/releases/tag/4.6.0)
 Released on 2017-12-3. All issues associated with this milestone can be found using this [filter](https://github.com/Alamofire/Alamofire/issues?utf8=✓&q=milestone%3A4.6.0).
@@ -958,7 +975,7 @@ Released on 2016-03-23. All issues associated with this milestone can be found u
 #### Upgrade Notes
 This release requires Xcode 7.3+ otherwise the Swift 2.2 changes will **NOT COMPILE**. There are several reasons why this was deployed as a MINOR and not MAJOR release. First off, the public API changes of this release are fully backwards compatible. There are no breaking API changes in the public APIs. Strictly following semver dictates that this is a MINOR, not MAJOR release.
 
-> See [semver](http://semver.org/#semantic-versioning-specification-semver) for more info.
+> See [semver](https://semver.org/#semantic-versioning-specification-semver) for more info.
 
 We also realize that this can be frustrating for those out there not ready to upgrade to Xcode 7.3. Please know that we consider each release version carefully before deploying. Our decision to bump the MINOR version was not only due to strictly following semver, but also because it's difficult and undesirable for all OSS libraries to bump MAJOR versions each time the Swift APIs are incremented. Alamofire would have had to go through 6 additional MAJOR versions if this was the policy. That would mean we'd already be running on Alamofire 10.x. Incrementing MAJOR versions this quickly is disruptive to the community and would cause even more confusion. Instead, we try to carefully plan our MAJOR version releases and accompany them with detailed Migration Guides to help make the transition as smooth as possible.
 
