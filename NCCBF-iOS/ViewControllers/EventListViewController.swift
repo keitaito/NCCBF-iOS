@@ -11,10 +11,13 @@ import UIKit
 class EventListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let events: [Event]
-    weak var tableView: UITableView!
     let tableViewStyle: UITableView.Style
     
     let reuseIdentifier = "reuseIdentifier"
+
+    private var tableView: UITableView {
+        return view as! UITableView
+    }
     
     init(events: [Event], tableViewStyle: UITableView.Style) {
         self.events = events
@@ -29,7 +32,6 @@ class EventListViewController: UIViewController, UITableViewDataSource, UITableV
     override func loadView() {
         super.loadView()
         self.view = UITableView(frame: view.bounds, style: tableViewStyle)
-        tableView = self.view as! UITableView
     }
     
     override func viewDidLoad() {
