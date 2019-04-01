@@ -12,11 +12,11 @@ class EventListViewController: UIViewController, UITableViewDataSource, UITableV
     
     let events: [Event]
     weak var tableView: UITableView!
-    let tableViewStyle: UITableViewStyle
+    let tableViewStyle: UITableView.Style
     
     let reuseIdentifier = "reuseIdentifier"
     
-    init(events: [Event], tableViewStyle: UITableViewStyle) {
+    init(events: [Event], tableViewStyle: UITableView.Style) {
         self.events = events
         self.tableViewStyle = tableViewStyle
         super.init(nibName: nil, bundle: nil)
