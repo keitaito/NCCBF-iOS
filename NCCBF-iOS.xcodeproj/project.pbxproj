@@ -893,7 +893,7 @@
 		87C5F8081E553B3D001D7B09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2018";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2019";
 				DEVELOPMENT_TEAM = D433NUFZ5K;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -910,7 +910,7 @@
 		87C5F8091E553B3D001D7B09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2018";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2019";
 				DEVELOPMENT_TEAM = D433NUFZ5K;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

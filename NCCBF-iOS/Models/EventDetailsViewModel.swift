@@ -75,3 +75,7 @@ struct EventDetailsViewModel {
         self.event = event
     }
 }
+
+extension EventDetailsViewModel {
+    var placeholderImageName: String { return event.placeholderImageName }
+}

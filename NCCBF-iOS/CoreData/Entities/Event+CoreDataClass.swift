@@ -68,3 +68,7 @@ extension Event {
         self.url = url
     }
 }
+
+extension Event {
+    var placeholderImageName: String { return "NCCBF-2019-Logo" }
+}
