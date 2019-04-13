@@ -168,10 +168,10 @@ class RootContainerViewController: UIViewController {
     private func setupChildVC() {
         let tc = UIStoryboard.instantiateViewController(withIdentifier: "NCCBFTabBarController") as! NCCBFTabBarController
         
-        addChildViewController(tc)
+        addChild(tc)
         tc.view.frame = view.frame
         view.addSubview(tc.view)
-        tc.didMove(toParentViewController: self)
+        tc.didMove(toParent: self)
         
         let context = dataController.persistentContainer.viewContext
         tc.eventCatalogTableViewController.context = context

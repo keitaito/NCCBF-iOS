@@ -9,12 +9,12 @@
 import Foundation
 
 enum ScheduleDate: String {
-    case week1Day1 = "2018-04-14"
-    case week1Day2 = "2018-04-15"
-    case week1End = "2018-04-16"
-    case week2Day1 = "2018-04-21"
-    case week2Day2 = "2018-04-22"
-    case week2End = "2018-04-23"
+    case week1Day1 = "2019-04-13"
+    case week1Day2 = "2019-04-14"
+    case week1End = "2019-04-15"
+    case week2Day1 = "2019-04-20"
+    case week2Day2 = "2019-04-21"
+    case week2End = "2019-04-22"
     
     var date: Date {
         return Date.scheduleDate(self)

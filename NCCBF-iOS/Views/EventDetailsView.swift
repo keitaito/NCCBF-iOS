@@ -44,7 +44,7 @@ class EventDetailsView: UIView {
         }
     }
     
-    func openURL(_ sender: UIButton) {
+    @objc func openURL(_ sender: UIButton) {
         guard let urlString = sender.titleLabel?.text else { return }
         guard let url = URL(string: urlString) else { return }
         
