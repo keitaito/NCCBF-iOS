@@ -894,6 +894,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2019";
+				CURRENT_PROJECT_VERSION = 237;
 				DEVELOPMENT_TEAM = D433NUFZ5K;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -904,6 +905,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.keitaito.NCCBF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -911,6 +913,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2019";
+				CURRENT_PROJECT_VERSION = 237;
 				DEVELOPMENT_TEAM = D433NUFZ5K;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -921,6 +924,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.keitaito.NCCBF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
