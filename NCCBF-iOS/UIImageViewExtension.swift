@@ -12,35 +12,26 @@ import AlamofireImage
 extension UIImageView {
     func configure(with event: Event) {
         guard let imageName = event.imageName else {
-            self.image = #imageLiteral(resourceName: "NCCBF2018Gold")
+            self.image = UIImage(named: event.placeholderImageName)
             return
         }
         
         let imageConfigurator = ImageConfigurator(imageName: imageName)
-        
         // 1. Load image from app bundle.
         if let appBundleImage = UIImage(named: imageName) {
-//            NCCBF_iOS.debugPrint(.foundInAppBundle)
             self.image = appBundleImage
         } else {
-            
             // 2. Check caches directory.
-//            NCCBF_iOS.debugPrint(.notFoundInAppBundle)
-            if FileManager.default.fileExists(atPath: imageConfigurator.imagePathURL.path) {
-                
+            if FileManager.default.fileExists(atPath: imageConfigurator.imagePathURL.path),
+                let image = imageConfigurator.loadImage() {
                 // 3. Display image in caches directory.
-//                NCCBF_iOS.debugPrint(.foundInCachesDirectory)
-                if let image = imageConfigurator.loadImage() {
-                    self.image = image
-                    return
-                }
+                self.image = image
+                return
             }
-            
             // 4. Download image from the server.
-//            NCCBF_iOS.debugPrint(.notFoundInCachesDirectory)
             self.af_setImage(
                 withURL: imageConfigurator.downloadImageURL,
-                placeholderImage: #imageLiteral(resourceName: "NCCBF2018Gold"),
+                placeholderImage: UIImage(named: event.placeholderImageName),
                 imageTransition: .crossDissolve(0.2),
                 runImageTransitionIfCached: false,
                 completion: { (dataResponse) in
@@ -48,7 +39,6 @@ extension UIImageView {
                     
                     // 5. Save downloaded image to caches directory.
                     if !FileManager.default.fileExists(atPath: imageConfigurator.imagePathURL.path) {
-//                        NCCBF_iOS.debugPrint(.saveDownloadedImageInCachesDirectory)
                         imageConfigurator.saveImageToCachesDirectory(imageData: data)
                     }
             })
